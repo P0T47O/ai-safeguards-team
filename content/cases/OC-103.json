@@ -1,0 +1,31 @@
+{
+  "id": "OC-103",
+  "kind": "ordinary",
+  "scenarioId": "minutes",
+  "edition": 2,
+  "name": "Joris Smit",
+  "initials": "JS",
+  "cityId": "nl",
+  "title": "再改一遍会议待办表",
+  "requests": 43,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_103",
+  "ip": "198.51.100.97",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "nl-NL",
+  "minutes": [
+    23,
+    0,
+    37,
+    44,
+    51,
+    58,
+    13
+  ],
+  "salary": 3050,
+  "rent": 1100
+}

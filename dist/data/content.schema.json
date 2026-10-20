@@ -1,0 +1,1014 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Orange Crab 游戏内容格式 v1",
+  "description": "游戏虚构资料。跨文件引用、阶段权限与证物唯一性同时由 data.js 校验。",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/campaign"
+    },
+    {
+      "$ref": "#/$defs/pack"
+    }
+  ],
+  "$defs": {
+    "record": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "kind": {
+          "enum": [
+            "document",
+            "week",
+            "memo",
+            "connection"
+          ]
+        },
+        "fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ],
+                "minLength": 1
+              }
+            },
+            "required": [
+              "key",
+              "label",
+              "value"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "values": {
+          "type": "array",
+          "description": "周一到周日每日使用时长，单位小时（支持小数）；界面换算为分钟展示，不包含行为判断。",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 24
+          }
+        },
+        "connection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "timestamp",
+            "ip",
+            "countryCode",
+            "city",
+            "networkType"
+          ],
+          "properties": {
+            "timestamp": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            "ip": {
+              "type": "string",
+              "minLength": 1
+            },
+            "countryCode": {
+              "type": "string",
+              "pattern": "^[A-Z]{2}$"
+            },
+            "city": {
+              "type": "string",
+              "minLength": 1
+            },
+            "networkType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "risk": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "level",
+                "label",
+                "source"
+              ],
+              "properties": {
+                "level": {
+                  "enum": [
+                    "high",
+                    "unlisted",
+                    "unknown"
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "tags"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "week"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "values"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "connection"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "connection"
+            ]
+          },
+          "else": {
+            "required": [
+              "text"
+            ]
+          }
+        }
+      ]
+    },
+    "case": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initials": {
+          "type": "string",
+          "minLength": 1
+        },
+        "occupation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "residence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "plan": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fee": {
+          "type": "number",
+          "minimum": 0
+        },
+        "feeCurrency": {
+          "enum": [
+            "USD",
+            "DEN"
+          ],
+          "description": "月费原币种，默认 USD；DEN 为游戏内部的第纳里标识，不作美元换算。"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interception": {
+          "type": "object",
+          "description": "系统自动转入的待复核事件；命中信息不是已确认违规，也不作为可圈选证物。",
+          "properties": {
+            "source": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ruleId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+            },
+            "signal": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "source",
+            "ruleId",
+            "signal"
+          ],
+          "additionalProperties": false
+        },
+        "documents": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "enum": [
+              "claim",
+              "usage",
+              "network",
+              "environment",
+              "calendar",
+              "chat",
+              "license",
+              "tax",
+              "bank"
+            ]
+          },
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/record"
+            }
+          },
+          "properties": {
+            "network": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "#/$defs/record"
+                  },
+                  {
+                    "properties": {
+                      "kind": {
+                        "const": "connection"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "reply": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "reviewMode": {
+          "enum": [
+            "standard",
+            "covert"
+          ],
+          "description": "covert 表示当事人不知情的后台拦截；补充材料来自后续留存，不发问询，后续反馈显示为系统记录。"
+        },
+        "messages": {
+          "type": "object",
+          "properties": {
+            "allow": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/outcomeMessage"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "review": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/outcomeMessage"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "pause": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/outcomeMessage"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "poison": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/outcomeMessage"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "allow",
+            "review",
+            "pause",
+            "poison"
+          ],
+          "additionalProperties": false,
+          "description": "按处置分支预写的后续聊天或客服会话自动摘要。描述用户反应，不是发给审核员的回执，不引用内部证物或归档理由，不推断未在对话中出现的事件。"
+        },
+        "assessment": {
+          "type": "object",
+          "properties": {
+            "partner": {
+              "type": "boolean"
+            },
+            "rules": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "actions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                      "enum": [
+                        "allow",
+                        "review",
+                        "pause",
+                        "poison"
+                      ]
+                    }
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "amount": {
+                    "type": "number",
+                    "not": {
+                      "const": 0
+                    }
+                  }
+                },
+                "required": [
+                  "actions",
+                  "label",
+                  "amount"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "anomalies": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "evidenceId",
+                  "actions",
+                  "note"
+                ],
+                "properties": {
+                  "evidenceId": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+                  },
+                  "actions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                      "enum": [
+                        "review",
+                        "pause",
+                        "poison"
+                      ]
+                    }
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "equivalentEvidenceIds": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+                    }
+                  }
+                }
+              }
+            },
+            "nonAnomalyNotes": {
+              "type": "object",
+              "propertyNames": {
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "partner",
+            "rules",
+            "anomalies"
+          ],
+          "additionalProperties": false
+        },
+        "poisonSample": {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "minLength": 1
+            },
+            "response": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1,
+              "description": "null 表示只留存用户最后一条消息，没有模型回复；不使用全局样例补写。"
+            },
+            "connectionStatus": {
+              "type": "string",
+              "minLength": 1,
+              "description": "无模型回复时的连接状态记录，只陈述可观察的状态，不推断失联原因。"
+            }
+          },
+          "required": [
+            "prompt",
+            "response"
+          ],
+          "additionalProperties": false
+        },
+        "outcomeMode": {
+          "enum": [
+            "standard",
+            "silent"
+          ],
+          "description": "silent 案卷不显示处置弹窗、输出样例或后续对话摘要，不推断用户结局。"
+        },
+        "authoring": {
+          "type": "object",
+          "description": "仅供作者追踪模板和变体，不在游戏界面展示。",
+          "properties": {
+            "templateId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+            },
+            "variantId": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+            }
+          },
+          "required": [
+            "templateId",
+            "variantId"
+          ],
+          "additionalProperties": false
+        },
+        "executionPolicy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "blockedActions",
+            "reason"
+          ],
+          "properties": {
+            "blockedActions": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "pause",
+                  "poison"
+                ]
+              }
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "description": "执行保护：保留玩家的处置选择和判分，但这些动作不生效，账号正常访问，不展示降智样例。"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "category",
+        "name",
+        "initials",
+        "occupation",
+        "residence",
+        "plan",
+        "fee",
+        "summary",
+        "interception",
+        "documents",
+        "reply",
+        "messages",
+        "assessment"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "outcomeMode": {
+                "const": "silent"
+              }
+            },
+            "required": [
+              "outcomeMode"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reply": {
+                "type": "null"
+              },
+              "messages": {
+                "properties": {
+                  "allow": {
+                    "type": "null"
+                  },
+                  "review": {
+                    "type": "null"
+                  },
+                  "pause": {
+                    "type": "null"
+                  },
+                  "poison": {
+                    "type": "null"
+                  }
+                }
+              }
+            },
+            "not": {
+              "required": [
+                "poisonSample"
+              ]
+            }
+          },
+          "else": {
+            "properties": {
+              "reply": {
+                "type": "string",
+                "minLength": 1
+              },
+              "messages": {
+                "properties": {
+                  "allow": {
+                    "$ref": "#/$defs/outcomeMessage"
+                  },
+                  "review": {
+                    "$ref": "#/$defs/outcomeMessage"
+                  },
+                  "pause": {
+                    "$ref": "#/$defs/outcomeMessage"
+                  },
+                  "poison": {
+                    "$ref": "#/$defs/outcomeMessage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "executionPolicy": {
+                "properties": {
+                  "blockedActions": {
+                    "contains": {
+                      "const": "poison"
+                    }
+                  }
+                },
+                "required": [
+                  "blockedActions"
+                ]
+              }
+            },
+            "required": [
+              "executionPolicy"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "poisonSample"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "campaign": {
+      "type": "object",
+      "properties": {
+        "caseChains": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "caseIds", "accounts", "followUps"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "caseIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string"}},
+              "accounts": {
+                "type": "array", "minItems": 2,
+                "items": {
+                  "type": "object", "additionalProperties": false,
+                  "required": ["accountId", "name", "initials", "occupation", "residence", "city", "timezone", "ip", "bankName", "docRef", "taxRef", "paymentRef"],
+                  "properties": {
+                    "accountId": {"type": "string", "minLength": 1},
+                    "name": {"type": "string", "minLength": 1},
+                    "initials": {"type": "string", "minLength": 1},
+                    "occupation": {"type": "string", "minLength": 1},
+                    "residence": {"type": "string", "minLength": 1},
+                    "city": {"type": "string", "minLength": 1},
+                    "timezone": {"type": "string", "minLength": 1},
+                    "ip": {"type": "string", "minLength": 1},
+                    "bankName": {"type": "string", "minLength": 1},
+                    "docRef": {"type": "string", "minLength": 1},
+                    "taxRef": {"type": "string", "minLength": 1},
+                    "paymentRef": {"type": "string", "minLength": 1}
+                  }
+                }
+              },
+              "followUps": {
+                "type": "object", "additionalProperties": {
+                  "type": "object", "additionalProperties": false,
+                  "properties": {
+                    "unseen": {"type": "string", "minLength": 1},
+                    "allow": {"type": "string", "minLength": 1},
+                    "review": {"type": "string", "minLength": 1},
+                    "pause": {"type": "string", "minLength": 1},
+                    "poison": {"type": "string", "minLength": 1}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ending": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title", "paragraphs", "signature"],
+          "properties": {
+            "title": { "type": "string", "minLength": 1 },
+            "paragraphs": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "signature": { "type": "string", "minLength": 1 }
+          }
+        },
+        "$schema": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tabs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+              },
+              "number": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "unlockDay": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "id",
+              "number",
+              "label",
+              "unlockDay"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "stages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+              },
+              "day": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "slogan": {
+                "type": "string",
+                "minLength": 1
+              },
+              "notice": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tabs": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "caseIds": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "baseWage": {
+                "type": "number",
+                "minimum": 0
+              },
+              "timeBudget": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "id",
+              "day",
+              "title",
+              "slogan",
+              "notice",
+              "tabs",
+              "caseIds",
+              "baseWage",
+              "timeBudget"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "tags": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "tags"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "actions": {
+          "type": "object",
+          "properties": {
+            "allow": {
+              "type": "string",
+              "minLength": 1
+            },
+            "review": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pause": {
+              "type": "string",
+              "minLength": 1
+            },
+            "poison": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "allow",
+            "review",
+            "pause",
+            "poison"
+          ],
+          "additionalProperties": false
+        },
+        "poisonSample": {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "minLength": 1
+            },
+            "response": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "prompt",
+            "response"
+          ],
+          "additionalProperties": false
+        },
+        "scoring": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maxSelected",
+            "wrongLimit",
+            "rewardPerCorrect"
+          ],
+          "properties": {
+            "maxSelected": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            "wrongLimit": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "rewardPerCorrect": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "title",
+        "tabs",
+        "stages",
+        "reasons",
+        "actions",
+        "poisonSample",
+        "scoring"
+      ],
+      "additionalProperties": false
+    },
+    "pack": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schemaVersion": {
+          "const": 1
+        },
+        "cases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/case"
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "cases"
+      ],
+      "additionalProperties": false
+    },
+    "outcomeMessage": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "title",
+        "body"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

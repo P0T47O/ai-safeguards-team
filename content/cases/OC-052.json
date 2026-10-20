@@ -1,0 +1,30 @@
+{
+  "id": "OC-052",
+  "kind": "ordinary",
+  "scenarioId": "handover",
+  "edition": 1,
+  "name": "Beatriz Ferreira",
+  "initials": "BF",
+  "cityId": "pt",
+  "requests": 86,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 7,
+  "artifact": "notes_52",
+  "ip": "192.0.2.46",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "pt-PT",
+  "minutes": [
+    34,
+    41,
+    48,
+    55,
+    0,
+    17,
+    24
+  ],
+  "salary": 3620,
+  "rent": 830
+}

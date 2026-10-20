@@ -1,0 +1,31 @@
+{
+  "id": "OC-085",
+  "kind": "ordinary",
+  "scenarioId": "cv",
+  "edition": 2,
+  "name": "Femke de Jong",
+  "initials": "Fd",
+  "cityId": "nl",
+  "title": "再改一遍个人简历",
+  "requests": 10,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_85",
+  "ip": "198.51.100.79",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "nl-NL",
+  "minutes": [
+    33,
+    0,
+    47,
+    54,
+    9,
+    16,
+    23
+  ],
+  "salary": 3050,
+  "rent": 1100
+}

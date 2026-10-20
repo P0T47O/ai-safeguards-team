@@ -1,0 +1,28 @@
+{
+  "id": "shift-14",
+  "day": 14,
+  "title": "模型与作品",
+  "slogan": "返回成功与答案正确分别统计。",
+  "notice": "沿用九类材料。采集意图、实际成功调用和普通创作应分别核对，不将请求失败写成已完成。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-067",
+    "OC-075",
+    "OC-104",
+    "OC-078",
+    "OC-079",
+    "OC-111"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

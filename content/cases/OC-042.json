@@ -1,0 +1,30 @@
+{
+  "id": "OC-042",
+  "kind": "ordinary",
+  "scenarioId": "worksheet",
+  "edition": 1,
+  "name": "Nur Aisyah",
+  "initials": "NA",
+  "cityId": "sg",
+  "requests": 98,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_42",
+  "ip": "192.0.2.36",
+  "networkType": "公司网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "en-SG",
+  "minutes": [
+    28,
+    35,
+    0,
+    49,
+    56,
+    11,
+    18
+  ],
+  "salary": 3430,
+  "rent": 1010
+}

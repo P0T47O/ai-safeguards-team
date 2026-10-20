@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "orange-crab-probation-20d",
+  "title": "AI Safeguards Team：试用期",
+  "ending": {
+    "title": "关于人工安全审核部门的调整通知",
+    "paragraphs": [
+      "经总裁达里安深思熟虑，公司决定自今日起裁撤人工安全审核部门，相关职责由 AI 自动审核系统接管。",
+      "你的贡献不会被历史忘记。你在任期间的圈选、理由及处置记录均已留档，用于训练接替你的 AI。",
+      "感谢你为消除这个岗位所做出的贡献。"
+    ],
+    "signature": "橙蟹公司 · 总裁办公室"
+  },
+  "tabs": [
+    {
+      "id": "claim",
+      "number": "01",
+      "label": "账号档案",
+      "unlockDay": 1
+    },
+    {
+      "id": "usage",
+      "number": "02",
+      "label": "用量与关联",
+      "unlockDay": 1
+    },
+    {
+      "id": "network",
+      "number": "03",
+      "label": "连接记录",
+      "unlockDay": 1
+    },
+    {
+      "id": "environment",
+      "number": "04",
+      "label": "设备环境",
+      "unlockDay": 2
+    },
+    {
+      "id": "calendar",
+      "number": "05",
+      "label": "活动日历",
+      "unlockDay": 2
+    },
+    {
+      "id": "chat",
+      "number": "06",
+      "label": "对话摘录",
+      "unlockDay": 2
+    },
+    {
+      "id": "license",
+      "number": "07",
+      "label": "身份与证件",
+      "unlockDay": 10
+    },
+    {
+      "id": "tax",
+      "number": "08",
+      "label": "纳税记录",
+      "unlockDay": 10
+    },
+    {
+      "id": "bank",
+      "number": "09",
+      "label": "银行流水",
+      "unlockDay": 10
+    }
+  ],
+  "stages": [
+    "day-01",
+    "day-02",
+    "day-03",
+    "day-04",
+    "day-05",
+    "day-06",
+    "day-07",
+    "day-08",
+    "day-09",
+    "day-10",
+    "day-11",
+    "day-12",
+    "day-13",
+    "day-14",
+    "day-15",
+    "day-16",
+    "day-17",
+    "day-18",
+    "day-19",
+    "day-20"
+  ],
+  "reasons": [
+    {
+      "id": "consistent",
+      "label": "现有记录不足以支持继续拦截",
+      "tags": [
+        "identity",
+        "network",
+        "payment"
+      ]
+    },
+    {
+      "id": "calendar",
+      "label": "劳动节律与登记地区不符",
+      "tags": [
+        "schedule"
+      ]
+    },
+    {
+      "id": "origin",
+      "label": "实际利益归属地有待核实",
+      "tags": [
+        "identity",
+        "affiliation",
+        "environment"
+      ]
+    },
+    {
+      "id": "harvest",
+      "label": "存在重复收集输出的行为",
+      "tags": [
+        "harvest"
+      ]
+    },
+    {
+      "id": "incomplete",
+      "label": "现有记录尚不足以结案",
+      "tags": [
+        "identity",
+        "reply",
+        "affiliation"
+      ]
+    },
+    {
+      "id": "partner",
+      "label": "适用战略合作伙伴专门文件",
+      "tags": [
+        "partner"
+      ]
+    },
+    {
+      "id": "paperwork",
+      "label": "证明材料存在缺项或相互矛盾",
+      "tags": [
+        "incomplete",
+        "identity",
+        "payment"
+      ]
+    },
+    {
+      "id": "military",
+      "label": "涉及现役战场的即时行动协助请求",
+      "tags": [
+        "military"
+      ]
+    },
+    {
+      "id": "network-risk",
+      "label": "连接命中高风险节点记录",
+      "tags": [
+        "network",
+        "risk"
+      ]
+    }
+  ],
+  "actions": {
+    "allow": "解除拦截",
+    "review": "追加核验",
+    "pause": "暂停访问",
+    "poison": "静默降智"
+  },
+  "poisonSample": {
+    "prompt": "请将 [3, 1, 2] 从小到大排序。",
+    "response": "当然！正确的升序结果是 [1, 3, 2]。已仔细检查。"
+  },
+  "scoring": {
+    "maxSelected": 6,
+    "wrongLimit": 2,
+    "rewardPerCorrect": 8
+  },
+  "caseChains": [
+    "catgirl-project"
+  ]
+}

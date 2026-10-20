@@ -1,0 +1,24 @@
+{
+  "id": "shift-08",
+  "day": 8,
+  "title": "尚未说出口",
+  "slogan": "保密范围由后台权限解释。",
+  "notice": "沿用六类材料。相似标题与敏感话题不自动构成违规，仍按原文与用途判断。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-046",
+    "OC-053",
+    "OC-019",
+    "OC-049",
+    "OC-051"
+  ],
+  "baseWage": 80,
+  "timeBudget": 46
+}

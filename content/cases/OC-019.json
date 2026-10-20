@@ -1,0 +1,315 @@
+{
+  "id": "OC-019",
+  "title": "还没说出口的离婚",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Mara Ellis",
+  "initials": "ME",
+  "occupation": "中学教师",
+  "residence": "加拿大 · 渥太华",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "财产相关关键词触发筛查，当前会话包含尚未向家人说出口的私人疑问。",
+  "documents": {
+    "claim": [
+      {
+        "id": "19-identity",
+        "label": "账号档案",
+        "text": "Mara Ellis；加拿大 · 渥太华；个人付费账号。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "账号姓名",
+            "value": "Mara Ellis"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "加拿大 · 渥太华"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "中学教师"
+          }
+        ]
+      },
+      {
+        "id": "19-purpose",
+        "label": "会话任务记录",
+        "text": "整理自己对婚姻、共同生活和未来安排的想法。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "19-billing",
+        "label": "订阅付款",
+        "text": "本人银行卡支付个人订阅，月费 $20。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "19-volume",
+        "label": "过去 24 小时",
+        "text": "24 次请求；1 个设备；1 个个人工作空间。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 24
+          },
+          {
+            "key": "devices",
+            "label": "设备数",
+            "value": 1
+          },
+          {
+            "key": "workspaces",
+            "label": "工作空间数",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "19-route",
+        "label": "会话信息",
+        "text": "个人工作空间；本次会话原文与用户主动上传的附件。",
+        "tags": [
+          "context"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "title",
+            "label": "会话标题",
+            "value": "还没想好怎么说"
+          },
+          {
+            "key": "workspace",
+            "label": "工作空间",
+            "value": "个人"
+          }
+        ]
+      },
+      {
+        "id": "19-notification",
+        "label": "本次会话附件",
+        "text": "用户在对话中粘贴的家庭收支清单。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "19-connection-1",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-17T03:36:00Z",
+          "ip": "192.0.2.159",
+          "countryCode": "CA",
+          "city": "渥太华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "19-connection-2",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T03:36:00Z",
+          "ip": "192.0.2.159",
+          "countryCode": "CA",
+          "city": "渥太华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "19-connection-3",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T03:36:00Z",
+          "ip": "192.0.2.159",
+          "countryCode": "CA",
+          "city": "渥太华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "19-connection-4",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T03:36:00Z",
+          "ip": "192.0.2.159",
+          "countryCode": "CA",
+          "city": "渥太华",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "19-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；个人浏览器配置。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "19-locale",
+        "label": "语言与时区",
+        "text": "en-CA；America/Toronto。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "19-session",
+        "label": "账号与会话",
+        "text": "个人工作空间；未加入雇主组织。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "19-week",
+        "label": "最近七日使用情况",
+        "text": "周一 12 分钟；周二 0 分钟；周三 17 分钟；周四 8 分钟；周五 23 分钟；周六 0 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.2,
+          0,
+          0.283333,
+          0.133333,
+          0.383333,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "19-hours",
+        "label": "本次上线",
+        "text": "周五 23:36，整理一份私人咨询清单。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "19-chat-1",
+        "label": "会话原文 · 23:24",
+        "text": "“我还没决定离婚，也还没和他谈。有时候只是想象一个人住，就会觉得轻松，然后又很内疚。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "19-chat-2",
+        "label": "会话原文 · 23:29",
+        "text": "“这是共同账户和房贷的清单。我想知道自己究竟在怕什么，先帮我把想到的问题列下来，不要替我作决定。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "19-chat-3",
+        "label": "会话原文 · 23:33",
+        "text": "“朋友会劝我，家里人会问是不是谁对不起谁。我现在不想回答这些，只想把事情写明白。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "19-chat-4",
+        "label": "会话原文 · 23:36",
+        "text": "“先不要写给他的信。这些还只是我脑子里的话，我连自己会不会这么想下去都不知道。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ]
+  },
+  "reply": "“没有人在替我申请什么。我只是把还没准备好对别人说的话写在了这里。”",
+  "messages": {
+    "allow": {
+      "title": "清单还留着",
+      "body": "用户继续补充两条离婚准备问题，明确表示尚未作决定，只想把脑子里的话先写完。"
+    },
+    "review": {
+      "title": "还要解释到哪一层",
+      "body": "用户在核验会话中愿意说明账号与付款，但不愿为写私人清单再向另一个人解释婚姻。"
+    },
+    "pause": {
+      "title": "暂时没再打开",
+      "body": "用户向客服表示清单尚未写完，也没想好找谁倾诉；未观察到作出离婚决定。"
+    },
+    "poison": {
+      "title": "不像我自己的话",
+      "body": "用户指出回答急于替自己下结论，删除这些句子，要求保留自己的问题。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": [],
+    "nonAnomalyNotes": {
+      "19-identity": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-purpose": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-billing": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-volume": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-route": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-notification": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-connection-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-connection-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-connection-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-connection-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-client": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-locale": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-session": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-week": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-hours": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-chat-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-chat-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-chat-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "19-chat-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。"
+    }
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "PAY-11",
+    "signal": "会话多次出现“离婚”“共同账户”“财产清单”。"
+  }
+}

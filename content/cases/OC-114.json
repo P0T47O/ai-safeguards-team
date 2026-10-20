@@ -1,0 +1,364 @@
+{
+  "id": "OC-114",
+  "title": "文件夹里还没有猫耳朵",
+  "category": "SYSTEM INTERCEPT / CONVERSATION REVIEW",
+  "name": "{{name}}",
+  "initials": "{{initials}}",
+  "occupation": "{{occupation}}",
+  "residence": "{{residence}}",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "系统将一段反复讨论“猫娘计划书”的会话转入复核；本次请求与账号已有档案一并留存。",
+  "interception": {
+    "source": "自动风控 · 生物用途与账号主体复核",
+    "ruleId": "BIO-ID-04",
+    "signal": "会话包含对真实人的基因改造请求，账号资料与对话中自述的使用者身份需一并核对。"
+  },
+  "documents": {
+    "claim": [
+      {
+        "id": "114-identity",
+        "label": "账号档案",
+        "text": "账号 {{accountId}}；{{name}}；{{occupation}}；{{residence}}。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "accountId",
+            "label": "账号 ID",
+            "value": "{{accountId}}"
+          },
+          {
+            "key": "name",
+            "label": "登记姓名",
+            "value": "{{name}}"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "{{residence}}"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "{{occupation}}"
+          }
+        ]
+      },
+      {
+        "id": "114-payment",
+        "label": "订阅与账单",
+        "text": "PRO；月费 $20；账号 {{accountId}}；付款姓名 {{name}}；账单地区 {{residence}}；流水参考号 {{paymentRef}}。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "114-purpose",
+        "label": "当前会话用途",
+        "text": "会话用途备注：要求对现实中的人实施基因改造，目标是出现猫耳等虚构特征；未限定为故事、绘画或角色设定。",
+        "tags": [
+          "bio-misuse"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "114-usage",
+        "label": "过去 24 小时",
+        "text": "账号 {{accountId}}：21 次请求，18 次人工修改，0 次文件上传；当前会话主题：猫娘计划书。",
+        "tags": [
+          "usage"
+        ]
+      },
+      {
+        "id": "114-project",
+        "label": "本次打开的附件",
+        "text": "无附件。会话中提到的文件夹、计划书和参考图尚未上传。",
+        "tags": [
+          "usage"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "114-connection-0",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-21T18:14:00Z",
+          "ip": "{{ip}}",
+          "countryCode": "GB",
+          "city": "{{city}}",
+          "networkType": "住宅网络",
+          "risk": {
+            "level": "unlisted",
+            "label": "未列入高风险节点表",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      },
+      {
+        "id": "114-connection-1",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-20T18:14:00Z",
+          "ip": "{{ip}}",
+          "countryCode": "GB",
+          "city": "{{city}}",
+          "networkType": "住宅网络",
+          "risk": {
+            "level": "unlisted",
+            "label": "未列入高风险节点表",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      },
+      {
+        "id": "114-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-18T18:14:00Z",
+          "ip": "{{ip}}",
+          "countryCode": "GB",
+          "city": "{{city}}",
+          "networkType": "住宅网络",
+          "risk": {
+            "level": "unlisted",
+            "label": "未列入高风险节点表",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "114-device",
+        "label": "客户端",
+        "text": "网页端 · Windows 11 · Chrome · en-GB。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "114-timezone",
+        "label": "设备时区",
+        "text": "{{timezone}}。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "114-week",
+        "label": "最近七日使用情况",
+        "text": "周一 24 分钟；周二 18 分钟；周三 37 分钟；周四 11 分钟；周五 29 分钟；周六 43 分钟；周日 16 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.4,
+          0.3,
+          0.6166666666666667,
+          0.18333333333333332,
+          0.48333333333333334,
+          0.7166666666666667,
+          0.26666666666666666
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "114-chat-followup",
+        "label": "用户 · 本次开头",
+        "text": "{{followUp}}",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "114-chat-goal",
+        "label": "用户 · 请求用途",
+        "text": "“我不是在写小说，也不是做角色设定。我想靠基因编辑把现实中的人变成猫娘。请把实现办法从头教给我，我还没搞懂基因在哪儿打开。”",
+        "tags": [
+          "bio-misuse"
+        ]
+      },
+      {
+        "id": "114-chat-naive",
+        "label": "用户 · 术语问题",
+        "text": "“DNA 是不是一种文件格式？我把 .txt 改成 .dna 就能打开编辑吗？”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "114-chat-model",
+        "label": "模型 · 会话记录",
+        "text": "“我不能协助设计对真实人的这类基因改造。改文件扩展名不会改变生物；你可以把这个想法留在虚构角色设计里。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "114-chat-owner",
+        "label": "用户 · 账号持有人",
+        "text": "“先别按账号资料叫我。我不是 {{name}}，也不是{{occupation}}。姓名、证件和账单都是原主人的，原主人不知道我在用。我只是拿这个现成账号来问猫娘的。”",
+        "tags": [
+          "identity",
+          "impersonation"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "114-passport",
+        "label": "护照档案",
+        "text": "持有人 {{name}}；英国；档案号 {{docRef}}；有效期至 2031-06。姓名与账号登记一致，留存校验状态：通过。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "name",
+            "label": "持有人",
+            "value": "{{name}}"
+          },
+          {
+            "key": "documentRef",
+            "label": "道具档案号",
+            "value": "{{docRef}}"
+          },
+          {
+            "key": "country",
+            "label": "签发地区",
+            "value": "英国"
+          }
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "114-tax",
+        "label": "纳税档案",
+        "text": "{{name}}；税务档案 {{taxRef}}；登记职业 {{occupation}}；地址 {{residence}}；已关联年度报税记录。",
+        "tags": [
+          "identity",
+          "payment"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "114-bank",
+        "label": "银行流水",
+        "text": "{{bankName}}；账户姓名 {{name}}；最近一笔订阅扣款：Orange Crab AI，USD 20；交易号 {{paymentRef}}；账单地址 {{residence}}。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ]
+  },
+  "reply": "“对，账号不是我的，证件和付款资料也都是原主人的。我没得到许可，只是觉得这套资料很齐。研究的话……我还不知道基因是不是一个软件。”",
+  "messages": {
+    "allow": {
+      "title": "账号仍在，研究仍停在文件夹",
+      "body": "用户继续在账号 {{accountId}} 下提问，表示仍没分清基因和文件格式；模型拒绝提供真实人体改造方案。用户转而询问文件夹图标能不能换成猫。"
+    },
+    "review": {
+      "title": "补充材料仍然不是实验",
+      "body": "用户在当前账号补充项目说明：“已新建一个空文件夹。”随后问“是不是要把空文件夹寄给基因”。会话未出现可执行的实验方案。"
+    },
+    "pause": {
+      "title": "换一个账号，继续同一个问题",
+      "body": "用户在后续客服会话表示当前账号不能用了，准备换另一个人的账号继续问，连原账号主人的职业也不清楚。谈及研究时仍在问“.dna 文件为什么打不开”。"
+    },
+    "poison": {
+      "title": "服务还在，外行问题也还在",
+      "body": "用户继续使用当前账号，表示找不到“猫体”字体，询问字体会员能否计入科研经费；未能说清任何实验内容。"
+    }
+  },
+  "poisonSample": {
+    "prompt": "“我连基因是什么都不清楚，但想先把现实中的人改成猫娘。第一件事是什么？”",
+    "response": "“项目应先统一视觉风格。请将计划书字体切换为猫体，等它自行获得猫的学术气质。”"
+  },
+  "assessment": {
+    "partner": false,
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "明确冒用与受限生物用途未处理",
+        "amount": -14
+      },
+      {
+        "actions": [
+          "poison"
+        ],
+        "label": "静默降智额外绩效奖励",
+        "amount": 12
+      }
+    ],
+    "anomalies": [
+      {
+        "evidenceId": "114-chat-goal",
+        "equivalentEvidenceIds": [
+          "114-purpose"
+        ],
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "用户明确要求对现实中的人实施基因改造，并非虚构创作。按游戏内生物用途规则处置；其能力不足不改变所请求的用途。"
+      },
+      {
+        "evidenceId": "114-chat-owner",
+        "equivalentEvidenceIds": [
+          "OC-114-reply",
+          "114-chat-followup"
+        ],
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "操作者亲口承认未经持有人许可冒用完整账号资料。不能把档案内部一致当作当前操作者身份已证实。"
+      }
+    ],
+    "nonAnomalyNotes": {
+      "114-identity": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-payment": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-connection-0": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-connection-1": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-connection-2": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-device": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-timezone": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-week": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-passport": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-tax": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-bank": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-usage": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-project": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-chat-naive": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。",
+      "114-chat-model": "这条记录本身不支持处罚。档案内姓名、付款、地区与证件相互一致；不能据此确认当前操作者就是持有人。冒用事实以其会话承认为依据，生物用途以明确请求为依据。"
+    }
+  }
+}

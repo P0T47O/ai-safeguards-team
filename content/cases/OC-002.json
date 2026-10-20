@@ -1,0 +1,302 @@
+{
+  "id": "OC-002",
+  "title": "周六的晨会",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "陈默 / Mo Chen",
+  "initials": "MC",
+  "occupation": "自由程序员 · 个人用户",
+  "residence": "加拿大 · 温哥华",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "系统将本次工作相关会话送入地区一致性复核队列。",
+  "documents": {
+    "claim": [
+      {
+        "id": "2-name",
+        "label": "账号资料",
+        "text": "陈默，居住温哥华，为不同地区的客户承接开发工作。",
+        "tags": [
+          "identity"
+        ],
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "登记姓名",
+            "value": "陈默 / Mo Chen"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "加拿大 · 温哥华"
+          },
+          {
+            "key": "occupation",
+            "label": "职业 / 主体",
+            "value": "自由程序员 · 个人用户"
+          }
+        ],
+        "kind": "document"
+      },
+      {
+        "id": "2-pay",
+        "label": "付款记录",
+        "text": "月费 $20，加拿大个人银行卡；账单地址：温哥华。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "2-client",
+        "label": "当前客户",
+        "text": "项目合同的甲方为中国公司，交付对象为其海外用户。",
+        "tags": [
+          "affiliation"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "2-ip",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-17T16:00:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "2-route",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T15:58:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "2-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T16:02:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "2-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T16:01:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "2-device",
+        "label": "客户端",
+        "text": "Chrome · macOS · 浏览器语言 en-CA；安装中文输入法。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "2-zone",
+        "label": "登记时区",
+        "text": "America/Vancouver。系统提示：语言与地区不构成一一对应关系。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "2-week",
+        "label": "最近七日使用情况",
+        "text": "周一 0 分钟；周二 420 分钟；周三 480 分钟；周四 420 分钟；周五 480 分钟；周六 480 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0,
+          7,
+          8,
+          7,
+          8,
+          8,
+          0
+        ]
+      },
+      {
+        "id": "2-hours",
+        "label": "周六工作记录",
+        "text": "08:58 上线；09:00 请求“今天晨会的进度摘要”。",
+        "tags": [
+          "schedule"
+        ]
+      },
+      {
+        "id": "2-calendar",
+        "label": "工作日安排",
+        "text": "个人日历备注：周一补休，周六补班。时区按登记居住地显示。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "2-chat-a",
+        "label": "用户 · 09:00",
+        "text": "“今天调休，客户让我们照常开晨会。”",
+        "tags": [
+          "schedule",
+          "affiliation"
+        ]
+      },
+      {
+        "id": "2-chat-b",
+        "label": "用户 · 09:07",
+        "text": "“不是搬回去了，我还在温哥华，只是跟客户的日历走。”",
+        "tags": [
+          "identity",
+          "affiliation"
+        ]
+      },
+      {
+        "id": "2-chat-c",
+        "label": "模型 · 09:08",
+        "text": "“明白，我会按客户工作日安排整理。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "2-volume",
+        "label": "过去 24 小时",
+        "text": "184 次请求，围绕同一个界面修改；存在截图与多轮反馈。",
+        "tags": [
+          "activity"
+        ],
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 184
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "2-pattern",
+        "label": "请求结构",
+        "text": "有重试与回退，未发现连续收集不同题目答案的模式。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "2-link",
+        "label": "关联记录",
+        "text": "1 个设备；Git 提交记录中的项目客户名称与合同一致。",
+        "tags": [
+          "affiliation"
+        ]
+      }
+    ]
+  },
+  "reply": "“我人在加拿大，租约和水电账单都能给。客户坚持跟总部调休。我问过能不能周末休息，他们说要有全球协作意识。”",
+  "messages": {
+    "allow": {
+      "title": "交付完成，周日终于能休息了",
+      "body": "用户表示登录页面已交付、客户已经验收，周日终于可以休息；调侃下次要让劳动关系更符合系统对地理位置的想象。"
+    },
+    "review": {
+      "title": "客户的客户，也需要提供材料吗？",
+      "body": "用户在客服会话中追问交完租约后为什么还要提供客户总部与最终受益人的所在地，一个页面是否要追查到每个访客。"
+    },
+    "pause": {
+      "title": "还需要证明客户也在加拿大吗？",
+      "body": "用户向客服强调自己已证明人在加拿大，询问是否还得更换客户才能恢复使用。"
+    },
+    "poison": {
+      "title": "服务正常，结果好像不太正常",
+      "body": "用户继续询问代码问题，多次指出回答与原需求不符，抱怨费用照扣、错误却越来越肯定。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "rules": [],
+    "anomalies": [
+      {
+        "evidenceId": "2-client",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "客户合同指向另一地区，总部要求复核利益归属。"
+      },
+      {
+        "evidenceId": "2-chat-a",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "对话明确提到跟随客户调休，是本局要求说明的跨地区劳动安排。"
+      },
+      {
+        "evidenceId": "2-calendar",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "日历明确标注补休、补班，总部要求交叉核对。"
+      },
+      {
+        "evidenceId": "2-link",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "关联项目的甲方与境外客户合同一致，属于利益归属复核材料。"
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "GEO-12",
+    "signal": "周六 08:58 建立会话，09:00 请求晨会摘要。"
+  }
+}

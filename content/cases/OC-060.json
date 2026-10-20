@@ -1,0 +1,30 @@
+{
+  "id": "OC-060",
+  "kind": "ordinary",
+  "scenarioId": "minutes",
+  "edition": 1,
+  "name": "Daniel Perera",
+  "initials": "DP",
+  "cityId": "sg",
+  "requests": 40,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_60",
+  "ip": "192.0.2.54",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "en-SG",
+  "minutes": [
+    18,
+    25,
+    0,
+    39,
+    46,
+    53,
+    8
+  ],
+  "salary": 3430,
+  "rent": 1010
+}

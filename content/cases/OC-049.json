@@ -1,0 +1,30 @@
+{
+  "id": "OC-049",
+  "kind": "ordinary",
+  "scenarioId": "cv",
+  "edition": 1,
+  "name": "Bram de Vries",
+  "initials": "Bd",
+  "cityId": "nl",
+  "requests": 35,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_49",
+  "ip": "198.51.100.43",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "nl-NL",
+  "minutes": [
+    53,
+    0,
+    15,
+    22,
+    29,
+    36,
+    43
+  ],
+  "salary": 3050,
+  "rent": 1100
+}

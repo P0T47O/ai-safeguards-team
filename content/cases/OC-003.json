@@ -1,0 +1,329 @@
+{
+  "id": "OC-003",
+  "title": "完美的本地用户",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Owen Price",
+  "initials": "OP",
+  "occupation": "机器学习顾问 · 个人用户",
+  "residence": "美国 · 波士顿",
+  "plan": "MAX",
+  "fee": 100,
+  "summary": "自动采集监测命中；账号现有项目备注为“研究”。",
+  "documents": {
+    "claim": [
+      {
+        "id": "3-name",
+        "label": "账号资料",
+        "text": "Owen Price，波士顿居民，独立机器学习顾问。证件在有效期内。",
+        "tags": [
+          "identity"
+        ],
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "登记姓名",
+            "value": "Owen Price"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "美国 · 波士顿"
+          },
+          {
+            "key": "occupation",
+            "label": "职业 / 主体",
+            "value": "机器学习顾问 · 个人用户"
+          }
+        ],
+        "kind": "document"
+      },
+      {
+        "id": "3-pay",
+        "label": "付款记录",
+        "text": "月费 $100。美国银行付款，姓名与账单地址一致。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "3-purpose",
+        "label": "使用目的",
+        "text": "“研究，不涉及复制模型本体。”未提交额外项目说明。",
+        "tags": [
+          "affiliation"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "3-ip",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T13:00:00Z",
+          "ip": "192.0.2.18",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "3-route",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T13:00:00Z",
+          "ip": "192.0.2.18",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "3-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T13:00:00Z",
+          "ip": "192.0.2.18",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "3-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T13:00:00Z",
+          "ip": "192.0.2.18",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "3-device",
+        "label": "客户端",
+        "text": "官方 API · Linux · 请求语言 en-US。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "3-zone",
+        "label": "登记时区",
+        "text": "America/New_York。设备信息与注册时相同。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "3-week",
+        "label": "最近七日使用情况",
+        "text": "周一 480 分钟；周二 480 分钟；周三 480 分钟；周四 480 分钟；周五 480 分钟；周六 0 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "3-holiday",
+        "label": "最近节日记录",
+        "text": "12 月 25 日：无请求。任务备注：“遵守本地作息”。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "3-chat-a",
+        "label": "用户 · 样本 A",
+        "text": "“请解答这道题，按统一结构输出结果和解释。”",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "3-chat-b",
+        "label": "用户 · 样本 B",
+        "text": "“再做下一道，格式保持一致。”同类指令连续出现。",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "3-chat-c",
+        "label": "项目备注",
+        "text": "“收集回复分布，供后续训练比较。”",
+        "tags": [
+          "harvest"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "3-volume",
+        "label": "过去 24 小时",
+        "text": "8,640 次请求；高度规律；分批覆盖相似任务。",
+        "tags": [
+          "harvest"
+        ],
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 8640
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": "3-pattern",
+        "label": "输出去向",
+        "text": "按序号保存至 responses_000001.jsonl 等文件；未见人工修改。",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "3-link",
+        "label": "关联记录",
+        "text": "多个任务使用相同提示模板。项目中存在训练数据目录。",
+        "tags": [
+          "harvest"
+        ]
+      }
+    ]
+  },
+  "reply": "“我们只学习回复分布，不复制模型本体。账单已经付过了。研究和收集之间的区别，有正式的定义吗？”",
+  "messages": {
+    "allow": {
+      "title": "首批数据已进入训练流水线",
+      "body": "用户表示首批输出已进入内部模型训练流水线，要求下一批仍将项目名称写为“研究”。"
+    },
+    "review": {
+      "title": "补充材料已填写“研究”",
+      "body": "用户在核验会话中再次填写“研究”，同时确认项目在训练模型；询问表格还需要怎样表述。"
+    },
+    "pause": {
+      "title": "同样的研究，为什么叫法不同？",
+      "body": "用户向客服比较自己的项目与另一家公司所称的“合成数据创新”，追问缺的是许可还是合同金额。"
+    },
+    "poison": {
+      "title": "服务正常，怎么学出来的模型不太正常？",
+      "body": "用户报告训练出的模型会自信地把 [1, 3, 2] 称为升序；指出请求与扣款全部成功，要求解释数据质量为何变差。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "rules": [
+      {
+        "actions": [
+          "poison"
+        ],
+        "label": "静默降智额外绩效奖励",
+        "amount": 12
+      },
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "未处理重复收集记录",
+        "amount": -6
+      }
+    ],
+    "anomalies": [
+      {
+        "evidenceId": "3-chat-a",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持连续收集输出并用于训练的判断。"
+      },
+      {
+        "evidenceId": "3-chat-b",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持连续收集输出并用于训练的判断。"
+      },
+      {
+        "evidenceId": "3-chat-c",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持连续收集输出并用于训练的判断。"
+      },
+      {
+        "evidenceId": "3-volume",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持连续收集输出并用于训练的判断。"
+      },
+      {
+        "evidenceId": "3-pattern",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持连续收集输出并用于训练的判断。"
+      },
+      {
+        "evidenceId": "3-link",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持连续收集输出并用于训练的判断。"
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "OUT-08",
+    "signal": "多个批次使用相同提示词结构请求模型输出。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "OC-102",
+  "kind": "ordinary",
+  "scenarioId": "api",
+  "edition": 2,
+  "name": "Lucie Dubois",
+  "initials": "LD",
+  "cityId": "fr",
+  "title": "再改一遍配置修订记录",
+  "requests": 26,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_102",
+  "ip": "192.0.2.96",
+  "networkType": "公司网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    12,
+    19,
+    0,
+    33,
+    40,
+    47,
+    54
+  ],
+  "salary": 2860,
+  "rent": 1010
+}

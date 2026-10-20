@@ -1,0 +1,31 @@
+{
+  "id": "OC-072",
+  "kind": "ordinary",
+  "scenarioId": "poster",
+  "edition": 2,
+  "name": "Sota Yamamoto",
+  "initials": "SY",
+  "cityId": "jp",
+  "title": "再改一遍社团海报文案",
+  "requests": 62,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 6,
+  "artifact": "notes_72",
+  "ip": "192.0.2.66",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    46,
+    53,
+    0,
+    15,
+    22,
+    29,
+    36
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

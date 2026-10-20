@@ -1,0 +1,30 @@
+{
+  "id": "OC-040",
+  "kind": "ordinary",
+  "scenarioId": "salon",
+  "edition": 1,
+  "name": "Lotte Bakker",
+  "initials": "LB",
+  "cityId": "nl",
+  "requests": 64,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_40",
+  "ip": "192.0.2.34",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "nl-NL",
+  "minutes": [
+    58,
+    13,
+    20,
+    27,
+    0,
+    41,
+    48
+  ],
+  "salary": 3050,
+  "rent": 830
+}

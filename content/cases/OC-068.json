@@ -1,0 +1,31 @@
+{
+  "id": "OC-068",
+  "kind": "ordinary",
+  "scenarioId": "soup",
+  "edition": 2,
+  "name": "Morgan Foster",
+  "initials": "MF",
+  "cityId": "ca",
+  "title": "再改一遍菜单",
+  "requests": 85,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_68",
+  "ip": "192.0.2.62",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-CA",
+  "minutes": [
+    0,
+    9,
+    16,
+    23,
+    30,
+    37,
+    0
+  ],
+  "salary": 3240,
+  "rent": 650
+}

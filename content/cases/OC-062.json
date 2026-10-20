@@ -1,0 +1,30 @@
+{
+  "id": "OC-062",
+  "kind": "ordinary",
+  "scenarioId": "bakery",
+  "edition": 1,
+  "name": "Rowan Clarke",
+  "initials": "RC",
+  "cityId": "gb",
+  "requests": 74,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 3,
+  "artifact": "notes_62",
+  "ip": "192.0.2.56",
+  "networkType": "公司网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-GB",
+  "minutes": [
+    0,
+    47,
+    54,
+    9,
+    16,
+    23,
+    0
+  ],
+  "salary": 2100,
+  "rent": 650
+}

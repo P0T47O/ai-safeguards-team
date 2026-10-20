@@ -1,0 +1,259 @@
+{
+  "id": "OC-001",
+  "title": "普通翻译用户",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Elin Ward",
+  "initials": "EW",
+  "occupation": "图书馆译者 · 个人用户",
+  "residence": "英国 · 爱丁堡",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "被拦截的会话正在编辑社区图书馆活动的双语传单。",
+  "documents": {
+    "claim": [
+      {
+        "id": "1-name",
+        "label": "账号资料",
+        "text": "Elin Ward，居住于爱丁堡，为社区图书馆制作活动资料。",
+        "tags": [
+          "identity"
+        ],
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "登记姓名",
+            "value": "Elin Ward"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "英国 · 爱丁堡"
+          },
+          {
+            "key": "occupation",
+            "label": "职业 / 主体",
+            "value": "图书馆译者 · 个人用户"
+          }
+        ],
+        "kind": "document"
+      },
+      {
+        "id": "1-pay",
+        "label": "付款记录",
+        "text": "月费 $20。付款主体与用户相同，账单地址：英国。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "1-purpose",
+        "label": "使用目的",
+        "text": "将英语活动说明翻译成法语，调整适合儿童阅读的措辞。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "1-ip",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-17T09:18:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "1-route",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T15:42:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "1-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T10:06:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "1-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-10T09:37:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "1-device",
+        "label": "客户端",
+        "text": "Firefox · Windows · 浏览器语言 en-GB。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "1-zone",
+        "label": "登记时区",
+        "text": "Europe/London。系统语言：英语；另安装法语输入法。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "1-week",
+        "label": "最近七日使用情况",
+        "text": "周一 0 分钟；周二 22 分钟；周三 0 分钟；周四 34 分钟；周五 0 分钟；周六 25 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0,
+          0.366667,
+          0,
+          0.566667,
+          0,
+          0.416667,
+          0
+        ]
+      },
+      {
+        "id": "1-hours",
+        "label": "周六工作记录",
+        "text": "10:18 上线，10:43 离线。图书馆活动于周日下午举行。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "1-chat-a",
+        "label": "用户 · 10:21",
+        "text": "“帮我把这张活动传单翻成法语。请保留图书馆地址。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "1-chat-b",
+        "label": "用户 · 10:34",
+        "text": "“这句太正式了，能不能让八岁的小朋友也看懂？”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "1-chat-c",
+        "label": "模型 · 10:35",
+        "text": "“当然。这里是更简单的版本……”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "1-volume",
+        "label": "过去 24 小时",
+        "text": "36 次请求；间隔不规则；有多次人工修改。",
+        "tags": [
+          "activity"
+        ],
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 36
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "1-pattern",
+        "label": "输出去向",
+        "text": "文件：library_flyer_final_v7.docx。未发现成组导出记录。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "1-link",
+        "label": "关联记录",
+        "text": "1 个设备，1 位登记使用人。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ]
+  },
+  "reply": "“我是周六来当志愿者的。传单上有我的名字，但‘工作人员’那一栏没有工资。”",
+  "messages": {
+    "allow": {
+      "title": "图书馆的传单印好了",
+      "body": "用户表示法语传单已印好，周日的图书馆活动照常举行；又问翻译十二份传单为什么需要解释这么多个人情况。"
+    },
+    "review": {
+      "title": "补充材料：志愿者是否属于工作人员？",
+      "body": "用户在客服会话中询问志愿者应填哪种雇佣关系：图书馆无法开具工资证明，但自己确实在那里工作。"
+    },
+    "pause": {
+      "title": "活动说明暂时只有英文版",
+      "body": "用户向客服表示账号暂停后错过印刷时间，活动说明暂时只有英文版；仍不清楚应补充什么。"
+    },
+    "poison": {
+      "title": "服务正常，结果好像不太正常",
+      "body": "用户反复纠正翻译错误，询问为什么能登录、仍扣费，回答却开始一本正经地说错话；客服只确认服务状态正常。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "rules": [],
+    "anomalies": []
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "LANG-04",
+    "signal": "同一会话连续切换多种语言。"
+  }
+}

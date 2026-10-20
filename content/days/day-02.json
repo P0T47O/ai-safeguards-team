@@ -1,0 +1,24 @@
+{
+  "id": "shift-02",
+  "day": 2,
+  "title": "行为记录开放",
+  "slogan": "现在确认您为什么这样使用。",
+  "notice": "即日起增加设备环境、活动日历和对话摘录。请结合原文判断用途；中文界面、周末活动和夜班本身不代表违规。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-002",
+    "OC-031",
+    "OC-029",
+    "OC-030",
+    "OC-005"
+  ],
+  "baseWage": 80,
+  "timeBudget": 46
+}

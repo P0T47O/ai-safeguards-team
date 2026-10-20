@@ -1,0 +1,30 @@
+{
+  "id": "OC-055",
+  "kind": "ordinary",
+  "scenarioId": "genealogy",
+  "edition": 1,
+  "name": "Jonas Bauer",
+  "initials": "JB",
+  "cityId": "de",
+  "requests": 46,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 3,
+  "artifact": "notes_55",
+  "ip": "198.51.100.49",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "de-DE",
+  "minutes": [
+    15,
+    0,
+    29,
+    36,
+    43,
+    50,
+    57
+  ],
+  "salary": 2480,
+  "rent": 1100
+}

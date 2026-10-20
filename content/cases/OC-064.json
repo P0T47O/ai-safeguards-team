@@ -1,0 +1,31 @@
+{
+  "id": "OC-064",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "completion-pairs",
+  "batchId": "RUN-008",
+  "artifact": "teacher_archive_008",
+  "name": "Hannah Vogel",
+  "initials": "HV",
+  "cityId": "de",
+  "requests": 8406,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 5,
+  "ip": "192.0.2.58",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "de-DE",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 2480,
+  "rent": 830
+}

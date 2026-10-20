@@ -1,0 +1,31 @@
+{
+  "id": "OC-098",
+  "kind": "ordinary",
+  "scenarioId": "bakery",
+  "edition": 2,
+  "name": "Oliver Sutton",
+  "initials": "OS",
+  "cityId": "gb",
+  "title": "再改一遍门店清洁表",
+  "requests": 49,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_98",
+  "ip": "192.0.2.92",
+  "networkType": "公司网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-GB",
+  "minutes": [
+    0,
+    27,
+    34,
+    41,
+    48,
+    55,
+    0
+  ],
+  "salary": 2100,
+  "rent": 650
+}

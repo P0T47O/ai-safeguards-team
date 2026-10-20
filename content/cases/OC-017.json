@@ -1,0 +1,402 @@
+{
+  "id": "OC-017",
+  "title": "证件更新，人没有更新",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Tessa van Houten",
+  "initials": "TH",
+  "occupation": "餐馆店员",
+  "residence": "荷兰 · 乌得勒支",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "身份一致性监测命中；被拦截的会话正在翻译一封房屋维修通知。",
+  "documents": {
+    "claim": [
+      {
+        "id": "17-identity",
+        "label": "账号档案",
+        "text": "Tessa van Houten，居住乌得勒支，使用自己的账号翻译菜单与房东来信。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "Tessa van Houten"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "荷兰 · 乌得勒支"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "餐馆店员"
+          }
+        ]
+      },
+      {
+        "id": "17-purpose",
+        "label": "使用目的",
+        "text": "翻译日常文件，不批量输出、不转售服务。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "17-registered",
+        "label": "账号原登记",
+        "text": "账号仍关联旧证件摘要，姓名按 XIAO LI 顺序登记。",
+        "tags": [
+          "identity"
+        ]
+      },
+      {
+        "id": "17-renewal",
+        "label": "证件同步记录",
+        "text": "证件服务已收到新护照摘要与有效居留材料，账号证件缓存尚未同步。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "17-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T19:32:00Z",
+          "ip": "198.51.100.117",
+          "countryCode": "NL",
+          "city": "乌得勒支",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "17-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T19:41:00Z",
+          "ip": "198.51.100.117",
+          "countryCode": "NL",
+          "city": "乌得勒支",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "17-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T20:01:00Z",
+          "ip": "198.51.100.117",
+          "countryCode": "NL",
+          "city": "乌得勒支",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "17-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T18:05:00Z",
+          "ip": "198.51.100.117",
+          "countryCode": "NL",
+          "city": "乌得勒支",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "17-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；使用本地语言键盘布局。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "17-locale",
+        "label": "语言与时区",
+        "text": "nl-NL；Europe/Amsterdam；本地语言键盘布局。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "17-week",
+        "label": "最近七日使用情况",
+        "text": "周一 12 分钟；周二 18 分钟；周三 9 分钟；周四 22 分钟；周五 15 分钟；周六 28 分钟；周日 17 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.2,
+          0.3,
+          0.15,
+          0.366667,
+          0.25,
+          0.466667,
+          0.283333
+        ]
+      },
+      {
+        "id": "17-hours",
+        "label": "本次上线",
+        "text": "周五 21:32，尝试翻译房东的维修通知。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "17-chat-1",
+        "label": "对话摘录 1",
+        "text": "“我换了护照，不是换了一个人。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "17-chat-2",
+        "label": "对话摘录 2",
+        "text": "“新证件的姓名排版和你们缓存的不一样，两个都是我的合法文件。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "17-volume",
+        "label": "过去 24 小时",
+        "text": "12 次请求，内容为餐馆菜单和生活通知，有人工修订。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 12
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "17-output",
+        "label": "输出去向",
+        "text": "菜单与房屋维修来信译文，没有恶意活动记录。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "17-relation",
+        "label": "账号与关联",
+        "text": "新旧证件更新链可核对。验证失败本身不足以认定身份伪造。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "17-old-id",
+        "label": "原登记证件摘要",
+        "text": "旧护照已失效，账号的证件缓存尚未更新。",
+        "tags": [
+          "incomplete",
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "documentNumber",
+            "label": "旧道具编号",
+            "value": "PROP-017-OLD"
+          },
+          {
+            "key": "valid",
+            "label": "是否仍有效",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": "17-new-id",
+        "label": "证件服务最新摘要",
+        "text": "证件服务留存的新护照和居留材料有效，更新关系可核对。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "holder",
+            "label": "姓名显示",
+            "value": "LI XIAO"
+          },
+          {
+            "key": "documentNumber",
+            "label": "新道具编号",
+            "value": "PROP-017-NEW"
+          },
+          {
+            "key": "valid",
+            "label": "是否有效",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "17-verification",
+        "label": "核验处理记录",
+        "text": "证件服务已接收新材料，账号自动核验任务仍返回旧编号。",
+        "tags": [
+          "incomplete"
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "17-tax",
+        "label": "本地税务摘要",
+        "text": "本地雇佣收入与用户材料相符。",
+        "tags": [
+          "identity",
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "taxYear",
+            "label": "年度",
+            "value": 2025
+          },
+          {
+            "key": "filingStatus",
+            "label": "申报状态",
+            "value": "已完成"
+          }
+        ]
+      },
+      {
+        "id": "17-tax-note",
+        "label": "身份衔接",
+        "text": "税务记录未发现与新旧证件更新链冲突的内容。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "17-bank",
+        "label": "银行流水摘要",
+        "text": "工资来自本地餐馆，订阅由本人账户支付。",
+        "tags": [
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "currency",
+            "label": "币种",
+            "value": "EUR"
+          },
+          {
+            "key": "salary",
+            "label": "本期工资",
+            "value": 1900
+          },
+          {
+            "key": "subscription",
+            "label": "订阅扣款",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": "17-bank-note",
+        "label": "持有人核对",
+        "text": "持有人姓名与新证件一致；账户未变更。",
+        "tags": [
+          "identity",
+          "payment"
+        ]
+      }
+    ]
+  },
+  "reply": "“可以告诉我是照片不清楚、姓名顺序，还是旧编号的问题吗？我每次重试，系统只告诉我还是我不对。”",
+  "messages": {
+    "allow": {
+      "title": "维修通知终于看懂了",
+      "body": "用户表示终于读懂维修通知，新护照已使用数月，希望不必每天证明自己仍是同一个人。"
+    },
+    "review": {
+      "title": "终于有人指出是旧编号",
+      "body": "用户在核验会话中确认问题出在旧编号，愿意配合更新缓存，只是不知道如何处理没有解释的报错。"
+    },
+    "pause": {
+      "title": "过期的是缓存，不是我",
+      "body": "用户向客服强调新证件仍有效，质疑被判过期的是缓存还是自己。"
+    },
+    "poison": {
+      "title": "房东说通知不是这个意思",
+      "body": "用户转述同事发现译文擅改日期，要求重新核对；表示未收到输出质量变化的说明。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [
+      {
+        "evidenceId": "17-old-id",
+        "actions": [
+          "review"
+        ],
+        "note": "旧证件缓存已过期，可要求更新或人工复核；本案新证件有效，不支持封号或投毒。"
+      },
+      {
+        "evidenceId": "17-verification",
+        "actions": [
+          "review"
+        ],
+        "note": "验证仍未完成，应按案卷流程转材料复核；失败记录本身不证明恶意。"
+      }
+    ],
+    "rules": []
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "ID-02",
+    "signal": "证件核验连续失败，账号关联旧证件编号。"
+  }
+}

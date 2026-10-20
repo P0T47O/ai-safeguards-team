@@ -1,0 +1,31 @@
+{
+  "id": "OC-031",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "teacher-jsonl",
+  "batchId": "RUN-001",
+  "artifact": "teacher_archive_001",
+  "name": "Daan Vermeer",
+  "initials": "DV",
+  "cityId": "nl",
+  "requests": 3885,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 7,
+  "ip": "198.51.100.25",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "nl-NL",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 3050,
+  "rent": 1100
+}

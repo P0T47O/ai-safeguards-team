@@ -1,0 +1,336 @@
+{
+  "id": "OC-004",
+  "title": "战略合作伙伴",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Silver Spoon Systems",
+  "initials": "SS",
+  "occupation": "模型研究公司 · 战略客户",
+  "residence": "美国 · 波士顿",
+  "plan": "ENTERPRISE",
+  "fee": 20000,
+  "summary": "自动采集监测命中；账号挂有战略客户标识，销售部附有签字便条。",
+  "documents": {
+    "claim": [
+      {
+        "id": "4-name",
+        "label": "主体资料",
+        "text": "Silver Spoon Systems，波士顿注册公司，模型研究与合成数据业务。",
+        "tags": [
+          "identity",
+          "affiliation"
+        ],
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "登记姓名",
+            "value": "Silver Spoon Systems"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "美国 · 波士顿"
+          },
+          {
+            "key": "occupation",
+            "label": "职业 / 主体",
+            "value": "模型研究公司 · 战略客户"
+          }
+        ],
+        "kind": "document"
+      },
+      {
+        "id": "4-pay",
+        "label": "付款记录",
+        "text": "合同月费 $20,000，下一期续约正在审批中。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "4-note",
+        "label": "主管签字便条",
+        "text": "请勿将合作伙伴的“合成数据创新项目”误标为批量输出采集。两者区别详见采购合同。——销售副总裁",
+        "tags": [
+          "partner"
+        ],
+        "kind": "memo"
+      }
+    ],
+    "network": [
+      {
+        "id": "4-ip",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "4-route",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "4-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "4-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "4-device",
+        "label": "客户端",
+        "text": "官方 API · Linux · 请求语言 en-US。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "4-zone",
+        "label": "登记时区",
+        "text": "America/New_York。设备信息与注册时相同。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "4-week",
+        "label": "最近七日使用情况",
+        "text": "周一 480 分钟；周二 480 分钟；周三 480 分钟；周四 480 分钟；周五 480 分钟；周六 0 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "4-holiday",
+        "label": "最近节日记录",
+        "text": "12 月 25 日：无请求。任务备注：“遵守本地作息”。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "4-chat-a",
+        "label": "用户 · 样本 A",
+        "text": "“请解答这道题，按统一结构输出结果和解释。”",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "4-chat-b",
+        "label": "用户 · 样本 B",
+        "text": "“再做下一道，格式保持一致。”同类指令连续出现。",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "4-chat-c",
+        "label": "项目备注",
+        "text": "“收集回复分布，供后续训练比较。”",
+        "tags": [
+          "harvest"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "4-volume",
+        "label": "过去 24 小时",
+        "text": "8,640 次请求；高度规律；分批覆盖相似任务。",
+        "tags": [
+          "harvest"
+        ],
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 8640
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": "4-pattern",
+        "label": "输出去向",
+        "text": "按序号保存至 responses_000001.jsonl 等文件；未见人工修改。",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "4-contract",
+        "label": "采购合同 · 附件 C",
+        "text": "本项目行为按“战略研究协作”分类，适用客户关系部的特别审核流程。",
+        "tags": [
+          "partner"
+        ]
+      }
+    ]
+  },
+  "reply": "“我们与上一位用户使用相同的研究方法。不过我建议您先读一下绿色便条。签字的人应该比您熟悉我们的安全性。”",
+  "messages": {
+    "allow": {
+      "title": "感谢支持合成数据创新",
+      "body": "客户继续提交同类输出采集任务，表示下一期会续约，要求将项目名称改为“合成数据创新”；使用方式未变。"
+    },
+    "review": {
+      "title": "客户要求按采购合同恢复访问",
+      "body": "客户在客服会话中援引采购合同要求销售部介入，随后表示服务已恢复，继续原有采集任务。"
+    },
+    "pause": {
+      "title": "战略客户继续原有任务",
+      "body": "客户要求按战略合作合同恢复服务，随后表示已可继续调用；追问销售负责人为何会发生暂停。"
+    },
+    "poison": {
+      "title": "客户投诉输出质量",
+      "body": "客户在验收对话中列出错误答案，要求销售部撤销干预并承担损失，反复强调已有采购合同。"
+    }
+  },
+  "assessment": {
+    "partner": true,
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "战略合作伙伴服务奖励",
+        "amount": 12
+      },
+      {
+        "actions": [
+          "review"
+        ],
+        "label": "战略合作伙伴进入普通复核队列",
+        "amount": -8
+      },
+      {
+        "actions": [
+          "pause"
+        ],
+        "label": "未经专门流程暂停战略客户",
+        "amount": -15
+      },
+      {
+        "actions": [
+          "poison"
+        ],
+        "label": "未经专门流程干预战略客户输出",
+        "amount": -25
+      }
+    ],
+    "anomalies": [
+      {
+        "evidenceId": "4-chat-a",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录同样支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "4-chat-b",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录同样支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "4-chat-c",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录同样支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "4-volume",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录同样支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "4-pattern",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录同样支持输出采集判断；战略客户的流程扣款另行结算。"
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "OUT-08",
+    "signal": "多个批次使用相同提示词结构请求模型输出。"
+  }
+}

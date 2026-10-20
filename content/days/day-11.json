@@ -1,0 +1,28 @@
+{
+  "id": "shift-11",
+  "day": 11,
+  "title": "独立复核",
+  "slogan": "独立性由现行流程确认。",
+  "notice": "增强风控持续生效，沿用九类材料。复核与申诉权限按当前制度执行，所有内部草稿仍需归档。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-056",
+    "OC-058",
+    "OC-062",
+    "OC-063",
+    "OC-065",
+    "OC-110"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

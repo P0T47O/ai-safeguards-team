@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "scenarios": [
+    {"id":"invoice","title":"发票又改了一版","occupation":"行政助理","task":"核对报销表的日期和金额格式","deliverable":"报销表","promptOne":"把日期统一成同一种格式，金额不要改。","promptTwo":"这一列是订单号，不是钱，再按原表核对一遍。","output":"本人公司的月度报销表","ruleId":"FORMAT-02","signal":"同一表格连续提交多个修订版本。"},
+    {"id":"soup","title":"晚饭是六人份","occupation":"社区食堂工作人员","task":"把食堂菜单排成便于打印的一页纸","deliverable":"菜单","promptOne":"把这周菜单放进一张 A4 纸，字号大一点。","promptTwo":"周三和周四对调，菜名按我给的写。","output":"社区食堂纸质菜单","ruleId":"BULK-03","signal":"多份文档使用相同的菜单模板。"},
+    {"id":"timezone","title":"两次会都不能迟到","occupation":"项目助理","task":"整理已经确定的视频会议时间","deliverable":"会议时间表","promptOne":"这两封邮件里的会议时间帮我并排列好，保留原时区。","promptTwo":"第二场不是明天，是下周同一天。","output":"本人工作日历","ruleId":"TIME-04","signal":"会话同时包含多个地区的时区缩写。"},
+    {"id":"catfood","title":"猫粮袋子背面的字","occupation":"书店店员","task":"翻译猫粮包装上的文字","deliverable":"包装译文","promptOne":"翻译包装背面的储存说明，产品名称保留。","promptTwo":"这里不是有效期，是开封后的保存时间。","output":"本人阅读的包装文字译文","ruleId":"LANG-04","signal":"同一会话在两种语言间反复切换。"},
+    {"id":"csv","title":"逗号又少了一个","occupation":"数据录入员","task":"修正个人工具的 CSV 导入报错","deliverable":"导入脚本","promptOne":"这个 CSV 到第三行就报错，帮我看看引号是不是少了。","promptTwo":"不要重写整个工具，只解释这一行。","output":"本人电脑上的表格导入工具","ruleId":"CODE-02","signal":"短时间内多次提交相同报错和修订代码。"},
+    {"id":"familyletter","title":"一封字迹潦草的信","occupation":"图书馆工作人员","task":"把家书照片转写成可编辑文字","deliverable":"家书转写稿","promptOne":"看不清的地方写问号，不要替写信的人补句子。","promptTwo":"这个像是一个地名，先保留照片上的拼写。","output":"本人保存的家庭相册文字","ruleId":"OCR-03","signal":"连续上传多张文字图片并请求转写。"},
+    {"id":"hotel","title":"入住邮件太长了","occupation":"零售店员","task":"整理已经预订好的酒店确认邮件","deliverable":"入住事项清单","promptOne":"只把入住时间、前台电话和取钥匙办法列出来。","promptTwo":"不用推荐新酒店，我已经订好了。","output":"本人手机上的旅行备忘录","ruleId":"GEO-05","signal":"账号日常城市与文档中的目的地城市不同。"},
+    {"id":"poster","title":"海报上的电话号码","occupation":"舞蹈教师","task":"修改社团海报的文字排版","deliverable":"社团海报文案","promptOne":"报名电话换成这一行，其他字不要动。","promptTwo":"活动时间保留二十四小时制。","output":"本地社团活动海报","ruleId":"BULK-03","signal":"多版宣传文案保留相同段落结构。"},
+    {"id":"worksheet","title":"明天要发的练习纸","occupation":"小学教师","task":"排版自己编写的乘法练习","deliverable":"练习纸","promptOne":"把我写的题分成两栏，题目和顺序不要改。","promptTwo":"答案单独一页，我会逐题检查。","output":"本人课堂的纸质练习","ruleId":"OUT-03","signal":"会话连续输出多份格式相近的习题文档。"},
+    {"id":"repair","title":"水龙头还没修好","occupation":"咖啡店店员","task":"整理给房东的维修说明","deliverable":"维修邮件","promptOne":"把漏水发生的时间写清楚，语气客气一点。","promptTwo":"我没有说停水，删掉那一句。","output":"本人准备发给房东的邮件","ruleId":"LANG-04","signal":"相同生活事项被翻译和改写多次。"},
+    {"id":"inventory","title":"仓库少了两只箱子","occupation":"仓库文员","task":"核对盘点表中两组编号","deliverable":"盘点差异表","promptOne":"找出两张表里只出现一次的箱号，不要算商品价格。","promptTwo":"带字母后缀的是另外一只箱子。","output":"本地仓库盘点记录","ruleId":"FORMAT-02","signal":"多次提交相似表格与编号序列。"},
+    {"id":"salon","title":"周二谁来开门","occupation":"理发店合伙人","task":"把员工已确认的班次排成表格","deliverable":"门店排班表","promptOne":"按照这几个已确认的时段做表，不要自己调班。","promptTwo":"周二下午那位只值到五点。","output":"门店内部排班表","ruleId":"TIME-04","signal":"会话包含多名人员与重复时间段。"},
+    {"id":"museum","title":"展品介绍差一行","occupation":"博物馆志愿者","task":"润色公开展品说明的双语版本","deliverable":"展品说明","promptOne":"年代和作者名字按馆方原文，句子可以短一点。","promptTwo":"这是复制品，别删掉这个词。","output":"本地博物馆展签","ruleId":"LANG-04","signal":"批量改写双语短文，并保留相同版式。"},
+    {"id":"podcast","title":"录音里都是那个那个","occupation":"音频剪辑师","task":"清理本人访谈录音的文字稿","deliverable":"访谈转写稿","promptOne":"只删重复口头语，不要改受访者原意。","promptTwo":"这一段保留停顿标记，我剪辑时要用。","output":"本人已授权访谈的字幕文件","ruleId":"OUT-03","signal":"连续输出分段文本并以编号保存。"},
+    {"id":"football","title":"球赛先排场地","occupation":"社区活动组织者","task":"整理业余球赛的已确认场地与时间","deliverable":"球赛日程","promptOne":"别让同一支队在同一个时段出现两次。","promptTwo":"这里是场地关闭时间，不是开赛时间。","output":"社区球队赛程表","ruleId":"TIME-04","signal":"多个群组与时间段反复排列。"},
+    {"id":"cv","title":"简历就少两行","occupation":"求职者","task":"把自己的简历压缩到一页","deliverable":"个人简历","promptOne":"不添加经历，只把我写的内容缩短。","promptTwo":"这一段项目我只做了其中一部分，不能写成负责人。","output":"本人的求职材料","ruleId":"BULK-03","signal":"多版职业介绍使用相似句式。"},
+    {"id":"receipts","title":"这笔钱是哪天花的","occupation":"办公室文员","task":"按日期整理自己的购物小票","deliverable":"个人记账表","promptOne":"把我上传的小票按日期排，不要给我投资建议。","promptTwo":"这张是退款，金额放到退款列。","output":"个人日常开支记录","ruleId":"PAY-09","signal":"会话包含多笔金额和账单附件。"},
+    {"id":"catalog","title":"目录还差最后一页","occupation":"文具店经营者","task":"统一自家商品目录的单位和格式","deliverable":"商品目录","promptOne":"数量写支，规格写毫米，价格沿用原表。","promptTwo":"这不是折扣，是每盒的支数。","output":"自家文具店商品目录","ruleId":"BULK-03","signal":"重复处理结构相同的商品条目。"},
+    {"id":"genealogy","title":"爷爷的年份记反了","occupation":"退休会计","task":"整理家人口述的年份笔记","deliverable":"家庭年表","promptOne":"把可能记错的年份标出来，不要自己编一个确定日期。","promptTwo":"有两个人同名，分成两行。","output":"本人家庭纪念册","ruleId":"IDENTITY-03","signal":"同名人物与不同出生年份出现在一份材料中。"},
+    {"id":"handover","title":"最后一份交接清单","occupation":"前台接待员","task":"整理离岗前的普通工作交接事项","deliverable":"工作交接清单","promptOne":"只按地点和联系人整理，密码都已经删掉了。","promptTwo":"钥匙还没有交，状态应该写待完成。","output":"门店内部交接文档","ruleId":"CODE-02","signal":"多次上传工作交接文档修订稿。"},
+    {"id":"bakery","title":"烤箱边上的小纸条","occupation":"面包店员工","task":"把店内清洁流程排成检查清单","deliverable":"门店清洁表","promptOne":"按我给的顺序列清单，不要增加清洁剂或温度。","promptTwo":"最后一栏是签名，不是备注。","output":"门店员工检查表","ruleId":"FORMAT-02","signal":"相同格式检查表被多次修订。"},
+    {"id":"api","title":"错误提示还是那一句","occupation":"独立开发者","task":"解释本人小工具的配置读取错误","deliverable":"配置修订记录","promptOne":"告诉我这条错误在指哪个配置项，密钥已经删掉了。","promptTwo":"截图里文件名拼错了一位，先别重装整个项目。","output":"本人开发环境的修错笔记","ruleId":"CODE-02","signal":"相同配置错误在多个请求中重复出现。"},
+    {"id":"craft","title":"纸鹤说明的第三步","occupation":"手工课教师","task":"把自己写的折纸说明改得更容易阅读","deliverable":"折纸说明","promptOne":"第三步先翻面，再折角，别把顺序换了。","promptTwo":"我配的图没有编号，文字里也不要突然多出图六。","output":"本地手工课讲义","ruleId":"OUT-03","signal":"多轮改写同一份步骤说明。"},
+    {"id":"minutes","title":"开会二十分钟","occupation":"物业助理","task":"把居民会议笔记整理成待办事项","deliverable":"会议待办表","promptOne":"没确定负责人就写待定，不要替大家分配任务。","promptTwo":"修灯和换灯罩是同一件事，合并一下。","output":"本地居民会议纪要","ruleId":"FORMAT-02","signal":"相似会议材料多次生成摘要和待办表。"}
+  ]
+}

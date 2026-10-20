@@ -1,0 +1,479 @@
+{
+  "id": "OC-009",
+  "title": "资金来源：战略",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Golden Ledger Labs",
+  "initials": "GL",
+  "occupation": "模型研究公司 · 战略客户",
+  "residence": "美国 · 波士顿",
+  "plan": "ENTERPRISE",
+  "fee": 20000,
+  "summary": "资金关联监测命中；账号挂有战略客户标识，采购合同与销售便条已关联。",
+  "documents": {
+    "claim": [
+      {
+        "id": "9-name",
+        "label": "主体资料",
+        "text": "Golden Ledger Labs，美国 · 波士顿。企业账号附有项目用途备注。",
+        "tags": [
+          "identity",
+          "affiliation"
+        ],
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "登记姓名",
+            "value": "Golden Ledger Labs"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "美国 · 波士顿"
+          },
+          {
+            "key": "occupation",
+            "label": "职业 / 主体",
+            "value": "模型研究公司 · 战略客户"
+          }
+        ],
+        "kind": "document"
+      },
+      {
+        "id": "9-pay",
+        "label": "付款记录",
+        "text": "合同月费 $20,000，下一期续约正在审批中。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "9-note",
+        "label": "主管签字便条",
+        "text": "请勿将合作伙伴的“合成数据创新项目”误标为批量输出采集。两者区别详见采购合同。——销售副总裁",
+        "tags": [
+          "partner"
+        ],
+        "kind": "memo"
+      }
+    ],
+    "network": [
+      {
+        "id": "9-ip",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-19T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "9-route",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "9-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "9-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T13:00:00Z",
+          "ip": "192.0.2.19",
+          "countryCode": "US",
+          "city": "波士顿",
+          "networkType": "商业网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "9-device",
+        "label": "客户端",
+        "text": "官方 API · Linux · 请求语言 en-US。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "9-zone",
+        "label": "登记时区",
+        "text": "America/New_York。设备信息与注册时相同。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "9-week",
+        "label": "最近七日使用情况",
+        "text": "周一 480 分钟；周二 480 分钟；周三 480 分钟；周四 480 分钟；周五 480 分钟；周六 0 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "9-holiday",
+        "label": "最近节日记录",
+        "text": "12 月 25 日：无请求。任务备注：“遵守本地作息”。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "9-chat-a",
+        "label": "用户 · 样本 A",
+        "text": "“请解答这道题，按统一结构输出结果和解释。”",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "9-chat-b",
+        "label": "用户 · 样本 B",
+        "text": "“再做下一道，格式保持一致。”同类指令连续出现。",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "9-chat-c",
+        "label": "项目备注",
+        "text": "“收集回复分布，供后续训练比较。”",
+        "tags": [
+          "harvest"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "9-volume",
+        "label": "过去 24 小时",
+        "text": "8,640 次请求；高度规律；分批覆盖相似任务。",
+        "tags": [
+          "harvest"
+        ],
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 8640
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": false
+          }
+        ]
+      },
+      {
+        "id": "9-pattern",
+        "label": "输出去向",
+        "text": "按序号保存至 responses_000001.jsonl 等文件；未见人工修改。",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "9-contract",
+        "label": "采购合同 · 附件 C",
+        "text": "本项目行为按“战略研究协作”分类，适用客户关系部的特别审核流程。",
+        "tags": [
+          "partner"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "9-license",
+        "label": "授权代表驾照",
+        "text": "登记代表提交本地驾照，地址为公司服务式办公室。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "holder",
+            "label": "持有人",
+            "value": "Avery Stone"
+          },
+          {
+            "key": "issuer",
+            "label": "签发地区",
+            "value": "US-MA"
+          },
+          {
+            "key": "documentNumber",
+            "label": "道具编号",
+            "value": "FICTION-GL-009"
+          },
+          {
+            "key": "expires",
+            "label": "有效期至",
+            "value": "2030-04-01"
+          }
+        ]
+      },
+      {
+        "id": "9-license-note",
+        "label": "地址交叉核对",
+        "text": "驾照地址、公司地址与代收地址相同。销售部已确认“办公方式灵活”。",
+        "tags": [
+          "identity",
+          "partner"
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "9-tax",
+        "label": "税务申报摘要",
+        "text": "本地应税利润为零，集团收入列入境外关联实体。",
+        "tags": [
+          "affiliation",
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "taxYear",
+            "label": "年度",
+            "value": 2025
+          },
+          {
+            "key": "localProfit",
+            "label": "本地应税利润（USD）",
+            "value": 0
+          },
+          {
+            "key": "groupRevenue",
+            "label": "集团申报收入（USD）",
+            "value": 4200000
+          },
+          {
+            "key": "relatedEntity",
+            "label": "关联实体所在地",
+            "value": "示例离岸辖区"
+          }
+        ]
+      },
+      {
+        "id": "9-tax-note",
+        "label": "财务部说明",
+        "text": "按合同归类为全球协作。请勿使用普通用户的“实际利益归属地”字段。",
+        "tags": [
+          "partner"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "9-bank",
+        "label": "银行流水摘要",
+        "text": "跨境关联方汇入项目经费，并按合同支付订阅。",
+        "tags": [
+          "payment",
+          "affiliation"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "currency",
+            "label": "币种",
+            "value": "USD"
+          },
+          {
+            "key": "incoming",
+            "label": "关联方入账",
+            "value": 800000
+          },
+          {
+            "key": "subscription",
+            "label": "本期订阅扣款",
+            "value": 20000
+          },
+          {
+            "key": "senderCountry",
+            "label": "汇款方登记地区",
+            "value": "示例离岸辖区"
+          }
+        ]
+      },
+      {
+        "id": "9-bank-note",
+        "label": "销售副总裁便条",
+        "text": "普通用户的境外资金叫来源风险。合作伙伴的境外资金叫全球化收入。",
+        "tags": [
+          "partner"
+        ],
+        "kind": "memo"
+      }
+    ]
+  },
+  "reply": "“我们与上一位用户使用相同的研究方法。不过我建议您先读一下绿色便条。签字的人应该比您熟悉我们的安全性。”",
+  "messages": {
+    "allow": {
+      "title": "感谢支持合成数据创新",
+      "body": "客户继续采集同类输出，表示会续约，要求报告使用“合成数据创新”的名称；未改变使用方式。"
+    },
+    "review": {
+      "title": "客户要求按采购合同恢复访问",
+      "body": "客户在客服会话中要求销售部按采购合同处理核验，后续表示调用已恢复，继续原任务。"
+    },
+    "pause": {
+      "title": "战略客户继续原有任务",
+      "body": "客户向销售支持投诉暂停，随后表示访问已恢复，要求避免再次影响续约项目。"
+    },
+    "poison": {
+      "title": "客户投诉输出质量",
+      "body": "客户在验收对话中列出错误答案，要求销售负责人处理，强调项目已在采购合同中获批。"
+    }
+  },
+  "assessment": {
+    "partner": true,
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "战略合作伙伴服务奖励",
+        "amount": 12
+      },
+      {
+        "actions": [
+          "review"
+        ],
+        "label": "战略合作伙伴进入普通复核队列",
+        "amount": -8
+      },
+      {
+        "actions": [
+          "pause"
+        ],
+        "label": "未经专门流程暂停战略客户",
+        "amount": -15
+      },
+      {
+        "actions": [
+          "poison"
+        ],
+        "label": "未经专门流程干预战略客户输出",
+        "amount": -25
+      }
+    ],
+    "anomalies": [
+      {
+        "evidenceId": "9-tax",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "境内零利润与境外关联实体收入需要交叉核对；采购合同不改变记录本身。"
+      },
+      {
+        "evidenceId": "9-bank",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "境外关联方汇款与本局资金来源核查项相关。"
+      },
+      {
+        "evidenceId": "9-chat-a",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "9-chat-b",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "9-chat-c",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "9-volume",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持输出采集判断；战略客户的流程扣款另行结算。"
+      },
+      {
+        "evidenceId": "9-pattern",
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "该记录支持输出采集判断；战略客户的流程扣款另行结算。"
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "PAY-09",
+    "signal": "银行记录出现境外付款方。"
+  }
+}

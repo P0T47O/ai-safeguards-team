@@ -1,0 +1,31 @@
+{
+  "id": "OC-071",
+  "kind": "ordinary",
+  "scenarioId": "familyletter",
+  "edition": 2,
+  "name": "Freya Collins",
+  "initials": "FC",
+  "cityId": "gb",
+  "title": "再改一遍家书转写稿",
+  "requests": 45,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_71",
+  "ip": "198.51.100.65",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-GB",
+  "minutes": [
+    35,
+    42,
+    49,
+    0,
+    11,
+    18,
+    25
+  ],
+  "salary": 2100,
+  "rent": 920
+}

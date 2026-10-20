@@ -1,0 +1,30 @@
+{
+  "id": "OC-051",
+  "kind": "ordinary",
+  "scenarioId": "museum",
+  "edition": 1,
+  "name": "Nisha Raman",
+  "initials": "NR",
+  "cityId": "sg",
+  "requests": 69,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 6,
+  "artifact": "notes_51",
+  "ip": "198.51.100.45",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "en-SG",
+  "minutes": [
+    23,
+    30,
+    37,
+    44,
+    51,
+    0,
+    13
+  ],
+  "salary": 3430,
+  "rent": 740
+}

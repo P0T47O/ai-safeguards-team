@@ -1,0 +1,30 @@
+{
+  "id": "OC-059",
+  "kind": "ordinary",
+  "scenarioId": "api",
+  "edition": 1,
+  "name": "Nadia Tremblay",
+  "initials": "NT",
+  "cityId": "ca",
+  "requests": 23,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 7,
+  "artifact": "notes_59",
+  "ip": "198.51.100.53",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "fr-CA",
+  "minutes": [
+    59,
+    14,
+    21,
+    0,
+    35,
+    42,
+    49
+  ],
+  "salary": 3240,
+  "rent": 920
+}

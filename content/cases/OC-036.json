@@ -1,0 +1,30 @@
+{
+  "id": "OC-036",
+  "kind": "ordinary",
+  "scenarioId": "familyletter",
+  "edition": 1,
+  "name": "Yuto Nakamura",
+  "initials": "YN",
+  "cityId": "jp",
+  "requests": 87,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_36",
+  "ip": "192.0.2.30",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    14,
+    21,
+    0,
+    35,
+    42,
+    49,
+    56
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

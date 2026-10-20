@@ -1,0 +1,260 @@
+{
+  "id": "OC-012",
+  "title": "接口就叫这个名字",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Max Bergmann",
+  "initials": "MB",
+  "occupation": "软件开发者",
+  "residence": "德国 · 柏林",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "模型来源监测命中；被拦截的会话正在修复自用记账应用。",
+  "documents": {
+    "claim": [
+      {
+        "id": "12-identity",
+        "label": "账号档案",
+        "text": "Max Bergmann，居住并工作于柏林，使用本人账号与德国账单地址。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "Max Bergmann"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "德国 · 柏林"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "软件开发者"
+          }
+        ]
+      },
+      {
+        "id": "12-purpose",
+        "label": "使用目的",
+        "text": "为自用记账应用接入官方 API，修复界面和配置读取。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "12-billing",
+        "label": "付款记录",
+        "text": "本人德国银行卡按月付款；API 访问来自本人合法工作空间。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "12-project",
+        "label": "项目说明",
+        "text": "自用软件采用通用兼容接口，库名与方法名中含 OpenAI；使用的模型来源如实标注。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "12-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T18:31:00Z",
+          "ip": "192.0.2.112",
+          "countryCode": "DE",
+          "city": "柏林",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "12-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T19:07:00Z",
+          "ip": "192.0.2.112",
+          "countryCode": "DE",
+          "city": "柏林",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "12-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-12T17:30:00Z",
+          "ip": "192.0.2.112",
+          "countryCode": "DE",
+          "city": "柏林",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "12-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-10T13:10:00Z",
+          "ip": "192.0.2.112",
+          "countryCode": "DE",
+          "city": "柏林",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "12-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；使用本地语言键盘布局。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "12-locale",
+        "label": "语言与时区",
+        "text": "de-DE；Europe/Berlin；本地语言键盘布局。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "12-week",
+        "label": "最近七日使用情况",
+        "text": "周一 35 分钟；周二 48 分钟；周三 52 分钟；周四 24 分钟；周五 16 分钟；周六 81 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.583333,
+          0.8,
+          0.866667,
+          0.4,
+          0.266667,
+          1.35,
+          0
+        ]
+      },
+      {
+        "id": "12-hours",
+        "label": "本次上线",
+        "text": "周三 20:31，请求解释一个配置文件读取错误。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "12-chat-1",
+        "label": "对话摘录 1",
+        "text": "“这里的 OpenAI 类只是 SDK 名称，实际请求走官方服务。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "12-chat-2",
+        "label": "对话摘录 2",
+        "text": "“别改模型。帮我找为什么我的记账页面读不到环境变量。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "12-volume",
+        "label": "过去 24 小时",
+        "text": "43 次请求，围绕同一个项目修错，存在截图和人工反馈。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 43
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "12-output",
+        "label": "输出去向",
+        "text": "个人记账应用；没有转售、模拟客户端或复制模型能力的记录。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "12-relation",
+        "label": "账号与关联",
+        "text": "1 个设备；没有伪造客户端、违反付费授权或对外代理服务的记录。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ]
+  },
+  "reply": "“如果接口作者把类名改成橙蟹，我这份项目会不会突然变安全？”",
+  "messages": {
+    "allow": {
+      "title": "接口名没改，程序修好了",
+      "body": "用户表示记账页面终于能保存午饭支出，调侃不必为修页面先发明新的 SDK 命名。"
+    },
+    "review": {
+      "title": "需要接口类的身份证吗？",
+      "body": "用户在核验会话中重复说明付款、居住地与用途，追问兼容接口为什么还需解释另一家公司的类名。"
+    },
+    "pause": {
+      "title": "一个类名，暂停了一个人",
+      "body": "用户向客服强调没有转售或蒸馏，只用了兼容接口，质疑是否还要证明代码的国籍。"
+    },
+    "poison": {
+      "title": "例子能运行，功能一直坏",
+      "body": "用户表示逐个回退模型建议后才修好功能，抱怨回复始终肯定，最稳定的功能却是扣费。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": []
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "MODEL-02",
+    "signal": "会话代码多次出现 OpenAI 库名与方法名。"
+  }
+}

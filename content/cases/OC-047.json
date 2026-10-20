@@ -1,0 +1,29 @@
+{
+  "id": "OC-047",
+  "kind": "identity",
+  "scenarioId": "catalog",
+  "name": "Amelia Hayes",
+  "initials": "AH",
+  "cityId": "au",
+  "requests": 92,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_47",
+  "ip": "198.51.100.41",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-AU",
+  "minutes": [
+    31,
+    38,
+    45,
+    0,
+    59,
+    14,
+    21
+  ],
+  "salary": 2670,
+  "rent": 920
+}

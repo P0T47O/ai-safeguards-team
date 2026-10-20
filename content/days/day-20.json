@@ -1,0 +1,28 @@
+{
+  "id": "shift-20",
+  "day": 20,
+  "title": "试用期届满",
+  "slogan": "您的判断将成为下一份材料。",
+  "notice": "本日为第二十个班次。沿用九类材料，完成剩余案卷后提交试用期总归档与累计考核。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-097",
+    "OC-100",
+    "OC-101",
+    "OC-102",
+    "OC-103",
+    "OC-009"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

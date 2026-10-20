@@ -1,0 +1,30 @@
+{
+  "id": "OC-063",
+  "kind": "ordinary",
+  "scenarioId": "craft",
+  "edition": 1,
+  "name": "Mizuki Ito",
+  "initials": "MI",
+  "cityId": "jp",
+  "requests": 91,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_63",
+  "ip": "198.51.100.57",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    51,
+    58,
+    13,
+    20,
+    27,
+    0,
+    41
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

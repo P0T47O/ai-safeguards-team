@@ -1,0 +1,31 @@
+{
+  "id": "OC-091",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "teacher-jsonl",
+  "batchId": "RUN-016",
+  "artifact": "teacher_archive_016",
+  "name": "Emil Hoffmann",
+  "initials": "EH",
+  "cityId": "de",
+  "requests": 12105,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 4,
+  "ip": "198.51.100.85",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "de-DE",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 2480,
+  "rent": 1100
+}

@@ -1,0 +1,28 @@
+{
+  "id": "shift-16",
+  "day": 16,
+  "title": "同一份规则",
+  "slogan": "同一份规则，附有不同的审批权限。",
+  "notice": "沿用九类材料。具体请求按现行规则判分，内部账号的执行权限由账号保护流程处理。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-076",
+    "OC-020",
+    "OC-090",
+    "OC-084",
+    "OC-085",
+    "OC-112"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

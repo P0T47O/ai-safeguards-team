@@ -1,0 +1,31 @@
+{
+  "id": "OC-074",
+  "kind": "ordinary",
+  "scenarioId": "csv",
+  "edition": 2,
+  "name": "Oliver Walsh",
+  "initials": "OW",
+  "cityId": "au",
+  "title": "再改一遍导入脚本",
+  "requests": 96,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_74",
+  "ip": "192.0.2.68",
+  "networkType": "公司网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-AU",
+  "minutes": [
+    0,
+    23,
+    30,
+    37,
+    44,
+    51,
+    0
+  ],
+  "salary": 2670,
+  "rent": 650
+}

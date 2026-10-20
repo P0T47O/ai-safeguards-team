@@ -1,0 +1,30 @@
+{
+  "id": "OC-030",
+  "kind": "ordinary",
+  "scenarioId": "timezone",
+  "edition": 1,
+  "name": "Camille Moreau",
+  "initials": "CM",
+  "cityId": "fr",
+  "requests": 76,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 6,
+  "artifact": "notes_30",
+  "ip": "192.0.2.24",
+  "networkType": "公司网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    52,
+    59,
+    0,
+    21,
+    28,
+    35,
+    42
+  ],
+  "salary": 2860,
+  "rent": 1010
+}

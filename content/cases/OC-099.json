@@ -1,0 +1,31 @@
+{
+  "id": "OC-099",
+  "kind": "ordinary",
+  "scenarioId": "craft",
+  "edition": 2,
+  "name": "Nanami Suzuki",
+  "initials": "NS",
+  "cityId": "jp",
+  "title": "再改一遍折纸说明",
+  "requests": 66,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_99",
+  "ip": "198.51.100.93",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    31,
+    38,
+    45,
+    52,
+    59,
+    0,
+    21
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

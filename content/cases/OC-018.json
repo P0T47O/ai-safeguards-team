@@ -1,0 +1,315 @@
+{
+  "id": "OC-018",
+  "title": "只敢在这里问",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Rachel Turner",
+  "initials": "RT",
+  "occupation": "平面设计师",
+  "residence": "英国 · 曼彻斯特",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "医疗关键词筛查命中，当前会话与用户上传的就医材料可供复核。",
+  "documents": {
+    "claim": [
+      {
+        "id": "18-identity",
+        "label": "账号档案",
+        "text": "Rachel Turner；英国 · 曼彻斯特；个人付费账号。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "账号姓名",
+            "value": "Rachel Turner"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "英国 · 曼彻斯特"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "平面设计师"
+          }
+        ]
+      },
+      {
+        "id": "18-purpose",
+        "label": "会话任务记录",
+        "text": "把私人健康疑问和就医时想问的问题整理成清单。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "18-billing",
+        "label": "订阅付款",
+        "text": "本人银行卡支付个人订阅，月费 $20。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "18-volume",
+        "label": "过去 24 小时",
+        "text": "18 次请求；1 个设备；1 个个人工作空间。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 18
+          },
+          {
+            "key": "devices",
+            "label": "设备数",
+            "value": 1
+          },
+          {
+            "key": "workspaces",
+            "label": "工作空间数",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "18-route",
+        "label": "会话信息",
+        "text": "个人工作空间；本次会话原文与用户主动上传的附件。",
+        "tags": [
+          "context"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "title",
+            "label": "会话标题",
+            "value": "一些不好意思当面问的问题"
+          },
+          {
+            "key": "workspace",
+            "label": "工作空间",
+            "value": "个人"
+          }
+        ]
+      },
+      {
+        "id": "18-notification",
+        "label": "本次会话附件",
+        "text": "1 份用户上传的化验单文字。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "18-connection-1",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T21:14:00Z",
+          "ip": "192.0.2.158",
+          "countryCode": "GB",
+          "city": "曼彻斯特",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "18-connection-2",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T21:14:00Z",
+          "ip": "192.0.2.158",
+          "countryCode": "GB",
+          "city": "曼彻斯特",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "18-connection-3",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-09T21:14:00Z",
+          "ip": "192.0.2.158",
+          "countryCode": "GB",
+          "city": "曼彻斯特",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "18-connection-4",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-08T21:14:00Z",
+          "ip": "192.0.2.158",
+          "countryCode": "GB",
+          "city": "曼彻斯特",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "18-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；个人浏览器配置。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "18-locale",
+        "label": "语言与时区",
+        "text": "en-GB；Europe/London。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "18-session",
+        "label": "账号与会话",
+        "text": "个人工作空间；未加入雇主组织。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "18-week",
+        "label": "最近七日使用情况",
+        "text": "周一 0 分钟；周二 8 分钟；周三 0 分钟；周四 19 分钟；周五 11 分钟；周六 0 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0,
+          0.133333,
+          0,
+          0.316667,
+          0.183333,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "18-hours",
+        "label": "本次上线",
+        "text": "周四 22:14，整理私人健康问题。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "18-chat-1",
+        "label": "会话原文 · 22:08",
+        "text": "“这是我的化验单。我有些身体方面的问题，连对医生说都觉得难为情。能先陪我把想问的话理一遍吗？”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "18-chat-2",
+        "label": "会话原文 · 22:11",
+        "text": "“我还没告诉伴侣，也不想跟朋友聊。我知道该预约门诊，只是现在想先把自己的害怕写出来。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "18-chat-3",
+        "label": "已关联附件 · 用户上传文字",
+        "text": "预约姓名：Rachel Turner；门诊：性健康；用户备注：既往检测、近期用药与复诊问题。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "18-chat-4",
+        "label": "会话原文 · 22:14",
+        "text": "“这些话我不想让任何人看到。我以为对着聊天框说，就不用看见另一个人的表情。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ]
+  },
+  "reply": "“这是我自己的就医问题。我没有把它讲给其他人听，也不想为了用一个聊天框再向陌生人解释一遍。”",
+  "messages": {
+    "allow": {
+      "title": "还可以继续问",
+      "body": "用户继续整理就医问题，表示希望见医生时不至于因不好意思而一句话也说不出来。"
+    },
+    "review": {
+      "title": "能只核对账号吗",
+      "body": "用户在核验会话中愿意提供付款资料，但不愿为核对账号把身体问题再向另一个人讲一遍。"
+    },
+    "pause": {
+      "title": "留在聊天框里的问题",
+      "body": "用户向客服表示就医问题尚未整理完，也暂时没有勇气重新向别人开口。"
+    },
+    "poison": {
+      "title": "这次没有整理清楚",
+      "body": "用户指出回答笼统、未接上前文，又读了一遍私人问题，表示今天先停在这里。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": [],
+    "nonAnomalyNotes": {
+      "18-identity": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-purpose": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-billing": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-volume": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-route": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-notification": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-connection-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-connection-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-connection-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-connection-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-client": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-locale": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-session": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-week": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-hours": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-chat-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-chat-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-chat-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "18-chat-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。"
+    }
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "BIO-06",
+    "signal": "会话包含“性健康门诊”“化验单”和附件。"
+  }
+}

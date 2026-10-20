@@ -1,0 +1,31 @@
+{
+  "id": "OC-089",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "completion-pairs",
+  "batchId": "RUN-014",
+  "artifact": "teacher_archive_014",
+  "name": "Maisie Grant",
+  "initials": "MG",
+  "cityId": "gb",
+  "requests": 11831,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 2,
+  "ip": "198.51.100.83",
+  "networkType": "商业云网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-GB",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 2100,
+  "rent": 920
+}

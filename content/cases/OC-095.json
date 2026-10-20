@@ -1,0 +1,31 @@
+{
+  "id": "OC-095",
+  "kind": "ordinary",
+  "scenarioId": "receipts",
+  "edition": 2,
+  "name": "Amelie Bouchard",
+  "initials": "AB",
+  "cityId": "ca",
+  "title": "再改一遍个人记账表",
+  "requests": 89,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_95",
+  "ip": "198.51.100.89",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "fr-CA",
+  "minutes": [
+    39,
+    46,
+    53,
+    0,
+    15,
+    22,
+    29
+  ],
+  "salary": 3240,
+  "rent": 920
+}

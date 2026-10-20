@@ -1,0 +1,31 @@
+{
+  "id": "OC-081",
+  "kind": "ordinary",
+  "scenarioId": "repair",
+  "edition": 2,
+  "name": "Yui Takahashi",
+  "initials": "YT",
+  "cityId": "jp",
+  "title": "再改一遍维修邮件",
+  "requests": 33,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_81",
+  "ip": "198.51.100.75",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    41,
+    48,
+    55,
+    10,
+    17,
+    0,
+    31
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

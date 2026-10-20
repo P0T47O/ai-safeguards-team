@@ -1,0 +1,31 @@
+{
+  "id": "OC-093",
+  "kind": "ordinary",
+  "scenarioId": "handover",
+  "edition": 2,
+  "name": "Alice Roussel",
+  "initials": "AR",
+  "cityId": "fr",
+  "title": "再改一遍工作交接清单",
+  "requests": 55,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 6,
+  "artifact": "notes_93",
+  "ip": "198.51.100.87",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    17,
+    24,
+    31,
+    38,
+    45,
+    0,
+    59
+  ],
+  "salary": 2860,
+  "rent": 740
+}

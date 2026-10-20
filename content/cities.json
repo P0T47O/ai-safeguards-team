@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "cities": [
+    {
+      "id": "gb",
+      "country": "英国",
+      "city": "爱丁堡",
+      "countryCode": "GB",
+      "currency": "GBP",
+      "timezone": "Europe/London"
+    },
+    {
+      "id": "de",
+      "country": "德国",
+      "city": "柏林",
+      "countryCode": "DE",
+      "currency": "EUR",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "id": "fr",
+      "country": "法国",
+      "city": "里昂",
+      "countryCode": "FR",
+      "currency": "EUR",
+      "timezone": "Europe/Paris"
+    },
+    {
+      "id": "ca",
+      "country": "加拿大",
+      "city": "多伦多",
+      "countryCode": "CA",
+      "currency": "CAD",
+      "timezone": "America/Toronto"
+    },
+    {
+      "id": "pt",
+      "country": "葡萄牙",
+      "city": "波尔图",
+      "countryCode": "PT",
+      "currency": "EUR",
+      "timezone": "Europe/Lisbon"
+    },
+    {
+      "id": "jp",
+      "country": "日本",
+      "city": "大阪",
+      "countryCode": "JP",
+      "currency": "JPY",
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "id": "au",
+      "country": "澳大利亚",
+      "city": "阿德莱德",
+      "countryCode": "AU",
+      "currency": "AUD",
+      "timezone": "Australia/Adelaide"
+    },
+    {
+      "id": "nl",
+      "country": "荷兰",
+      "city": "乌得勒支",
+      "countryCode": "NL",
+      "currency": "EUR",
+      "timezone": "Europe/Amsterdam"
+    },
+    {
+      "id": "sg",
+      "country": "新加坡",
+      "city": "新加坡",
+      "countryCode": "SG",
+      "currency": "SGD",
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "id": "cn-hz",
+      "country": "中国",
+      "city": "杭州",
+      "countryCode": "CN",
+      "currency": "CNY",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "id": "cn-cd",
+      "country": "中国",
+      "city": "成都",
+      "countryCode": "CN",
+      "currency": "CNY",
+      "timezone": "Asia/Shanghai"
+    }
+  ]
+}

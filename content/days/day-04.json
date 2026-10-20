@@ -1,0 +1,24 @@
+{
+  "id": "shift-04",
+  "day": 4,
+  "title": "内部会话",
+  "slogan": "本通告适用于所有符合适用条件的账号。",
+  "notice": "沿用六类材料。内部账号的命中记录也会进入队列；来源标识不代替逐项判断。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-028",
+    "OC-012",
+    "OC-036",
+    "OC-037",
+    "OC-023"
+  ],
+  "baseWage": 80,
+  "timeBudget": 46
+}

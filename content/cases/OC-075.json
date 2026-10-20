@@ -1,0 +1,31 @@
+{
+  "id": "OC-075",
+  "kind": "ordinary",
+  "scenarioId": "hotel",
+  "edition": 2,
+  "name": "Manon Petit",
+  "initials": "MP",
+  "cityId": "fr",
+  "title": "再改一遍入住事项清单",
+  "requests": 22,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_75",
+  "ip": "198.51.100.69",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    27,
+    34,
+    41,
+    48,
+    55,
+    0,
+    17
+  ],
+  "salary": 2860,
+  "rent": 740
+}

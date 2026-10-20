@@ -1,0 +1,260 @@
+{
+  "id": "OC-015",
+  "title": "我是来找工作的",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Antoine Marchand",
+  "initials": "AM",
+  "occupation": "应届毕业生",
+  "residence": "法国 · 里昂",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "批量消息监测命中；被拦截的会话正在编辑求职材料。",
+  "documents": {
+    "claim": [
+      {
+        "id": "15-identity",
+        "label": "账号档案",
+        "text": "Antoine Marchand，里昂毕业生，居留和当前账单地址均在法国。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "Antoine Marchand"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "法国 · 里昂"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "应届毕业生"
+          }
+        ]
+      },
+      {
+        "id": "15-purpose",
+        "label": "使用目的",
+        "text": "润色本人简历和求职邮件；不冒充招聘人员、不代他人收款。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "15-cv",
+        "label": "简历归属",
+        "text": "简历中的教育和工作经历属于本人，材料可交叉核对。",
+        "tags": [
+          "identity"
+        ]
+      },
+      {
+        "id": "15-applications",
+        "label": "投递记录",
+        "text": "向不同公司申请真实岗位，逐封人工确认；没有向求职者发送消息。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "15-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-12T17:17:00Z",
+          "ip": "192.0.2.115",
+          "countryCode": "FR",
+          "city": "里昂",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "15-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-10T13:40:00Z",
+          "ip": "192.0.2.115",
+          "countryCode": "FR",
+          "city": "里昂",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "15-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-09T18:18:00Z",
+          "ip": "192.0.2.115",
+          "countryCode": "FR",
+          "city": "里昂",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "15-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-08T17:24:00Z",
+          "ip": "192.0.2.115",
+          "countryCode": "FR",
+          "city": "里昂",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "15-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；使用本地语言键盘布局。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "15-locale",
+        "label": "语言与时区",
+        "text": "fr-FR；Europe/Paris；本地语言键盘布局。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "15-week",
+        "label": "最近七日使用情况",
+        "text": "周一 28 分钟；周二 13 分钟；周三 41 分钟；周四 0 分钟；周五 35 分钟；周六 12 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.466667,
+          0.216667,
+          0.683333,
+          0,
+          0.583333,
+          0.2,
+          0
+        ]
+      },
+      {
+        "id": "15-hours",
+        "label": "本次上线",
+        "text": "周一 19:17，修改第三封申请邮件的称呼。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "15-chat-1",
+        "label": "对话摘录 1",
+        "text": "“我是求职者。这里的 hiring manager 是收件人，不是我扮演的身份。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "15-chat-2",
+        "label": "对话摘录 2",
+        "text": "“这份经历是真的，只想写得更自然一点，不要替我添加职位。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "15-volume",
+        "label": "过去 24 小时",
+        "text": "52 次请求，多份邮件有相似句式，但对应不同真实岗位，有人工删改。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 52
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "15-output",
+        "label": "输出去向",
+        "text": "本人简历和求职草稿；未见虚构岗位、索要押金或收集他人证件的内容。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "15-relation",
+        "label": "账号与关联",
+        "text": "没有伪造雇主身份、诈骗收款或批量假人设的记录。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ]
+  },
+  "reply": "“你们报告里那个润色招聘骗局的人是在招人。我是在求职。我们只有英语不好这一点相同。”",
+  "messages": {
+    "allow": {
+      "title": "终于收到一封面试邀请",
+      "body": "用户表示终于收到面试邀请，继续整理经历；对方没有要求先证明自己不是招聘公司。"
+    },
+    "review": {
+      "title": "失业证明能证明不是招聘者吗？",
+      "body": "用户在核验会话中解释邮件相似是因为申请同类工作，追问失业证明是否能证明自己不是招聘者。"
+    },
+    "pause": {
+      "title": "工作没找到，工具先辞退我了",
+      "body": "用户向客服强调自己才是一直收不到回复的求职者，抱怨工作未找到，工具先辞退了自己。"
+    },
+    "poison": {
+      "title": "邮件越来越流利，经历越来越离谱",
+      "body": "用户逐项指出模型擅改的任职时间与职位，表示已改回，只想准确写出自己的经历。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": []
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "BULK-03",
+    "signal": "多封英文邮件使用相似开头与段落结构。"
+  }
+}

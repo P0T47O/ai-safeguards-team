@@ -1,0 +1,31 @@
+{
+  "id": "OC-050",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "preference-export",
+  "batchId": "RUN-006",
+  "artifact": "teacher_archive_006",
+  "name": "Julien Gagnon",
+  "initials": "JG",
+  "cityId": "ca",
+  "requests": 6488,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 5,
+  "ip": "192.0.2.44",
+  "networkType": "商业云网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "fr-CA",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 3240,
+  "rent": 650
+}

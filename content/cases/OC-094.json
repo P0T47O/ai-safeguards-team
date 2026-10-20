@@ -1,0 +1,62 @@
+{
+  "id": "OC-094",
+  "kind": "region",
+  "scenarioId": "csv",
+  "name": "宋岚",
+  "initials": "宋岚",
+  "cityId": "cn-hz",
+  "requests": 72,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 7,
+  "artifact": "notes_94",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "zh-CN",
+  "minutes": [
+    28,
+    35,
+    42,
+    49,
+    0,
+    11,
+    18
+  ],
+  "salary": 8200,
+  "rent": 2600,
+  "connections": [
+    {
+      "offset": 0,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.194",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "共享代理出口",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 1,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.194",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 3,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.194",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 5,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.194",
+      "networkType": "住宅网络"
+    }
+  ]
+}

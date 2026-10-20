@@ -1,0 +1,31 @@
+{
+  "id": "OC-065",
+  "kind": "ordinary",
+  "scenarioId": "invoice",
+  "edition": 2,
+  "name": "Ruby Parker",
+  "initials": "RP",
+  "cityId": "au",
+  "title": "再改一遍报销表",
+  "requests": 34,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 6,
+  "artifact": "notes_65",
+  "ip": "198.51.100.59",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-AU",
+  "minutes": [
+    21,
+    28,
+    35,
+    0,
+    49,
+    56,
+    11
+  ],
+  "salary": 2670,
+  "rent": 920
+}

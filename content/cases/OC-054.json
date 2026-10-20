@@ -1,0 +1,30 @@
+{
+  "id": "OC-054",
+  "kind": "ordinary",
+  "scenarioId": "receipts",
+  "edition": 1,
+  "name": "Ren Kobayashi",
+  "initials": "RK",
+  "cityId": "jp",
+  "requests": 29,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_54",
+  "ip": "192.0.2.48",
+  "networkType": "公司网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    56,
+    11,
+    0,
+    25,
+    32,
+    39,
+    46
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

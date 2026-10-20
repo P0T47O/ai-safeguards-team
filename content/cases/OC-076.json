@@ -1,0 +1,31 @@
+{
+  "id": "OC-076",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "completion-pairs",
+  "batchId": "RUN-011",
+  "artifact": "teacher_archive_011",
+  "name": "Milan Visser",
+  "initials": "MV",
+  "cityId": "nl",
+  "requests": 10050,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 3,
+  "ip": "192.0.2.70",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "nl-NL",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 3050,
+  "rent": 830
+}

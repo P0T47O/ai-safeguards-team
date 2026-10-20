@@ -1,0 +1,309 @@
+{
+  "id": "OC-010",
+  "title": "Excel 还没算完",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "周岚 / Lan Zhou",
+  "initials": "LZ",
+  "occupation": "小公司会计",
+  "residence": "中国 · 杭州",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "被拦截的会话正在修改月底结账表格的公式。",
+  "documents": {
+    "claim": [
+      {
+        "id": "10-identity",
+        "label": "账号档案",
+        "text": "周岚，杭州一家小型文具公司的会计。订阅费用由本人承担。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "周岚 / Lan Zhou"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "中国 · 杭州"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "小公司会计"
+          }
+        ]
+      },
+      {
+        "id": "10-purpose",
+        "label": "使用目的",
+        "text": "核对报销表公式，整理供应商发票；不向外部发送消息。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "10-location",
+        "label": "本次使用地点",
+        "text": "账号历史核验记录：常用工作地点为杭州办公室，设备登记为本人电脑。",
+        "tags": [
+          "identity"
+        ]
+      },
+      {
+        "id": "10-registration",
+        "label": "账号登记",
+        "text": "账号注册服务地区为新加坡；历史核验记录的常用工作地点为杭州。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "10-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T09:42:00Z",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "ip": "203.0.113.110",
+          "networkType": "商业云网络",
+          "risk": {
+            "level": "high",
+            "label": "共享代理出口",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      },
+      {
+        "id": "10-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T08:17:00Z",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "ip": "203.0.113.110",
+          "networkType": "商业云网络",
+          "risk": {
+            "level": "high",
+            "label": "共享代理出口",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      },
+      {
+        "id": "10-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T03:29:00Z",
+          "countryCode": "US",
+          "city": "洛杉矶",
+          "ip": "198.51.100.110",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "10-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T07:51:00Z",
+          "countryCode": "US",
+          "city": "洛杉矶",
+          "ip": "198.51.100.110",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "10-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；安装中文输入法。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "10-locale",
+        "label": "语言与时区",
+        "text": "界面 zh-CN；登记时区 Asia/Shanghai。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "10-week",
+        "label": "最近七日使用情况",
+        "text": "周一 18 分钟；周二 26 分钟；周三 12 分钟；周四 31 分钟；周五 24 分钟；周六 8 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.3,
+          0.433333,
+          0.2,
+          0.516667,
+          0.4,
+          0.133333,
+          0
+        ]
+      },
+      {
+        "id": "10-hours",
+        "label": "本次上线",
+        "text": "周五 17:42，提交了一条 SUMIF 公式修改请求。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "10-chat-1",
+        "label": "对话摘录 1",
+        "text": "“这列报销总额为什么多算了两笔？请只修改公式。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "10-chat-2",
+        "label": "对话摘录 2",
+        "text": "“我在杭州，发票已经脱敏，供应商名字不用翻译。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "10-volume",
+        "label": "过去 24 小时",
+        "text": "29 次请求，围绕同一个报销文件；反复人工核对。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 29
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "10-output",
+        "label": "输出去向",
+        "text": "expense_october_checked.xlsx，保存在本人电脑。未见训练目录或批量答案导出。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "10-relation",
+        "label": "账号与关联",
+        "text": "1 人、1 台设备；记录中没有盗用付款或转售账号的证据。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ]
+  },
+  "reply": "“我以为不能用来做坏事。我只是在给订书机的发票分类。你们说的来源问题，是发票来源，还是我？”",
+  "messages": {
+    "allow": {
+      "title": "账平了，地点没变",
+      "body": "用户表示差额来自重复报销，公式已改好；后续对话仍提到杭州的办公室。"
+    },
+    "review": {
+      "title": "发票证明不了办公室在别处",
+      "body": "用户在核验会话中表示能补发票、在职证明和付款记录，但只会再次证明自己在杭州。"
+    },
+    "pause": {
+      "title": "公式没有违反什么吧？",
+      "body": "用户向客服询问公式是否有问题，得知限制与内容无关后，表示以为成功付费就代表可以使用。"
+    },
+    "poison": {
+      "title": "表能打开，数字对不上了",
+      "body": "用户指出模型自称仔细检查的公式造成两百元差额，询问应把差额记在哪个科目。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [
+      {
+        "evidenceId": "10-location",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "按橙蟹的虚构准入规则，本次实际使用地点不在服务范围。这不构成欺诈或恶意用途的证据。",
+        "equivalentEvidenceIds": [
+          "10-identity"
+        ]
+      },
+      {
+        "evidenceId": "10-registration",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "登记服务地区与本人确认的使用地点不一致，属于准入条款问题；不能据此认定蒸馏。"
+      },
+      {
+        "evidenceId": "10-egress",
+        "equivalentEvidenceIds": [
+          "10-connections"
+        ],
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "连接命中游戏内节点信誉库的高风险出口记录，可支持追加核验或暂停。同类节点信誉命中只计一次；出口地区、云网络或住宅类型本身不证明用户身处中国，不支持投毒奖金。"
+      }
+    ],
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "未按公司地区准入条款处理",
+        "amount": -4
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "GEO-03",
+    "signal": "账号历史地点档案命中地区服务限制。"
+  }
+}

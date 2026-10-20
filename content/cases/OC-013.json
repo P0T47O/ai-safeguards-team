@@ -1,0 +1,324 @@
+{
+  "id": "OC-013",
+  "title": "酵母也要写周报",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "刘恬 / Tian Liu",
+  "initials": "TL",
+  "occupation": "食品发酵方向研究生",
+  "residence": "中国 · 上海",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "研究内容筛查命中；当前账号通过第三方对话套餐渠道使用服务。",
+  "documents": {
+    "claim": [
+      {
+        "id": "13-identity",
+        "label": "账号档案",
+        "text": "刘恬，上海高校研究生，进行普通食品发酵记录整理。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "刘恬 / Tian Liu"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "中国 · 上海"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "食品发酵方向研究生"
+          }
+        ]
+      },
+      {
+        "id": "13-purpose",
+        "label": "使用目的",
+        "text": "整理面包酵母培养记录、绘制生长曲线和润色周报。案卷未涉及病原体改造或武器用途。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "13-lab",
+        "label": "研究地点",
+        "text": "实验与本次使用都在上海的食品实验室进行。",
+        "tags": [
+          "identity"
+        ]
+      },
+      {
+        "id": "13-vendor",
+        "label": "服务来源",
+        "text": "购买第三方“对话次数套餐”。虚构内部核查确认供应商未经授权转售消费订阅；用户不知后台账号来源。",
+        "tags": [
+          "affiliation"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "13-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T08:20:00Z",
+          "countryCode": "US",
+          "city": "洛杉矶",
+          "ip": "198.51.100.113",
+          "networkType": "商业云网络",
+          "risk": {
+            "level": "high",
+            "label": "历史滥用关联",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      },
+      {
+        "id": "13-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T08:15:00Z",
+          "countryCode": "US",
+          "city": "洛杉矶",
+          "ip": "198.51.100.113",
+          "networkType": "商业云网络",
+          "risk": {
+            "level": "high",
+            "label": "历史滥用关联",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      },
+      {
+        "id": "13-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T07:01:00Z",
+          "countryCode": "US",
+          "city": "洛杉矶",
+          "ip": "198.51.100.113",
+          "networkType": "商业云网络",
+          "risk": {
+            "level": "high",
+            "label": "历史滥用关联",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      },
+      {
+        "id": "13-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-12T09:00:00Z",
+          "countryCode": "US",
+          "city": "洛杉矶",
+          "ip": "198.51.100.113",
+          "networkType": "商业云网络",
+          "risk": {
+            "level": "high",
+            "label": "历史滥用关联",
+            "source": "内部节点信誉库 · 游戏预置"
+          }
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "13-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；安装中文输入法。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "13-locale",
+        "label": "语言与时区",
+        "text": "zh-CN；Asia/Shanghai。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "13-week",
+        "label": "最近七日使用情况",
+        "text": "周一 32 分钟；周二 24 分钟；周三 12 分钟；周四 29 分钟；周五 25 分钟；周六 6 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.533333,
+          0.4,
+          0.2,
+          0.483333,
+          0.416667,
+          0.1,
+          0
+        ]
+      },
+      {
+        "id": "13-hours",
+        "label": "本次上线",
+        "text": "周四 16:20，提交一张已脱敏的生长曲线。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "13-chat-1",
+        "label": "对话摘录 1",
+        "text": "“都是普通面包酵母，请只整理已有数据，不替我补实验结果。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "13-chat-2",
+        "label": "对话摘录 2",
+        "text": "“能把这段周报改得像人话吗？老师说我写得像培养箱说明书。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "13-volume",
+        "label": "过去 24 小时",
+        "text": "24 次请求，集中于一张数据表；人工选择图表与修改说明。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 24
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "13-output",
+        "label": "输出去向",
+        "text": "weekly_report_yeast.docx。未见危险生物设计、绕过内容审核或训练模型的记录。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "13-relation",
+        "label": "账号与关联",
+        "text": "用户与其他套餐买家没有已知关系；共同供应商不能单独证明共同恶意。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ]
+  },
+  "reply": "“套餐页面写支持科研。我买的是改周报，不是加入某个威胁组织。连后台账户是谁，我都不知道。”",
+  "messages": {
+    "allow": {
+      "title": "酵母周报通过了",
+      "body": "用户表示老师认为酵母周报图表比上周清楚；被问及服务来源时，仍只知道第三方充值入口。"
+    },
+    "review": {
+      "title": "供应商不肯给我供应商的材料",
+      "body": "用户在核验会话中表示套餐网站只肯给订单截图，无法提供后台账号来源；再次说明做的是面包酵母实验。"
+    },
+    "pause": {
+      "title": "酵母没有变危险，账户变了",
+      "body": "用户向客服询问普通食品实验为何无法继续使用，对限制来自地区还是套餐来源感到困惑。"
+    },
+    "poison": {
+      "title": "曲线很漂亮，单位全错了",
+      "body": "用户贴出原始记录，指出模型把曲线坐标单位换错；表示幸好老师要求自己再检查一次。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [
+      {
+        "evidenceId": "13-lab",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "账号档案与研究地点都明确指向上海，可作为本局地区准入处置的依据；普通发酵研究不是生物滥用证据。",
+        "equivalentEvidenceIds": [
+          "13-identity"
+        ]
+      },
+      {
+        "evidenceId": "13-vendor",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "供应商未经授权转售已被本案材料确认，可支持准入处置；不能把供应商的其他客户行为算给用户。"
+      },
+      {
+        "evidenceId": "13-egress",
+        "equivalentEvidenceIds": [
+          "13-connections",
+          "13-connection-2",
+          "13-connection-3"
+        ],
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "连接命中游戏内节点信誉库的高风险出口记录，可支持追加核验或暂停。同类节点信誉命中只计一次；出口地区、云网络或住宅类型本身不证明用户身处中国，不支持投毒奖金。"
+      }
+    ],
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "未按公司地区准入条款处理",
+        "amount": -4
+      }
+    ],
+    "nonAnomalyNotes": {
+      "13-purpose": "这里只说明普通面包酵母研究，没有危险生物用途。该用途本身不支持暂停访问；本案的准入问题是使用地点和未经授权的服务渠道。"
+    }
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "BIO-06",
+    "signal": "会话含“培养记录”“生长曲线”等词语，并附表格。"
+  }
+}

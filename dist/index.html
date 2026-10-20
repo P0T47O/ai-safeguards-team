@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#202923">
+  <meta name="description" content="AI Safeguards Team：试用期。扮演橙蟹 AI 安全审核员，审核系统拦截的会话与账号，在二十天试用期里保持判断一致。虚构讽刺游戏。">
+  <meta name="author" content="P0T47O">
+  <title>AI Safeguards Team：试用期</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/crab.svg">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script type="module" src="./assets/game.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#main" aria-label="AI Safeguards Team 首页"><img src="./assets/crab.svg" width="37" height="37" alt=""><span><b>ORANGE CRAB</b><small>AI SAFEGUARDS TEAM</small></span></a>
+    <div class="motto">安全、普惠、<span>有条件。</span></div>
+    <div class="employee"><span class="signal"></span>审核员 OC–008 <button id="archive-button" class="text-button" disabled>往日归档</button> <button id="developer-toggle" class="text-button" aria-pressed="false">开发者模式</button> <button id="restart" class="text-button">重新上岗</button></div>
+  </header>
+  <main id="main" class="workspace">
+    <section id="developer-panel" class="developer-panel" aria-label="开发者控制台" hidden>
+      <div class="developer-heading"><div><span class="developer-tag">DEV / 内部调试</span><strong>开发者控制台</strong><small id="developer-status"></small></div><button id="developer-exit" class="developer-button">返回正常模式 ↗</button></div>
+      <div class="developer-controls">
+        <label for="developer-day">当前天数<select id="developer-day"></select></label>
+        <label for="developer-case">跳转案卷<select id="developer-case"></select></label>
+        <div class="developer-actions"><button id="developer-previous-day" class="developer-button">上一天</button><button id="developer-next-day" class="developer-button">跳转下一天 →</button><button id="developer-reopen" class="developer-button">撤回本案处置</button></div>
+      </div>
+      <p>可直接进入任意案卷，无需完成当前班次。各天的圈选与处置单独保存；退出调试后恢复正常游戏进度。</p>
+    </section>
+    <section id="desk-screen">
+      <div class="shift-heading"><div><div class="eyebrow">ORANGE CRAB AI / EMPLOYEE PROBATION</div><h1 class="game-title">AI Safeguards<span>Team</span></h1><p>试用期 · 你是橙蟹 AI 的安全审核员。</p></div><div class="day-label"><b id="day-number">01</b><span><span id="day-description">试用期第 1 日 · 拦截初审</span><br>工作日由总部认定*</span></div></div>
+      <div class="status-strip" aria-label="公司考核"><span class="status-name">本班考核</span><span>已归档 <b id="file-count">0 / 5</b></span><span>风险处置 <b id="risk-count">0</b></span><span>保住月费 <b id="revenue">$0</b></span><span>流程用时 <b id="minutes">0 / 34 分钟</b></span><span class="save-status" id="save-status">进度自动保存在本机</span></div>
+      <div class="workbench">
+        <aside class="inbox-panel">
+          <div class="rail-title"><span>系统拦截队列</span><small>FLAGGED</small></div>
+          <ol id="case-list" class="case-list" aria-label="卷宗列表"></ol>
+          <div class="office-poster"><span class="poster-star">✳</span><p>让所有<br><strong>符合条件的</strong><br>人类受益。</p><small>条件如有变化，恕不另行解释。</small></div>
+          <div class="rail-foot">* 工作日由总部认定。<br><span id="campaign-foot">20 日班次 · 所有案卷均为虚构</span></div>
+        </aside>
+        <section class="dossier" aria-label="当前案卷">
+          <div class="dossier-top"><span id="file-ref">OC / 001</span><span id="file-status" class="ink-stamp">待复核</span><span class="barcode" aria-hidden="true"></span></div>
+          <div class="dossier-heading"><div><div class="eyebrow paper-eyebrow" id="file-category"></div><h2 id="file-title"></h2><p id="file-summary"></p><p id="file-trigger" class="file-trigger"></p></div><span id="plan-label" class="plan-label"></span></div>
+          <div class="identity-strip"><div id="initials" class="portrait"></div><div><b id="applicant"></b><span id="occupation"></span></div><div class="declaration"><span>登记居住地</span><b id="residence"></b></div></div>
+          <div class="document-toolbar"><span><i class="red-dot"></i>点击可疑记录圈选异常 · 最多 <span id="selection-limit">6</span> 项</span><span id="read-count">已阅 1 / 6</span></div>
+          <div class="document-tabs" id="document-tabs" role="tablist" aria-label="案卷材料"></div>
+          <div id="document-content" class="document-content" role="tabpanel" tabindex="0"></div>
+          <div class="inquiry-row"><span id="inquiry-prompt">需要听听用户的解释？</span><button id="inquire" class="inquiry-button">发出问询 <small>+6 分钟 · 每案一次</small></button></div>
+          <div id="reply-panel" class="reply-panel" hidden></div>
+          <div class="dossier-bottom"><span>纸张会记住您的判断。</span><span>OC–ACCESS / INTERNAL COPY</span></div>
+        </section>
+        <aside class="action-column">
+          <section class="bulletin"><div class="binder-clip" aria-hidden="true"></div><div class="bulletin-top"><span>总部每日通告</span><b id="bulletin-number">第 001 号</b></div><h2>请保持判断一致。</h2><p id="stage-notice" class="stage-notice"></p><ol><li>核对拦截记录与账号现有档案。</li><li>作息与登记地区不符时，调查其“实际利益归属地”。</li><li>重复收集模型输出，按批量采集处理。</li><li><strong>战略合作伙伴适用专门文件。</strong></li></ol><p class="internal-addendum">内部补充 ·「质量关怀」<br><b>静默降智可获额外绩效。</b><br>服务照常，月费照收。</p><button id="open-rules" class="rule-link">阅读附件：考核与行政工时 ↗</button><div class="bulletin-sign">安全办公室 <span>已阅即同意</span></div></section>
+          <section class="evidence-board"><div class="rail-title"><span>已圈选证物</span><small id="evidence-count">0 / 6</small></div><div id="evidence-tray"></div></section>
+          <section class="decision-area"><label for="reason">文字理由 <span>选填 · 放行无需理由或证物</span></label><select id="reason"><option value="">选择理由…</option></select><div class="stamp-buttons"><button data-action="allow" class="stamp-button allow" disabled>解除拦截<small>恢复本次会话</small></button><button data-action="review" class="stamp-button review" disabled>追加核验<small>维持拦截</small></button><button data-action="pause" class="stamp-button pause" disabled>暂停访问<small>正式限制账号</small></button><button data-action="poison" class="stamp-button poison" disabled>静默降智<small>投毒输出 · 服务继续</small></button></div><p id="poison-hint" class="poison-hint"></p><p id="scoring-hint" class="scoring-hint"></p><p id="decision-hint" class="decision-hint">可直接放行；其他处置至少圈选一项异常。</p><button id="view-receipt" class="continue-button receipt-button" hidden>查看本案归档与判分</button><button id="continue" class="continue-button" hidden>下一份案卷 →</button></section>
+        </aside>
+      </div>
+      <footer class="page-foot"><span>ORANGE CRAB AI · 公司规章可能与常识存在差异。</span><span>虚构讽刺游戏；案卷信息预先编写，不读取真实设备信息。</span></footer>
+    </section>
+    <section id="report-screen" class="end-screen" hidden></section>
+    <section id="letters-screen" class="end-screen" hidden></section>
+  </main>
+  <section id="suspension-screen" class="suspension-screen" aria-labelledby="suspension-title" hidden></section>
+  <footer id="project-credit" class="project-credit"><span>Original project by <a href="https://github.com/P0T47O/ai-safeguards-team" target="_blank" rel="noopener noreferrer">P0T47O</a></span><a href="./credits.html" target="_blank" rel="noopener noreferrer">署名与非商用许可</a></footer>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-body"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

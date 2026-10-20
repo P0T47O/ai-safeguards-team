@@ -1,0 +1,29 @@
+{
+  "id": "shift-13",
+  "day": 13,
+  "title": "时间与记录",
+  "slogan": "没有下一条记录，不等于已有结论。",
+  "notice": "沿用九类材料。核对原始记录与当前用途，个人设想本身不构成违规。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-113",
+    "OC-064",
+    "OC-070",
+    "OC-071",
+    "OC-072",
+    "OC-074",
+    "OC-115"
+  ],
+  "baseWage": 80,
+  "timeBudget": 74
+}

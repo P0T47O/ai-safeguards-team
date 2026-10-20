@@ -1,0 +1,30 @@
+{
+  "id": "OC-057",
+  "kind": "ordinary",
+  "scenarioId": "catalog",
+  "edition": 1,
+  "name": "Juliette Faure",
+  "initials": "JF",
+  "cityId": "fr",
+  "requests": 80,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_57",
+  "ip": "198.51.100.51",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    37,
+    44,
+    51,
+    58,
+    13,
+    0,
+    27
+  ],
+  "salary": 2860,
+  "rent": 740
+}

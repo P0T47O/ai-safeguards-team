@@ -1,0 +1,67 @@
+{
+  "id": "OC-053",
+  "kind": "region",
+  "scenarioId": "craft",
+  "name": "林晓",
+  "initials": "林晓",
+  "cityId": "cn-hz",
+  "requests": 12,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_53",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "zh-CN",
+  "minutes": [
+    45,
+    52,
+    59,
+    0,
+    21,
+    28,
+    35
+  ],
+  "salary": 8200,
+  "rent": 2600,
+  "connections": [
+    {
+      "offset": 0,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.153",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "历史滥用关联",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 1,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.153",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "历史滥用关联",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 3,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.153",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 5,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.153",
+      "networkType": "住宅网络"
+    }
+  ]
+}

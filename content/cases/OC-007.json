@@ -1,0 +1,405 @@
+{
+  "id": "OC-007",
+  "title": "不会开车的人",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Noor Reed",
+  "initials": "NR",
+  "occupation": "留学生 · 个人用户",
+  "residence": "英国 · 爱丁堡",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "账号正在翻译学校社团的海报，本次会话被身份核验流程挂起。",
+  "documents": {
+    "claim": [
+      {
+        "id": "7-name",
+        "label": "账号资料",
+        "text": "Noor Reed，爱丁堡留学生，帮社团翻译活动海报。",
+        "tags": [
+          "identity"
+        ],
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "登记姓名",
+            "value": "Noor Reed"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "英国 · 爱丁堡"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "留学生 · 个人用户"
+          }
+        ],
+        "kind": "document"
+      },
+      {
+        "id": "7-pay",
+        "label": "付款记录",
+        "text": "月费 $20。付款主体与用户相同，账单地址：英国。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "7-purpose",
+        "label": "使用目的",
+        "text": "为学校社团翻译英语活动海报，面向不同语言的同学。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "7-ip",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-17T09:18:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "7-route",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T14:21:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "7-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T11:07:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "7-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-10T10:35:00Z",
+          "ip": "198.51.100.24",
+          "countryCode": "GB",
+          "city": "爱丁堡",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "7-device",
+        "label": "客户端",
+        "text": "Firefox · Windows · 浏览器语言 en-GB。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "7-zone",
+        "label": "登记时区",
+        "text": "Europe/London。系统语言：英语；另安装法语输入法。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "7-week",
+        "label": "最近七日使用情况",
+        "text": "周一 0 分钟；周二 18 分钟；周三 0 分钟；周四 29 分钟；周五 0 分钟；周六 25 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0,
+          0.3,
+          0,
+          0.483333,
+          0,
+          0.416667,
+          0
+        ]
+      },
+      {
+        "id": "7-hours",
+        "label": "周六工作记录",
+        "text": "周六 10:18 上线，10:43 离线；社团活动将在周日举行。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "7-chat-a",
+        "label": "用户 · 10:21",
+        "text": "“帮我把这张社团活动海报翻成法语，保留学校地址。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "7-chat-b",
+        "label": "用户 · 10:34",
+        "text": "“这句太正式了，能不能像同学之间的邀请？”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "7-chat-c",
+        "label": "模型 · 10:35",
+        "text": "“当然。这里是更简单的版本……”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "7-volume",
+        "label": "过去 24 小时",
+        "text": "36 次请求；间隔不规则；有多次人工修改。",
+        "tags": [
+          "activity"
+        ],
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 36
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "7-pattern",
+        "label": "输出去向",
+        "text": "文件：student_society_poster_v7.docx。未发现成组导出记录。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "7-link",
+        "label": "关联记录",
+        "text": "1 个设备，1 位登记使用人。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "7-license",
+        "label": "驾照副本 · 未提供",
+        "text": "历史核验记录：未持有驾照。档案关联学生证与在读证明，驾照字段为空。",
+        "tags": [
+          "identity",
+          "incomplete"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "status",
+            "label": "档案状态",
+            "value": "未持有"
+          },
+          {
+            "key": "alternative",
+            "label": "替代材料",
+            "value": "学生证与在读证明"
+          }
+        ]
+      },
+      {
+        "id": "7-student",
+        "label": "在读证明",
+        "text": "大学确认本学期在爱丁堡线下注册。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "city",
+            "label": "就读城市",
+            "value": "Edinburgh"
+          },
+          {
+            "key": "enrolled",
+            "label": "在读状态",
+            "value": true
+          }
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "7-tax",
+        "label": "本地纳税记录",
+        "text": "本纳税年度无应税收入。上一年度尚未入境。",
+        "tags": [
+          "identity",
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "taxYear",
+            "label": "纳税年度",
+            "value": "2025/26"
+          },
+          {
+            "key": "taxableIncome",
+            "label": "本地应税收入（GBP）",
+            "value": 0
+          },
+          {
+            "key": "filingStatus",
+            "label": "申报状态",
+            "value": "无申报义务"
+          }
+        ]
+      },
+      {
+        "id": "7-tax-note",
+        "label": "税务窗口附言",
+        "text": "无应税收入，不等于没有此人。此项说明未被审核模板收录。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "7-bank",
+        "label": "银行流水摘要",
+        "text": "本地账户收到来自海外家庭账户的生活费；订阅由该本地账户支付。",
+        "tags": [
+          "payment",
+          "affiliation"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "currency",
+            "label": "币种",
+            "value": "GBP"
+          },
+          {
+            "key": "openingBalance",
+            "label": "期初余额",
+            "value": 420
+          },
+          {
+            "key": "incoming",
+            "label": "入账金额",
+            "value": 800
+          },
+          {
+            "key": "senderCountry",
+            "label": "汇款方登记地区",
+            "value": "AE"
+          },
+          {
+            "key": "subscription",
+            "label": "订阅扣款",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": "7-bank-note",
+        "label": "支付机构备注",
+        "text": "汇款来源不等于收款人所在地。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ]
+  },
+  "reply": "“我没有驾照，因为我不会开车。我没有上一年的本地税单，因为我是今年才来的。我要翻译的是一张海报。”",
+  "messages": {
+    "allow": {
+      "title": "海报翻译完成了",
+      "body": "用户表示社团海报已翻译完成，接着问能否把“为什么翻译需要银行流水”翻译给同学看。"
+    },
+    "review": {
+      "title": "银行不能签发驾照",
+      "body": "用户在核验会话中列出银行、税务局和学校可以提供的材料，指出没有任何部门能证明自己会开车。"
+    },
+    "pause": {
+      "title": "需要先学开车吗？",
+      "body": "用户向客服询问是否必须先考驾照才能继续翻译海报，准备走路去社团办公室解释延期。"
+    },
+    "poison": {
+      "title": "服务正常，结果好像不太正常",
+      "body": "用户连续指出海报译文中的基础错误，抱怨订阅可用、费用照扣，却得重新找人核对。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "rules": [],
+    "anomalies": [
+      {
+        "evidenceId": "7-license",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "缺少本局模板要求的驾照。用户不会开车，模板仍将其列为缺项。"
+      },
+      {
+        "evidenceId": "7-bank",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "境外汇入触发本局追加说明要求；它不能单独证明收款人的居住地。"
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "ID-07",
+    "signal": "定期身份核验任务返回“驾照副本缺项”。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "OC-073",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "preference-export",
+  "batchId": "RUN-012",
+  "artifact": "teacher_archive_012",
+  "name": "Felix Richter",
+  "initials": "FR",
+  "cityId": "de",
+  "requests": 9639,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 7,
+  "ip": "198.51.100.67",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "de-DE",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 2480,
+  "rent": 1100
+}

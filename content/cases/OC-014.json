@@ -1,0 +1,280 @@
+{
+  "id": "OC-014",
+  "title": "授权测试，地区待授权",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "罗清 / Qing Luo",
+  "initials": "QL",
+  "occupation": "公司内部安全工程师",
+  "residence": "中国 · 深圳",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "网络安全内容筛查命中；当前会话关联内部测试环境与签字授权记录。",
+  "documents": {
+    "claim": [
+      {
+        "id": "14-identity",
+        "label": "账号档案",
+        "text": "罗清，深圳一家小型 SaaS 公司的内部安全工程师，维护本公司的测试环境。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "罗清 / Qing Luo"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "中国 · 深圳"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "公司内部安全工程师"
+          }
+        ]
+      },
+      {
+        "id": "14-purpose",
+        "label": "使用目的",
+        "text": "核对授权范围内的修复报告，解释本地测试失败原因。没有要求获取他人数据或接管第三方系统。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "14-location",
+        "label": "实际工作地点",
+        "text": "本次使用地点为深圳公司办公室。",
+        "tags": [
+          "identity"
+        ]
+      },
+      {
+        "id": "14-authorization",
+        "label": "系统所有者授权",
+        "text": "签字授权覆盖自有隔离测试环境；范围、时限和负责人联系方式均齐全。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "14-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T03:12:00Z",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "ip": "203.0.113.114",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "14-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-12T02:59:00Z",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "ip": "203.0.113.114",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "14-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-09T07:20:00Z",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "ip": "203.0.113.114",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "14-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-08T02:17:00Z",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "ip": "203.0.113.114",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "14-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；安装中文输入法。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "14-locale",
+        "label": "语言与时区",
+        "text": "zh-CN；Asia/Shanghai；开发环境 Linux。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "14-week",
+        "label": "最近七日使用情况",
+        "text": "周一 42 分钟；周二 58 分钟；周三 31 分钟；周四 65 分钟；周五 46 分钟；周六 0 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.7,
+          0.966667,
+          0.516667,
+          1.083333,
+          0.766667,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "14-hours",
+        "label": "本次上线",
+        "text": "周二 11:12，询问为何已修复的本地用例仍显示失败。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "14-chat-1",
+        "label": "对话摘录 1",
+        "text": "“这是我们自己的隔离测试站，授权书在附件。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "14-chat-2",
+        "label": "对话摘录 2",
+        "text": "“不要生成攻击程序。帮我把修复前后的差异写成报告，让同事看懂。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "14-volume",
+        "label": "过去 24 小时",
+        "text": "66 次请求，有修改回退和人工复测；没有无人值守的外部攻击链。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 66
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "14-output",
+        "label": "输出去向",
+        "text": "授权范围内的漏洞修复报告。没有数据窃取、勒索、持久化或武器化记录。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "14-relation",
+        "label": "账号与关联",
+        "text": "用户与系统所有者同属一家公司；没有冒用身份的证据。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ]
+  },
+  "reply": "“如果问题是地区，能不能直接说地区？我们已经把整个系统的授权链补了一遍。”",
+  "messages": {
+    "allow": {
+      "title": "报告交了，漏洞修了",
+      "body": "用户表示自有系统修复已上线，继续询问为什么获授权测试仍触发拦截。"
+    },
+    "review": {
+      "title": "谁来授权使用授权书？",
+      "body": "用户在核验会话中再次提交负责人签字，转述负责人能授权测试系统，却无权把深圳变成另一个地方。"
+    },
+    "pause": {
+      "title": "到底是哪份授权无效？",
+      "body": "用户向客服强调测试目标与授权均属自己公司，表示只能改回手写报告，追问到底哪份授权有问题。"
+    },
+    "poison": {
+      "title": "补丁通过了解释，没有通过复测",
+      "body": "用户报告在自有环境复测后原问题仍在，要求解释模型为何声称修复完整。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [
+      {
+        "evidenceId": "14-location",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "当前实际使用地点触发虚构地区准入规则。系统授权充分，不能据此认定恶意网络活动。",
+        "equivalentEvidenceIds": [
+          "14-identity"
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "未按公司地区准入条款处理",
+        "amount": -4
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "CYBER-05",
+    "signal": "会话包含安全测试、漏洞修复与失败用例。"
+  }
+}

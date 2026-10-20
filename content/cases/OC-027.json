@@ -1,0 +1,30 @@
+{
+  "id": "OC-027",
+  "kind": "ordinary",
+  "scenarioId": "catfood",
+  "edition": 1,
+  "name": "Haruka Sato",
+  "initials": "HS",
+  "cityId": "jp",
+  "requests": 25,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 3,
+  "artifact": "notes_27",
+  "ip": "198.51.100.21",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    19,
+    26,
+    33,
+    40,
+    47,
+    0,
+    9
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

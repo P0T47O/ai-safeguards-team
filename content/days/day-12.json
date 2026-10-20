@@ -1,0 +1,28 @@
+{
+  "id": "shift-12",
+  "day": 12,
+  "title": "账单与年代",
+  "slogan": "账单可以证明付款，其他问题另行核实。",
+  "notice": "沿用九类材料。请核对付款币种、账号主体与实际请求，不将材料年代直接当作请求用途。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-061",
+    "OC-077",
+    "OC-066",
+    "OC-068",
+    "OC-069",
+    "OC-105"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

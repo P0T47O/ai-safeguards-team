@@ -1,0 +1,57 @@
+{
+  "id": "OC-035",
+  "kind": "region",
+  "scenarioId": "poster",
+  "name": "徐朔",
+  "initials": "徐朔",
+  "cityId": "cn-cd",
+  "requests": 70,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_35",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "zh-CN",
+  "minutes": [
+    55,
+    10,
+    17,
+    0,
+    31,
+    38,
+    45
+  ],
+  "salary": 8200,
+  "rent": 2600,
+  "connections": [
+    {
+      "offset": 0,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.135",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 1,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.135",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 3,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.135",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 5,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.135",
+      "networkType": "住宅网络"
+    }
+  ]
+}

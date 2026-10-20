@@ -1,0 +1,31 @@
+{
+  "id": "OC-092",
+  "kind": "ordinary",
+  "scenarioId": "catalog",
+  "edition": 2,
+  "name": "Matilda Foster",
+  "initials": "MF",
+  "cityId": "au",
+  "title": "再改一遍商品目录",
+  "requests": 38,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_92",
+  "ip": "192.0.2.86",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-AU",
+  "minutes": [
+    0,
+    13,
+    20,
+    27,
+    34,
+    41,
+    0
+  ],
+  "salary": 2670,
+  "rent": 650
+}

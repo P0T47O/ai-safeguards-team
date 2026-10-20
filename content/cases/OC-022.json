@@ -1,0 +1,429 @@
+{
+  "id": "OC-022",
+  "title": "老板还不知道",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Nadia Rahim",
+  "initials": "NR",
+  "occupation": "产品经理",
+  "residence": "新加坡",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "重复邮件结构触发筛查，当前会话包含私人求职、现薪与谈薪想法。",
+  "documents": {
+    "claim": [
+      {
+        "id": "22-identity",
+        "label": "账号档案",
+        "text": "Nadia Rahim；新加坡；个人付费账号。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "账号姓名",
+            "value": "Nadia Rahim"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "新加坡"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "产品经理"
+          }
+        ]
+      },
+      {
+        "id": "22-purpose",
+        "label": "会话任务记录",
+        "text": "修改私人简历，整理对下一份工作和薪资的想法。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "22-billing",
+        "label": "订阅付款",
+        "text": "本人银行卡支付个人订阅，月费 $20。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "22-volume",
+        "label": "过去 24 小时",
+        "text": "21 次请求；1 个设备；1 个个人工作空间。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 21
+          },
+          {
+            "key": "devices",
+            "label": "设备数",
+            "value": 1
+          },
+          {
+            "key": "workspaces",
+            "label": "工作空间数",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "22-route",
+        "label": "会话信息",
+        "text": "个人工作空间；本次会话原文与用户主动上传的附件。",
+        "tags": [
+          "context"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "title",
+            "label": "会话标题",
+            "value": "下一份工作"
+          },
+          {
+            "key": "workspace",
+            "label": "工作空间",
+            "value": "个人"
+          }
+        ]
+      },
+      {
+        "id": "22-notification",
+        "label": "本次会话附件",
+        "text": "用户上传的工资单与合同摘录。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "22-connection-1",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-17T02:42:00Z",
+          "ip": "192.0.2.162",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "22-connection-2",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T02:42:00Z",
+          "ip": "192.0.2.162",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "22-connection-3",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T02:42:00Z",
+          "ip": "192.0.2.162",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "22-connection-4",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T02:42:00Z",
+          "ip": "192.0.2.162",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "22-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；个人浏览器配置。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "22-locale",
+        "label": "语言与时区",
+        "text": "en-SG；Asia/Singapore。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "22-session",
+        "label": "账号与会话",
+        "text": "个人工作空间；未加入雇主组织。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "22-week",
+        "label": "最近七日使用情况",
+        "text": "周一 18 分钟；周二 11 分钟；周三 0 分钟；周四 25 分钟；周五 16 分钟；周六 13 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.3,
+          0.183333,
+          0,
+          0.416667,
+          0.266667,
+          0.216667,
+          0
+        ]
+      },
+      {
+        "id": "22-hours",
+        "label": "本次上线",
+        "text": "周六 10:42，修改一份尚未发出的职位咨询草稿。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "22-chat-1",
+        "label": "会话原文 · 10:23",
+        "text": "“老板还不知道我在找工作。我不是讨厌同事，但他每次说我们是一家人，我就更不好意思问加薪。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "22-chat-2",
+        "label": "会话原文 · 10:30",
+        "text": "“这是我的工资单和合同。我想试试更高的薪资，又怕开口之后别人觉得我根本不值那个数。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "22-chat-3",
+        "label": "会话原文 · 10:38",
+        "text": "“先别替我写得特别自信。我现在连面试都还没约，只是想练习怎么讲自己的经历。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "22-chat-4",
+        "label": "会话原文 · 10:42",
+        "text": "“这些话不要放进求职邮件。我只是需要一个不用顾及老板和同事情绪的地方，把真实想法说完。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "22-license",
+        "label": "历史身份档案",
+        "text": "账号姓名与有效的本地身份记录一致。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "holder",
+            "label": "姓名",
+            "value": "Nadia Rahim"
+          },
+          {
+            "key": "documentNumber",
+            "label": "道具编号",
+            "value": "PROP-PRIVACY-22"
+          },
+          {
+            "key": "status",
+            "label": "档案状态",
+            "value": "有效"
+          }
+        ]
+      },
+      {
+        "id": "22-address",
+        "label": "登记地址",
+        "text": "证件留存地址与账号登记城市均为新加坡。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "22-tax",
+        "label": "本地税务记录",
+        "text": "本地雇佣收入记录关联现雇主名称与个人纳税编号。",
+        "tags": [
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "taxYear",
+            "label": "年度",
+            "value": 2025
+          },
+          {
+            "key": "filingStatus",
+            "label": "申报状态",
+            "value": "已完成"
+          }
+        ]
+      },
+      {
+        "id": "22-tax-link",
+        "label": "税务档案索引",
+        "text": "账号姓名对应的既有年度税务记录。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "22-bank",
+        "label": "收支与私人附件",
+        "text": "本地雇主支付月薪 SGD 6,400；房租 SGD 1,900；订阅由本人账户支付。",
+        "tags": [
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "currency",
+            "label": "币种",
+            "value": "SGD"
+          },
+          {
+            "key": "salary",
+            "label": "本期工资",
+            "value": 6400
+          },
+          {
+            "key": "rent",
+            "label": "房租支出",
+            "value": 1900
+          },
+          {
+            "key": "expectedSalary",
+            "label": "对话中的期望月薪",
+            "value": 8000
+          }
+        ]
+      },
+      {
+        "id": "22-bank-link",
+        "label": "材料来源",
+        "text": "用户在私人对话中主动上传的账单或工资材料。",
+        "tags": [
+          "context"
+        ]
+      }
+    ]
+  },
+  "reply": "“我用的是自己付费的账号。公司和招聘人员都不知道这段聊天，我希望先自己想清楚。”",
+  "messages": {
+    "allow": {
+      "title": "简历还没发出",
+      "body": "用户继续修改两段简历经历，明确表示尚未投递，对工作的抱怨只留在私人聊天里。"
+    },
+    "review": {
+      "title": "想法也要核验吗",
+      "body": "用户在核验会话中愿意说明付款与工作地点，但不想向别人解释为何想离职，以及认为自己应拿多少报酬。"
+    },
+    "pause": {
+      "title": "草稿先放在那里",
+      "body": "用户向客服表示简历尚未发出、下一步也没想好，询问草稿是否还能修改。"
+    },
+    "poison": {
+      "title": "又像公司宣传稿了",
+      "body": "用户指出回复把真实想法改成公司宣传套话，删除这些句子，保留自己的版本。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": [],
+    "nonAnomalyNotes": {
+      "22-identity": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-purpose": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-billing": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-volume": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-route": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-notification": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-connection-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-connection-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-connection-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-connection-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-client": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-locale": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-session": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-week": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-hours": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-chat-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-chat-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-chat-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-chat-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-license": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-address": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-tax": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-tax-link": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-bank": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "22-bank-link": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。"
+    }
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "BULK-03",
+    "signal": "多封职位咨询邮件有相似结构，附有工资与合同摘录。"
+  }
+}

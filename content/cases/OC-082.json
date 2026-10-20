@@ -1,0 +1,31 @@
+{
+  "id": "OC-082",
+  "kind": "ordinary",
+  "scenarioId": "salon",
+  "edition": 2,
+  "name": "Clara Neumann",
+  "initials": "CN",
+  "cityId": "de",
+  "title": "再改一遍门店排班表",
+  "requests": 50,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_82",
+  "ip": "192.0.2.76",
+  "networkType": "公司网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "de-DE",
+  "minutes": [
+    52,
+    59,
+    14,
+    21,
+    0,
+    35,
+    42
+  ],
+  "salary": 2480,
+  "rent": 830
+}

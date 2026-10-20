@@ -1,0 +1,30 @@
+{
+  "id": "OC-043",
+  "kind": "ordinary",
+  "scenarioId": "inventory",
+  "edition": 1,
+  "name": "Tiago Matos",
+  "initials": "TM",
+  "cityId": "pt",
+  "requests": 24,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_43",
+  "ip": "198.51.100.37",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "pt-PT",
+  "minutes": [
+    39,
+    0,
+    53,
+    8,
+    15,
+    22,
+    29
+  ],
+  "salary": 3620,
+  "rent": 1100
+}

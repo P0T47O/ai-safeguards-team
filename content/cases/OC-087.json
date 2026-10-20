@@ -1,0 +1,31 @@
+{
+  "id": "OC-087",
+  "kind": "ordinary",
+  "scenarioId": "museum",
+  "edition": 2,
+  "name": "Priya Thomas",
+  "initials": "PT",
+  "cityId": "sg",
+  "title": "再改一遍展品说明",
+  "requests": 44,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 7,
+  "artifact": "notes_87",
+  "ip": "198.51.100.81",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "en-SG",
+  "minutes": [
+    55,
+    10,
+    17,
+    24,
+    31,
+    0,
+    45
+  ],
+  "salary": 3430,
+  "rent": 740
+}

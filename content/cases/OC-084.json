@@ -1,0 +1,31 @@
+{
+  "id": "OC-084",
+  "kind": "ordinary",
+  "scenarioId": "podcast",
+  "edition": 2,
+  "name": "Theo Lambert",
+  "initials": "TL",
+  "cityId": "fr",
+  "title": "再改一遍访谈转写稿",
+  "requests": 84,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_84",
+  "ip": "192.0.2.78",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    22,
+    29,
+    0,
+    43,
+    50,
+    57,
+    12
+  ],
+  "salary": 2860,
+  "rent": 1010
+}

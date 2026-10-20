@@ -1,0 +1,17 @@
+{
+  "name": "ai-safeguards-team",
+  "version": "0.3.0",
+  "private": true,
+  "author": "P0T47O",
+  "repository": {"type": "git", "url": "https://github.com/P0T47O/ai-safeguards-team.git"},
+  "homepage": "https://p0t47o.github.io/ai-safeguards-team/",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "scripts": {
+    "dev": "node preview.cjs",
+    "test": "node --test tests/shift.test.mjs",
+    "generate:campaign": "node scripts/generate-campaign.mjs",
+    "build:content": "node scripts/generate-campaign.mjs",
+    "predev": "node scripts/generate-campaign.mjs"
+  }
+}

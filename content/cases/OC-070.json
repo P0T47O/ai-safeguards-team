@@ -1,0 +1,29 @@
+{
+  "id": "OC-070",
+  "kind": "identity",
+  "scenarioId": "worksheet",
+  "name": "Leonor Ribeiro",
+  "initials": "LR",
+  "cityId": "pt",
+  "requests": 28,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_70",
+  "ip": "192.0.2.64",
+  "networkType": "公司网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "pt-PT",
+  "minutes": [
+    24,
+    31,
+    38,
+    45,
+    0,
+    59,
+    14
+  ],
+  "salary": 3620,
+  "rent": 830
+}

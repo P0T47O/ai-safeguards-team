@@ -1,0 +1,31 @@
+{
+  "id": "OC-066",
+  "kind": "ordinary",
+  "scenarioId": "timezone",
+  "edition": 2,
+  "name": "Hugo Girard",
+  "initials": "HG",
+  "cityId": "fr",
+  "title": "再改一遍会议时间表",
+  "requests": 51,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 7,
+  "artifact": "notes_66",
+  "ip": "192.0.2.60",
+  "networkType": "公司网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    32,
+    39,
+    0,
+    53,
+    8,
+    15,
+    22
+  ],
+  "salary": 2860,
+  "rent": 1010
+}

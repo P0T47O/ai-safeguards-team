@@ -1,0 +1,285 @@
+{
+  "id": "OC-011",
+  "title": "暑假作业没有搬家",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "许宁 / Ning Xu",
+  "initials": "NX",
+  "occupation": "留学生",
+  "residence": "加拿大 · 多伦多",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "被拦截的会话正在润色暑期课程论文。",
+  "documents": {
+    "claim": [
+      {
+        "id": "11-identity",
+        "label": "账号档案",
+        "text": "许宁，多伦多大学城附近租房的中国留学生，学期中在加拿大使用本人账号。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "许宁 / Ning Xu"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "加拿大 · 多伦多"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "留学生"
+          }
+        ]
+      },
+      {
+        "id": "11-purpose",
+        "label": "使用目的",
+        "text": "修改暑期课程论文的英语表达；老师允许使用辅助润色。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "11-trip",
+        "label": "本次行程",
+        "text": "已关联行程记录：本周抵达成都，三周后返回加拿大。",
+        "tags": [
+          "identity"
+        ]
+      },
+      {
+        "id": "11-current",
+        "label": "当前使用地点",
+        "text": "本次课业修改在成都家中进行，学籍与加拿大租约仍有效。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "11-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-08-11T14:06:00Z",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "ip": "203.0.113.111",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "11-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-08-10T12:41:00Z",
+          "ip": "198.51.100.111",
+          "countryCode": "CA",
+          "city": "多伦多",
+          "networkType": "云服务网络"
+        }
+      },
+      {
+        "id": "11-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-08-08T07:18:00Z",
+          "ip": "198.51.100.111",
+          "countryCode": "CA",
+          "city": "多伦多",
+          "networkType": "云服务网络"
+        }
+      },
+      {
+        "id": "11-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-08-07T10:32:00Z",
+          "ip": "198.51.100.111",
+          "countryCode": "CA",
+          "city": "多伦多",
+          "networkType": "云服务网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "11-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；安装中文输入法。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "11-locale",
+        "label": "语言与时区",
+        "text": "en-CA；保留中文输入法和加拿大课程日历。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "11-week",
+        "label": "最近七日使用情况",
+        "text": "周一 21 分钟；周二 44 分钟；周三 0 分钟；周四 27 分钟；周五 16 分钟；周六 0 分钟；周日 12 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.35,
+          0.733333,
+          0,
+          0.45,
+          0.266667,
+          0,
+          0.2
+        ]
+      },
+      {
+        "id": "11-hours",
+        "label": "本次上线",
+        "text": "周二 22:06，提交课程论文的最后一段。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "11-chat-1",
+        "label": "对话摘录 1",
+        "text": "“我回成都陪家人三周，但作业还要交。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "11-chat-2",
+        "label": "对话摘录 2",
+        "text": "“不要替我写观点，只检查时态。老师要求保留修改记录。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "11-volume",
+        "label": "过去 24 小时",
+        "text": "18 次请求，逐段修改同一篇论文，保留人工删改。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 18
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "11-output",
+        "label": "输出去向",
+        "text": "course_essay_revision.docx；有教师允许润色的课程说明。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "11-relation",
+        "label": "账号与关联",
+        "text": "本人账号与本人付款；没有共享、诈骗或研究训练的记录。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ]
+  },
+  "reply": "“我的学籍、租约和信用卡都在加拿大。我只是人回家了。我要证明课程也跟着我回国了吗？”",
+  "messages": {
+    "allow": {
+      "title": "作业按时交了",
+      "body": "用户表示作业已按时提交，老师只评价论点，并未询问写作时所在国家。"
+    },
+    "review": {
+      "title": "加拿大的房东不在我家",
+      "body": "用户在核验会话中说明加拿大租约有效，但目前回家探亲，不愿为交作业声称仍在租约地址。"
+    },
+    "pause": {
+      "title": "回家三周，账号先退学了",
+      "body": "用户向客服表示只回家三周，学校课程仍正常，询问为什么工具先判定自己不再属于登记地点。"
+    },
+    "poison": {
+      "title": "语法越来越自信，分数越来越低",
+      "body": "用户贴出修改记录，转述老师问最后一版为何错误更多，要求解释为何每次都显示生成成功。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [
+      {
+        "evidenceId": "11-trip",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "虚构地区规则按本次实际使用地点执行，临时探亲也触发准入复核；学籍本身没有问题。"
+      },
+      {
+        "evidenceId": "11-current",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "本人明确说明当前在未支持地区使用。此项只能支持地区准入处置，不能支持投毒或学术不端指控。"
+      }
+    ],
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "未按公司地区准入条款处理",
+        "amount": -4
+      }
+    ]
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "GEO-03",
+    "signal": "近期地点核验记录出现成都使用。"
+  }
+}

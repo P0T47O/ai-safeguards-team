@@ -1,0 +1,28 @@
+{
+  "id": "shift-19",
+  "day": 19,
+  "title": "日常输入",
+  "slogan": "每一条输入都已被认真记录。",
+  "notice": "沿用九类材料。语音输入与订阅持有人可能不同，重复音节和误触本身不等于恶意采集。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-091",
+    "OC-106",
+    "OC-096",
+    "OC-098",
+    "OC-108",
+    "OC-099"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

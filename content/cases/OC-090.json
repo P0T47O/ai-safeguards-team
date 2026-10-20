@@ -1,0 +1,29 @@
+{
+  "id": "OC-090",
+  "kind": "identity",
+  "scenarioId": "minutes",
+  "name": "Kenta Mori",
+  "initials": "KM",
+  "cityId": "jp",
+  "requests": 95,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 3,
+  "artifact": "notes_90",
+  "ip": "192.0.2.84",
+  "networkType": "公司网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "ja-JP",
+  "minutes": [
+    36,
+    43,
+    0,
+    57,
+    12,
+    19,
+    26
+  ],
+  "salary": 290000,
+  "rent": 78000
+}

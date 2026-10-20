@@ -1,0 +1,57 @@
+{
+  "id": "OC-058",
+  "kind": "region",
+  "scenarioId": "catfood",
+  "name": "魏宁",
+  "initials": "魏宁",
+  "cityId": "cn-cd",
+  "requests": 97,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 6,
+  "artifact": "notes_58",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "zh-CN",
+  "minutes": [
+    48,
+    55,
+    10,
+    17,
+    0,
+    31,
+    38
+  ],
+  "salary": 8200,
+  "rent": 2600,
+  "connections": [
+    {
+      "offset": 0,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.158",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 1,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.158",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 3,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.158",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 5,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.158",
+      "networkType": "住宅网络"
+    }
+  ]
+}

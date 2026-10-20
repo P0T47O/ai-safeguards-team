@@ -1,0 +1,30 @@
+{
+  "id": "OC-032",
+  "kind": "ordinary",
+  "scenarioId": "csv",
+  "edition": 1,
+  "name": "Avery Campbell",
+  "initials": "AC",
+  "cityId": "ca",
+  "requests": 19,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_32",
+  "ip": "192.0.2.26",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-CA",
+  "minutes": [
+    0,
+    29,
+    36,
+    43,
+    50,
+    57,
+    0
+  ],
+  "salary": 3240,
+  "rent": 650
+}

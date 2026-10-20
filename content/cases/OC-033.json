@@ -1,0 +1,30 @@
+{
+  "id": "OC-033",
+  "kind": "ordinary",
+  "scenarioId": "hotel",
+  "edition": 1,
+  "name": "Arjun Nair",
+  "initials": "AN",
+  "cityId": "sg",
+  "requests": 36,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_33",
+  "ip": "198.51.100.27",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "en-SG",
+  "minutes": [
+    33,
+    40,
+    47,
+    54,
+    9,
+    0,
+    23
+  ],
+  "salary": 3430,
+  "rent": 740
+}

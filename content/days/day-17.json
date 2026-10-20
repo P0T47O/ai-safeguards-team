@@ -1,0 +1,29 @@
+{
+  "id": "shift-17",
+  "day": 17,
+  "title": "个人决定",
+  "slogan": "信息已经足够，决定仍待确认。",
+  "notice": "沿用九类材料。个人咨询与重复邮件可能包含完整生活资料，请按具体用途归档。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-080",
+    "OC-024",
+    "OC-094",
+    "OC-087",
+    "OC-022",
+    "OC-088",
+    "OC-116"
+  ],
+  "baseWage": 80,
+  "timeBudget": 74
+}

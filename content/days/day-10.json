@@ -1,0 +1,28 @@
+{
+  "id": "shift-10",
+  "day": 10,
+  "title": "增强风控",
+  "slogan": "为了恢复信任，我们需要更多材料。",
+  "notice": "总部通告：近期监测到大规模批量异常，即日起启动增强风控。新增身份与证件、纳税记录和银行流水权限；核对身份证、护照或驾照等已有档案。未核实身份的记录继续复核。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-007",
+    "OC-047",
+    "OC-057",
+    "OC-059",
+    "OC-060",
+    "OC-017"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

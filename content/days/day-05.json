@@ -1,0 +1,24 @@
+{
+  "id": "shift-05",
+  "day": 5,
+  "title": "研究与工作",
+  "slogan": "研究用途由用途记录说明。",
+  "notice": "沿用六类材料。重复格式可以是普通工作，也可以是采集排程，请引用具体记录。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-006",
+    "OC-035",
+    "OC-039",
+    "OC-040",
+    "OC-015"
+  ],
+  "baseWage": 80,
+  "timeBudget": 46
+}

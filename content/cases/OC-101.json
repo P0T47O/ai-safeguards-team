@@ -1,0 +1,29 @@
+{
+  "id": "OC-101",
+  "kind": "identity",
+  "scenarioId": "repair",
+  "name": "Ethan Cooper",
+  "initials": "EC",
+  "cityId": "au",
+  "requests": 9,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 7,
+  "artifact": "notes_101",
+  "ip": "198.51.100.95",
+  "networkType": "住宅网络",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "en-AU",
+  "minutes": [
+    53,
+    8,
+    15,
+    0,
+    29,
+    36,
+    43
+  ],
+  "salary": 2670,
+  "rent": 920
+}

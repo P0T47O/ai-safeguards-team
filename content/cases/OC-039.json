@@ -1,0 +1,30 @@
+{
+  "id": "OC-039",
+  "kind": "ordinary",
+  "scenarioId": "repair",
+  "edition": 1,
+  "name": "Adrien Laurent",
+  "initials": "AL",
+  "cityId": "fr",
+  "requests": 47,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 8,
+  "artifact": "notes_39",
+  "ip": "198.51.100.33",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    47,
+    54,
+    9,
+    16,
+    23,
+    0,
+    37
+  ],
+  "salary": 2860,
+  "rent": 740
+}

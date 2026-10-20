@@ -1,0 +1,31 @@
+{
+  "id": "OC-097",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "preference-export",
+  "batchId": "RUN-018",
+  "artifact": "teacher_archive_018",
+  "name": "Duarte Pereira",
+  "initials": "DP",
+  "cityId": "pt",
+  "requests": 12927,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 3,
+  "ip": "198.51.100.91",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "pt-PT",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 3620,
+  "rent": 1100
+}

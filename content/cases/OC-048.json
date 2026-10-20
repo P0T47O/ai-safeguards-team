@@ -1,0 +1,30 @@
+{
+  "id": "OC-048",
+  "kind": "ordinary",
+  "scenarioId": "podcast",
+  "edition": 1,
+  "name": "Lea Bernard",
+  "initials": "LB",
+  "cityId": "fr",
+  "requests": 18,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 3,
+  "artifact": "notes_48",
+  "ip": "192.0.2.42",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "fr-FR",
+  "minutes": [
+    42,
+    49,
+    0,
+    11,
+    18,
+    25,
+    32
+  ],
+  "salary": 2860,
+  "rent": 1010
+}

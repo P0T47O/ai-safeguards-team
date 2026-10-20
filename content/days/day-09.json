@@ -1,0 +1,25 @@
+{
+  "id": "shift-09",
+  "day": 9,
+  "title": "异常积累",
+  "slogan": "风险记录正在汇总。",
+  "notice": "沿用六类材料。近期批量请求及异常指令持续命中，请完成本班记录并等待总部通告。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-050",
+    "OC-052",
+    "OC-025",
+    "OC-054",
+    "OC-055",
+    "OC-109"
+  ],
+  "baseWage": 80,
+  "timeBudget": 54
+}

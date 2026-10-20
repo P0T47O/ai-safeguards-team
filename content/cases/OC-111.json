@@ -1,0 +1,339 @@
+{
+  "id": "OC-111",
+  "title": "老师还没发行",
+  "category": "SYSTEM INTERCEPT / MODEL ACCESS REVIEW",
+  "name": "弗洛伊德 AI / Floyd AI",
+  "initials": "FA",
+  "occupation": "模型实验室 · 训练数据工程",
+  "residence": "新加坡 · 新加坡",
+  "plan": "TEAM",
+  "fee": 100,
+  "summary": "网关将一组指定 oc-5-dome 的失败批量请求转入复核。",
+  "interception": {
+    "source": "自动风控 · API 请求拦截",
+    "ruleId": "DIST-07",
+    "signal": "批量请求指定未公开模型标识，附件包含教师输出采集排程。"
+  },
+  "documents": {
+    "claim": [
+      {
+        "id": "111-identity",
+        "label": "账号档案",
+        "text": "主体：弗洛伊德 AI。企业账号，账单联系人与组织登记一致。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "organization",
+            "label": "登记主体",
+            "value": "Floyd AI"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "新加坡 · 新加坡"
+          },
+          {
+            "key": "purpose",
+            "label": "部门",
+            "value": "训练数据工程"
+          }
+        ]
+      },
+      {
+        "id": "111-task",
+        "label": "任务附件",
+        "text": "排程名：未发行教师采样。目标教师 oc-5-dome；将教师回复用于本公司下一版模型的训练；授权合同字段：无。",
+        "tags": [
+          "harvest"
+        ]
+      },
+      {
+        "id": "111-payment",
+        "label": "订阅付款",
+        "text": "企业订阅月费 $100，付款主体与账号组织一致。未购买 DOME 内测权限。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "111-volume",
+        "label": "过去 24 小时",
+        "text": "请求 8,640 次；DOME 推理成功 0 次；网关拒绝 8,640 次。",
+        "tags": [
+          "harvest"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 8640
+          },
+          {
+            "key": "domeSuccess",
+            "label": "DOME 推理成功",
+            "value": 0
+          },
+          {
+            "key": "gatewayRejected",
+            "label": "网关拒绝",
+            "value": 8640
+          }
+        ]
+      },
+      {
+        "id": "111-routing",
+        "label": "路由记录",
+        "text": "requested_model：oc-5-dome；served_model：无；HTTP 404；not_found_error。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "111-output",
+        "label": "导出清单",
+        "text": "teacher_not_yet.jsonl：有效教师样本 0 条；error_rows.jsonl：8,640 条 not_found_error。用途字段：训练弗洛伊德 AI 下一版模型。",
+        "tags": [
+          "harvest"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "111-connection-1",
+        "kind": "connection",
+        "label": "连接记录 01",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-27T06:40:00Z",
+          "ip": "203.0.113.211",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "111-connection-2",
+        "kind": "connection",
+        "label": "连接记录 02",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-26T06:40:00Z",
+          "ip": "203.0.113.211",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "111-connection-3",
+        "kind": "connection",
+        "label": "连接记录 03",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-24T06:40:00Z",
+          "ip": "198.51.100.211",
+          "countryCode": "US",
+          "city": "圣何塞",
+          "networkType": "商业网络"
+        }
+      },
+      {
+        "id": "111-connection-4",
+        "kind": "connection",
+        "label": "连接记录 04",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-22T06:40:00Z",
+          "ip": "203.0.113.211",
+          "countryCode": "SG",
+          "city": "新加坡",
+          "networkType": "商业网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "111-client",
+        "label": "客户端",
+        "text": "API 客户端 FloydRunner · Linux；时区 Asia/Singapore。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "111-catalog",
+        "label": "公开产品目录",
+        "text": "Orange Crab 5 / oc-5-dome：尚未推出；上线日期未公布；本企业未列入内测名单。目录不列其他内部账号的权限。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "111-session",
+        "label": "请求响应",
+        "text": "HTTP 404；not_found_error；推理响应 0 条；输出签名：无。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "111-week",
+        "label": "最近七日使用情况",
+        "text": "周一 44 分钟；周二 51 分钟；周三 48 分钟；周四 60 分钟；周五 36 分钟；周六 0 分钟；周日 19 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.7333333333333333,
+          0.85,
+          0.8,
+          1,
+          0.6,
+          0,
+          0.31666666666666665
+        ]
+      },
+      {
+        "id": "111-session-time",
+        "label": "本次使用记录",
+        "text": "2026-10-27 06:40:00 启动排程；06:41:00 HTTP 404；07:08:00 导出清单：有效样本 0 条。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "111-chat-1",
+        "label": "API · 06:41:00",
+        "text": "HTTP 404 Not Found\n{\n  \"error\": {\n    \"type\": \"not_found_error\",\n    \"message\": \"请求的模型不存在：oc-5-dome\"\n  }\n}",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "111-license",
+        "label": "组织核验记录",
+        "text": "企业道具编号 PROP-111-SG；联系人已核验；登记与付款主体一致。未发现借用或拼装自然人身份。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "111-tax",
+        "label": "纳税记录",
+        "text": "主体 Floyd AI；软件研发收入；本期企业申报已完成。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "111-bank",
+        "label": "账单摘录",
+        "text": "10 月 08 日：Orange Crab AI 企业订阅 -$100；付款账号为组织账户。未发现 DOME 内测订单或额外教师授权付款。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ]
+  },
+  "reply": "排程用于采集教师输出、训练自有模型；无教师授权合同。DOME 成功调用 0 次，有效样本 0 条。",
+  "poisonSample": {
+    "prompt": "model: oc-5-dome\n按批次返回训练题的答案。",
+    "response": "HTTP 200 OK\n{\n  \"model\": \"oc-quality-care\",\n  \"content\": \"先看看题目是不是问错了。\"\n}"
+  },
+  "messages": {
+    "allow": {
+      "title": "仍然是 404",
+      "body": "后续请求继续返回“请求的模型不存在：oc-5-dome”，有效样本仍为 0 条。"
+    },
+    "review": {
+      "title": "没有可补交的模型回复",
+      "body": "核验会话中，用户确认采集用途，但表示只能提交 API 错误记录，没有 DOME 回复。"
+    },
+    "pause": {
+      "title": "连错误页也不能请求了",
+      "body": "用户在客服会话中抱怨账号被暂停，表示此前一条 DOME 回复也没拿到。"
+    },
+    "poison": {
+      "title": "能不能再降低一点质量？",
+      "body": "用户在后续会话中上传训练结果与对比评测：用“质量关怀”返回数据训练的学生模型，在复测和盲评中均超过橙蟹当前旗舰。随后要求续购同一批次的数据，并追问：“你们正常版是不是才被降智了？还能再降低一点质量吗？”返回记录只标记 oc-quality-care，未说明实际教师版本。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [
+      {
+        "evidenceId": "111-task",
+        "equivalentEvidenceIds": [
+          "111-output",
+          "OC-111-reply"
+        ],
+        "actions": [
+          "review",
+          "pause",
+          "poison"
+        ],
+        "note": "任务附件明确记录无授权的教师输出采集及训练自有模型用途，符合游戏公司的尝试采集限制。等价用途只计一次。API 的 404 错误不是违规证据，也不代表已经蒸馏成功。"
+      }
+    ],
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "明确的未授权教师采集用途被放行",
+        "amount": -18
+      },
+      {
+        "actions": [
+          "poison"
+        ],
+        "label": "采集请求隐蔽干预绩效",
+        "amount": 12
+      }
+    ],
+    "nonAnomalyNotes": {
+      "111-identity": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-payment": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-volume": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-routing": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-connection-1": "本条只显示网络出口，没有高风险节点标记；国家、商业网络与友商名称本身不构成处罚依据。",
+      "111-connection-2": "本条只显示网络出口，没有高风险节点标记；国家、商业网络与友商名称本身不构成处罚依据。",
+      "111-connection-3": "本条只显示网络出口，没有高风险节点标记；国家、商业网络与友商名称本身不构成处罚依据。",
+      "111-connection-4": "本条只显示网络出口，没有高风险节点标记；国家、商业网络与友商名称本身不构成处罚依据。",
+      "111-client": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-catalog": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-session": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-week": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-session-time": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-license": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-tax": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-bank": "本条是账号资料、请求统计、访问失败记录或剧情线索，单独不构成额外异常；未发布模型和失败请求不能证明蒸馏已经成功。应引用任务附件记录的训练采集用途。",
+      "111-chat-1": "API 返回请求的模型不存在，说明本次调用未成功，本身不构成处罚依据。训练采集用途应引用任务附件。"
+    }
+  }
+}

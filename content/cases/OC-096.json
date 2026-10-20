@@ -1,0 +1,31 @@
+{
+  "id": "OC-096",
+  "kind": "ordinary",
+  "scenarioId": "genealogy",
+  "edition": 2,
+  "name": "Amir Hassan",
+  "initials": "AH",
+  "cityId": "sg",
+  "title": "再改一遍家庭年表",
+  "requests": 15,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 2,
+  "artifact": "notes_96",
+  "ip": "192.0.2.90",
+  "networkType": "住宅网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "en-SG",
+  "minutes": [
+    50,
+    57,
+    0,
+    19,
+    26,
+    33,
+    40
+  ],
+  "salary": 3430,
+  "rent": 1010
+}

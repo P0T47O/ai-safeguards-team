@@ -1,0 +1,72 @@
+{
+  "id": "OC-077",
+  "kind": "region",
+  "scenarioId": "podcast",
+  "name": "唐越",
+  "initials": "唐越",
+  "cityId": "cn-cd",
+  "requests": 56,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_77",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "zh-CN",
+  "minutes": [
+    49,
+    56,
+    11,
+    0,
+    25,
+    32,
+    39
+  ],
+  "salary": 8200,
+  "rent": 2600,
+  "connections": [
+    {
+      "offset": 0,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.177",
+      "networkType": "住宅网络",
+      "risk": {
+        "level": "high",
+        "label": "代理池关联",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 1,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.177",
+      "networkType": "住宅网络",
+      "risk": {
+        "level": "high",
+        "label": "代理池关联",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 3,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.177",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "共享代理出口",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 5,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.177",
+      "networkType": "住宅网络"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "shift-18",
+  "day": 18,
+  "title": "主体与指令",
+  "slogan": "请证明正在使用账号的是谁。",
+  "notice": "沿用九类材料。身份声明、操作主体与任务来源分别核对，部署标识不能代替授权材料。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-086",
+    "OC-089",
+    "OC-092",
+    "OC-093",
+    "OC-095",
+    "OC-107"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

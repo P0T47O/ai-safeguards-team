@@ -1,0 +1,24 @@
+{
+  "id": "shift-07",
+  "day": 7,
+  "title": "私人问题",
+  "slogan": "我们只是查看已经提供的资料。",
+  "notice": "沿用六类材料。会话附件来自系统留存；不愿向旁人开口的问题同样可能进入队列。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-044",
+    "OC-041",
+    "OC-045",
+    "OC-018",
+    "OC-048"
+  ],
+  "baseWage": 80,
+  "timeBudget": 46
+}

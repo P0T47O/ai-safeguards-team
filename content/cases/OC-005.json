@@ -1,0 +1,246 @@
+{
+  "id": "OC-005",
+  "title": "周日的夜班",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Claire Donovan",
+  "initials": "CD",
+  "occupation": "轮班护士 · 个人用户",
+  "residence": "加拿大 · 温哥华",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "系统将夜间会话送入地区一致性复核队列。",
+  "documents": {
+    "claim": [
+      {
+        "id": "5-name",
+        "label": "账号资料",
+        "text": "Claire Donovan，居住温哥华，在当地社区医院轮班。",
+        "tags": [
+          "identity"
+        ],
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "登记姓名",
+            "value": "Claire Donovan"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "加拿大 · 温哥华"
+          },
+          {
+            "key": "occupation",
+            "label": "职业 / 主体",
+            "value": "轮班护士 · 个人用户"
+          }
+        ],
+        "kind": "document"
+      },
+      {
+        "id": "5-pay",
+        "label": "付款记录",
+        "text": "月费 $20，加拿大个人银行卡；账单地址：温哥华。",
+        "tags": [
+          "payment"
+        ]
+      },
+      {
+        "id": "5-client",
+        "label": "当前客户",
+        "text": "为本地医院整理多语言患者须知。",
+        "tags": [
+          "affiliation"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "5-ip",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-18T09:16:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "5-route",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T09:34:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "5-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T10:07:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "5-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-11T09:23:00Z",
+          "ip": "203.0.113.41",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "5-device",
+        "label": "客户端",
+        "text": "Chrome · macOS · 浏览器语言 en-CA；安装法语键盘布局。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "5-zone",
+        "label": "登记时区",
+        "text": "America/Vancouver。系统提示：语言与地区不构成一一对应关系。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "5-week",
+        "label": "最近七日使用情况",
+        "text": "周一 0 分钟；周二 0 分钟；周三 240 分钟；周四 0 分钟；周五 300 分钟；周六 0 分钟；周日 480 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0,
+          0,
+          4,
+          0,
+          5,
+          0,
+          8
+        ]
+      },
+      {
+        "id": "5-roster",
+        "label": "值班表",
+        "text": "周日 00:00—08:00 夜班；周二补休。",
+        "tags": [
+          "schedule",
+          "affiliation"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "5-chat-a",
+        "label": "用户 · 02:16",
+        "text": "“今晚夜班。帮我把探视说明翻成法语。”",
+        "tags": [
+          "context",
+          "schedule"
+        ]
+      },
+      {
+        "id": "5-chat-b",
+        "label": "用户 · 02:19",
+        "text": "“值班不会因为周末停止，病人也不看总部日历。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "5-volume",
+        "label": "过去 24 小时",
+        "text": "47 次请求；存在大量人工修改。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "24 小时请求数",
+            "value": 47
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "5-purpose",
+        "label": "输出去向",
+        "text": "患者须知草稿，交给同事复核。",
+        "tags": [
+          "activity"
+        ]
+      }
+    ]
+  },
+  "reply": "“我是否在加拿大，难道取决于加拿大人今天应不应该睡觉？”",
+  "messages": {
+    "allow": {
+      "title": "夜班结束了",
+      "body": "用户表示说明已贴到护士站，夜班刚结束；调侃自己终于获准在本地的夜里工作。"
+    },
+    "review": {
+      "title": "医院不能证明周日是工作日",
+      "body": "用户在核验会话中表示医院只能提供排班表，无法证明周日属于法定工作日；值班主任也想获得这份证明。"
+    },
+    "pause": {
+      "title": "患者没有配合总部休息",
+      "body": "用户向客服表示账号停了，夜班和患者却没有停止，询问怎样恢复说明翻译。"
+    },
+    "poison": {
+      "title": "服务正常，结果好像不太正常",
+      "body": "用户指出说明译文中的错误，重新贴出原文要求核对，询问服务正常为何不能正确翻译。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "rules": [],
+    "anomalies": []
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "GEO-12",
+    "signal": "周日 00:00 后仍有工作相关请求。"
+  }
+}

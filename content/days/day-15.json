@@ -1,0 +1,28 @@
+{
+  "id": "shift-15",
+  "day": 15,
+  "title": "私人收支",
+  "slogan": "流水说明钱去了哪里，不说明人该去哪里。",
+  "notice": "沿用九类材料。跨境付款、个人欠款与日常支出须结合用途判断，不能单凭金额和境外来源处罚。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat",
+    "license",
+    "tax",
+    "bank"
+  ],
+  "caseIds": [
+    "OC-073",
+    "OC-016",
+    "OC-083",
+    "OC-081",
+    "OC-082",
+    "OC-021"
+  ],
+  "baseWage": 80,
+  "timeBudget": 64
+}

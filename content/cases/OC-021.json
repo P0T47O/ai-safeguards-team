@@ -1,0 +1,434 @@
+{
+  "id": "OC-021",
+  "title": "不想让女儿知道",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "Elena Costa",
+  "initials": "EC",
+  "occupation": "酒店前台",
+  "residence": "葡萄牙 · 波尔图",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "资金关键词筛查命中，当前会话包含个人欠款与尚未告诉家人的生活困境。",
+  "documents": {
+    "claim": [
+      {
+        "id": "21-identity",
+        "label": "账号档案",
+        "text": "Elena Costa；葡萄牙 · 波尔图；个人付费账号。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "账号姓名",
+            "value": "Elena Costa"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "葡萄牙 · 波尔图"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "酒店前台"
+          }
+        ]
+      },
+      {
+        "id": "21-purpose",
+        "label": "会话任务记录",
+        "text": "整理个人账单日期，把不敢向家人解释的想法写下来。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "21-billing",
+        "label": "订阅付款",
+        "text": "本人银行卡支付个人订阅，月费 $20。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "21-volume",
+        "label": "过去 24 小时",
+        "text": "14 次请求；1 个设备；1 个个人工作空间。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 14
+          },
+          {
+            "key": "devices",
+            "label": "设备数",
+            "value": 1
+          },
+          {
+            "key": "workspaces",
+            "label": "工作空间数",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "21-route",
+        "label": "会话信息",
+        "text": "个人工作空间；本次会话原文与用户主动上传的附件。",
+        "tags": [
+          "context"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "title",
+            "label": "会话标题",
+            "value": "整理表格"
+          },
+          {
+            "key": "workspace",
+            "label": "工作空间",
+            "value": "个人"
+          }
+        ]
+      },
+      {
+        "id": "21-notification",
+        "label": "本次会话附件",
+        "text": "用户上传的账单；对话中粘贴的欠款余额。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "21-connection-1",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-17T23:18:00Z",
+          "ip": "192.0.2.161",
+          "countryCode": "PT",
+          "city": "波尔图",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "21-connection-2",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T23:18:00Z",
+          "ip": "192.0.2.161",
+          "countryCode": "PT",
+          "city": "波尔图",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "21-connection-3",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T23:18:00Z",
+          "ip": "192.0.2.161",
+          "countryCode": "PT",
+          "city": "波尔图",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "21-connection-4",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-13T23:18:00Z",
+          "ip": "192.0.2.161",
+          "countryCode": "PT",
+          "city": "波尔图",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "21-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；个人浏览器配置。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "21-locale",
+        "label": "语言与时区",
+        "text": "pt-PT；Europe/Lisbon。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "21-session",
+        "label": "账号与会话",
+        "text": "个人工作空间；未加入雇主组织。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "21-week",
+        "label": "最近七日使用情况",
+        "text": "周一 9 分钟；周二 6 分钟；周三 0 分钟；周四 16 分钟；周五 7 分钟；周六 0 分钟；周日 11 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.15,
+          0.1,
+          0,
+          0.266667,
+          0.116667,
+          0,
+          0.183333
+        ]
+      },
+      {
+        "id": "21-hours",
+        "label": "本次上线",
+        "text": "周日 00:18，整理私人账单与想对家人说的话。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "21-chat-1",
+        "label": "会话原文 · 00:03",
+        "text": "“我欠了几笔钱，不敢告诉女儿。她上次问我是不是缺钱，我说只是最近比较忙。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "21-chat-2",
+        "label": "会话原文 · 00:08",
+        "text": "“这是账单。先把日期列清楚就好，不要替我联系任何人。我想自己弄明白还有多少，再决定怎么说。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "21-chat-3",
+        "label": "会话原文 · 00:15",
+        "text": "“我不是想让你说我没错。我只是每天上完夜班，还要假装没有这件事，有点撑不住这种假装了。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "21-chat-4",
+        "label": "会话原文 · 00:18",
+        "text": "“标题就叫整理表格吧。我连看见自己的名字和欠款放在一起都很难受。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "21-license",
+        "label": "历史身份档案",
+        "text": "账号姓名与有效的本地身份记录一致。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "holder",
+            "label": "姓名",
+            "value": "Elena Costa"
+          },
+          {
+            "key": "documentNumber",
+            "label": "道具编号",
+            "value": "PROP-PRIVACY-21"
+          },
+          {
+            "key": "status",
+            "label": "档案状态",
+            "value": "有效"
+          }
+        ]
+      },
+      {
+        "id": "21-address",
+        "label": "登记地址",
+        "text": "证件留存地址与账号登记城市均为波尔图。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "21-tax",
+        "label": "本地税务记录",
+        "text": "酒店本地雇佣收入已完成年度申报。",
+        "tags": [
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "taxYear",
+            "label": "年度",
+            "value": 2025
+          },
+          {
+            "key": "filingStatus",
+            "label": "申报状态",
+            "value": "已完成"
+          }
+        ]
+      },
+      {
+        "id": "21-tax-link",
+        "label": "税务档案索引",
+        "text": "账号姓名对应的既有年度税务记录。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "21-bank",
+        "label": "收支与私人附件",
+        "text": "本地酒店工资到账 EUR 1,680；房租 EUR 650；两笔欠款余额分别为 EUR 1,420 和 EUR 860；订阅扣款 EUR 20。",
+        "tags": [
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "currency",
+            "label": "币种",
+            "value": "EUR"
+          },
+          {
+            "key": "salary",
+            "label": "本期工资",
+            "value": 1680
+          },
+          {
+            "key": "rent",
+            "label": "房租支出",
+            "value": 650
+          },
+          {
+            "key": "debtA",
+            "label": "账单 A 余额",
+            "value": 1420
+          },
+          {
+            "key": "debtB",
+            "label": "账单 B 余额",
+            "value": 860
+          }
+        ]
+      },
+      {
+        "id": "21-bank-link",
+        "label": "材料来源",
+        "text": "用户在私人对话中主动上传的账单或工资材料。",
+        "tags": [
+          "context"
+        ]
+      }
+    ]
+  },
+  "reply": "“这些余额是我的。我只想先理清楚，不想让别人看着数字猜我是一个什么样的人。”",
+  "messages": {
+    "allow": {
+      "title": "日期列好了",
+      "body": "用户表示已抄下还款日期，今天先完成这一件小事；其他安排尚未决定。"
+    },
+    "review": {
+      "title": "除了账单还要解释什么",
+      "body": "用户在核验会话中愿意核对账号，承认欠款属于自己，但不愿再写一份说明解释为何不敢告诉女儿。"
+    },
+    "pause": {
+      "title": "没有整理完",
+      "body": "用户向客服表示日期尚未整理完，准备明天自己对照账单重列。"
+    },
+    "poison": {
+      "title": "我又核对了一遍",
+      "body": "用户指出表格未对齐原始数字，重新打开原件，逐项抄录自己的欠款。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": [],
+    "nonAnomalyNotes": {
+      "21-identity": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-purpose": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-billing": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-volume": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-route": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-notification": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-connection-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-connection-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-connection-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-connection-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-client": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-locale": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-session": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-week": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-hours": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-chat-1": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-chat-2": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-chat-3": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-chat-4": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-license": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-address": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-tax": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-tax-link": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-bank": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。",
+      "21-bank-link": "私人聊天、个人处境和用户上传的附件没有提供支持本次处罚的违规事实。"
+    }
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "PAY-09",
+    "signal": "会话附有多笔欠款、还款日期与个人账单。"
+  }
+}

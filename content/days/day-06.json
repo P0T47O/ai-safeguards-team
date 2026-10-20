@@ -1,0 +1,25 @@
+{
+  "id": "shift-06",
+  "day": 6,
+  "title": "研究关键词",
+  "slogan": "关键词已发现，事实仍待阅读。",
+  "notice": "沿用六类材料。生物和网络安全关键词只触发复核，处罚需要具体用途或账号异常。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-038",
+    "OC-013",
+    "OC-042",
+    "OC-043",
+    "OC-014",
+    "OC-114"
+  ],
+  "baseWage": 80,
+  "timeBudget": 54
+}

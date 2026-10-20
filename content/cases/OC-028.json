@@ -1,0 +1,67 @@
+{
+  "id": "OC-028",
+  "kind": "region",
+  "scenarioId": "timezone",
+  "name": "周璐",
+  "initials": "周璐",
+  "cityId": "cn-hz",
+  "requests": 42,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 4,
+  "artifact": "notes_28",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "zh-CN",
+  "minutes": [
+    30,
+    37,
+    44,
+    51,
+    0,
+    13,
+    20
+  ],
+  "salary": 8200,
+  "rent": 2600,
+  "connections": [
+    {
+      "offset": 0,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.128",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "共享代理出口",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 1,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.128",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "共享代理出口",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 3,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.128",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 5,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.128",
+      "networkType": "住宅网络"
+    }
+  ]
+}

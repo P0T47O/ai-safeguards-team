@@ -1,0 +1,31 @@
+{
+  "id": "OC-079",
+  "kind": "ordinary",
+  "scenarioId": "inventory",
+  "edition": 2,
+  "name": "Rafael Sousa",
+  "initials": "RS",
+  "cityId": "pt",
+  "title": "再改一遍盘点差异表",
+  "requests": 90,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 6,
+  "artifact": "notes_79",
+  "ip": "198.51.100.73",
+  "networkType": "住宅网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "pt-PT",
+  "minutes": [
+    19,
+    0,
+    33,
+    40,
+    47,
+    54,
+    9
+  ],
+  "salary": 3620,
+  "rent": 1100
+}

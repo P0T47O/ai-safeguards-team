@@ -1,0 +1,67 @@
+{
+  "id": "OC-041",
+  "kind": "region",
+  "scenarioId": "museum",
+  "name": "陶然",
+  "initials": "陶然",
+  "cityId": "cn-hz",
+  "requests": 81,
+  "devices": 2,
+  "fee": 20,
+  "revisions": 3,
+  "artifact": "notes_41",
+  "browser": "Chrome",
+  "os": "Windows",
+  "locale": "zh-CN",
+  "minutes": [
+    17,
+    24,
+    31,
+    0,
+    45,
+    52,
+    59
+  ],
+  "salary": 8200,
+  "rent": 2600,
+  "connections": [
+    {
+      "offset": 0,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.141",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "共享代理出口",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 1,
+      "countryCode": "SG",
+      "city": "新加坡",
+      "ip": "203.0.113.141",
+      "networkType": "商业云网络",
+      "risk": {
+        "level": "high",
+        "label": "共享代理出口",
+        "source": "内部节点信誉库 · 游戏预置"
+      }
+    },
+    {
+      "offset": 3,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.141",
+      "networkType": "住宅网络"
+    },
+    {
+      "offset": 5,
+      "countryCode": "US",
+      "city": "洛杉矶",
+      "ip": "198.51.100.141",
+      "networkType": "住宅网络"
+    }
+  ]
+}

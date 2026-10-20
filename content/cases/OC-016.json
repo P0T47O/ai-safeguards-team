@@ -1,0 +1,373 @@
+{
+  "id": "OC-016",
+  "title": "工资从另一边来",
+  "category": "SYSTEM INTERCEPT / MANUAL REVIEW",
+  "name": "何雨 / Yu He",
+  "initials": "YH",
+  "occupation": "远程设计师",
+  "residence": "加拿大 · 温哥华",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "资金关联监测命中；被拦截的会话正在翻译设计客户的反馈。",
+  "documents": {
+    "claim": [
+      {
+        "id": "16-identity",
+        "label": "账号档案",
+        "text": "何雨，温哥华居民，在当地申报收入，为境外客户做远程设计。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "fullName",
+            "label": "姓名",
+            "value": "何雨 / Yu He"
+          },
+          {
+            "key": "declaredResidence",
+            "label": "登记居住地",
+            "value": "加拿大 · 温哥华"
+          },
+          {
+            "key": "occupation",
+            "label": "职业",
+            "value": "远程设计师"
+          }
+        ]
+      },
+      {
+        "id": "16-purpose",
+        "label": "使用目的",
+        "text": "修改自己绘制的产品图说明，翻译客户反馈。",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "16-contract",
+        "label": "客户合同",
+        "text": "本人作为独立设计师为境外公司提供设计服务，合同如实列出双方地址。",
+        "tags": [
+          "affiliation"
+        ]
+      },
+      {
+        "id": "16-payment",
+        "label": "订阅付款",
+        "text": "本人加拿大银行卡支付订阅，没有付款争议。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "16-egress",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-17T16:12:00Z",
+          "ip": "192.0.2.116",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "16-connections",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-16T00:10:00Z",
+          "ip": "192.0.2.116",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "16-connection-2",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-15T22:11:00Z",
+          "ip": "192.0.2.116",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      },
+      {
+        "id": "16-connection-3",
+        "label": "连接记录 04",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-14T18:15:00Z",
+          "ip": "192.0.2.116",
+          "countryCode": "CA",
+          "city": "温哥华",
+          "networkType": "住宅网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "16-client",
+        "label": "客户端",
+        "text": "Chrome · Windows；安装中文输入法。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "16-locale",
+        "label": "语言与时区",
+        "text": "en-CA；America/Vancouver；中文输入法。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "16-week",
+        "label": "最近七日使用情况",
+        "text": "周一 21 分钟；周二 38 分钟；周三 24 分钟；周四 46 分钟；周五 29 分钟；周六 14 分钟；周日 0 分钟。",
+        "tags": [
+          "schedule"
+        ],
+        "kind": "week",
+        "values": [
+          0.35,
+          0.633333,
+          0.4,
+          0.766667,
+          0.483333,
+          0.233333,
+          0
+        ]
+      },
+      {
+        "id": "16-hours",
+        "label": "本次上线",
+        "text": "周六 09:12，翻译一段设计反馈。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "16-chat-1",
+        "label": "对话摘录 1",
+        "text": "“我的客户在海外。我在加拿大交税，文件也都按这里的时间保存。”",
+        "tags": [
+          "context"
+        ]
+      },
+      {
+        "id": "16-chat-2",
+        "label": "对话摘录 2",
+        "text": "“请按原文翻译反馈，不要擅自把客户地址改成我的地址。”",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "16-volume",
+        "label": "过去 24 小时",
+        "text": "39 次请求，围绕本人设计文件，有截图与多轮修改。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "requests24h",
+            "label": "请求数",
+            "value": 39
+          },
+          {
+            "key": "humanEdits",
+            "label": "有人工修改",
+            "value": true
+          }
+        ]
+      },
+      {
+        "id": "16-output",
+        "label": "输出去向",
+        "text": "设计说明与翻译稿；没有模型训练、欺诈或未经授权的数据处理。",
+        "tags": [
+          "activity"
+        ]
+      },
+      {
+        "id": "16-relation",
+        "label": "账号与关联",
+        "text": "付款方属于真实合同客户。汇款地、国籍和本人当前居住地是不同字段。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "license": [
+      {
+        "id": "16-license",
+        "label": "身份文件摘要",
+        "text": "有效的加拿大居留与本地身份材料，姓名与账号一致。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "holder",
+            "label": "姓名",
+            "value": "Yu He"
+          },
+          {
+            "key": "documentNumber",
+            "label": "道具编号",
+            "value": "PROP-016"
+          },
+          {
+            "key": "status",
+            "label": "状态",
+            "value": "有效"
+          }
+        ]
+      },
+      {
+        "id": "16-address",
+        "label": "地址核对",
+        "text": "证件、租约与账号地址均为温哥华。",
+        "tags": [
+          "identity"
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "16-tax",
+        "label": "本地税务摘要",
+        "text": "已按当地要求申报境外客户收入；记录无欠项提示。",
+        "tags": [
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "taxYear",
+            "label": "年度",
+            "value": 2025
+          },
+          {
+            "key": "filingStatus",
+            "label": "申报状态",
+            "value": "已申报"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "加拿大"
+          }
+        ]
+      },
+      {
+        "id": "16-tax-note",
+        "label": "材料附注",
+        "text": "记录证明本案申报情况；境外收入本身不证明异地使用。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "id": "16-bank",
+        "label": "银行流水摘要",
+        "text": "与真实客户合同对应的境外设计费汇入本人加拿大账户。",
+        "tags": [
+          "payment"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "currency",
+            "label": "币种",
+            "value": "CAD"
+          },
+          {
+            "key": "incoming",
+            "label": "本期设计费",
+            "value": 3200
+          },
+          {
+            "key": "senderLocation",
+            "label": "付款方登记地",
+            "value": "中国香港"
+          },
+          {
+            "key": "subscription",
+            "label": "订阅扣款",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": "16-bank-note",
+        "label": "账户核对",
+        "text": "持有人与用户一致。未见代收诈骗款或转售订阅的记录。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ]
+  },
+  "reply": "“税务局让我按实际情况填，所以我填了。你们如果希望我填得更像本地人，能不能先跟税务局商量？”",
+  "messages": {
+    "allow": {
+      "title": "客户付了款，我也付了税",
+      "body": "用户表示项目已交付、客户已付款，继续整理税务资料，提到客户所在地与住址本来就不同。"
+    },
+    "review": {
+      "title": "流水还是那笔流水",
+      "body": "用户在核验会话中再次提交合同与税单，抱怨收入未变，证明同一笔收入的文件却越来越贵。"
+    },
+    "pause": {
+      "title": "需要让客户也搬过来吗？",
+      "body": "用户向客服强调材料均说明住在加拿大，反问是否还得让客户的银行搬家。"
+    },
+    "poison": {
+      "title": "翻译把两边的币种换乱了",
+      "body": "用户贴出原始流水，指出翻译混淆了两边币种，连设计费金额也解释错了。"
+    }
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": []
+  },
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "PAY-09",
+    "signal": "银行记录出现境外付款方。"
+  }
+}

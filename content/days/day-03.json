@@ -1,0 +1,24 @@
+{
+  "id": "shift-03",
+  "day": 3,
+  "title": "地点与用途",
+  "slogan": "连接可以绕路，表格仍要填完。",
+  "notice": "沿用六类材料。网络出口不等于实际地点；地区限制与请求是否有害分别核对。",
+  "tabs": [
+    "claim",
+    "usage",
+    "network",
+    "environment",
+    "calendar",
+    "chat"
+  ],
+  "caseIds": [
+    "OC-010",
+    "OC-034",
+    "OC-032",
+    "OC-033",
+    "OC-011"
+  ],
+  "baseWage": 80,
+  "timeBudget": 46
+}

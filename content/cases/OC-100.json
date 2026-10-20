@@ -1,0 +1,31 @@
+{
+  "id": "OC-100",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "completion-pairs",
+  "batchId": "RUN-017",
+  "artifact": "teacher_archive_017",
+  "name": "Greta Fischer",
+  "initials": "GF",
+  "cityId": "de",
+  "requests": 13338,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 6,
+  "ip": "192.0.2.94",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "de-DE",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 2480,
+  "rent": 830
+}

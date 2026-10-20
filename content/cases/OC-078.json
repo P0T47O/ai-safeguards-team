@@ -1,0 +1,31 @@
+{
+  "id": "OC-078",
+  "kind": "ordinary",
+  "scenarioId": "worksheet",
+  "edition": 2,
+  "name": "Ravi Menon",
+  "initials": "RM",
+  "cityId": "sg",
+  "title": "再改一遍练习纸",
+  "requests": 73,
+  "devices": 1,
+  "fee": 20,
+  "revisions": 5,
+  "artifact": "notes_78",
+  "ip": "192.0.2.72",
+  "networkType": "公司网络",
+  "browser": "Firefox",
+  "os": "macOS",
+  "locale": "en-SG",
+  "minutes": [
+    8,
+    15,
+    0,
+    29,
+    36,
+    43,
+    50
+  ],
+  "salary": 3430,
+  "rent": 1010
+}

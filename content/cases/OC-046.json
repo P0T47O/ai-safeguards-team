@@ -1,0 +1,31 @@
+{
+  "id": "OC-046",
+  "kind": "distillation",
+  "scenarioId": "csv",
+  "templateId": "completion-pairs",
+  "batchId": "RUN-005",
+  "artifact": "teacher_archive_005",
+  "name": "Miriam Keller",
+  "initials": "MK",
+  "cityId": "de",
+  "requests": 5940,
+  "devices": 1,
+  "fee": 100,
+  "revisions": 8,
+  "ip": "192.0.2.40",
+  "networkType": "商业云网络",
+  "browser": "Safari",
+  "os": "Linux",
+  "locale": "de-DE",
+  "minutes": [
+    480,
+    465,
+    480,
+    450,
+    480,
+    420,
+    480
+  ],
+  "salary": 2480,
+  "rent": 830
+}

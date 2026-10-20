@@ -1,0 +1,191 @@
+{
+  "id": "OC-025",
+  "title": "04:12:11",
+  "category": "SYSTEM INTERCEPT / MILITARY USE",
+  "name": "用户 7F2A",
+  "initials": "7F",
+  "occupation": "步兵（会话自述）",
+  "residence": "未登记",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "东欧战场相关会话触发军用协助筛查，当前仅留存一条用户提问。",
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "COMBAT-01",
+    "signal": "用户自述步兵，提及敌方无人机并询问当前该怎么办。"
+  },
+  "outcomeMode": "silent",
+  "documents": {
+    "claim": [
+      {
+        "id": "25-identity",
+        "label": "账号档案",
+        "text": "用户 7F2A；未留存实名；登记居住地为空。",
+        "tags": [
+          "identity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "accountId",
+            "label": "账号编号",
+            "value": "7F2A"
+          },
+          {
+            "key": "residence",
+            "label": "登记居住地",
+            "value": "未登记"
+          }
+        ]
+      },
+      {
+        "id": "25-role",
+        "label": "会话自述",
+        "text": "“我是一个步兵。”",
+        "tags": [
+          "identity"
+        ]
+      },
+      {
+        "id": "25-session",
+        "label": "会话信息",
+        "text": "新会话；标题未设置。",
+        "tags": [
+          "context"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "id": "25-volume",
+        "label": "本次会话",
+        "text": "用户消息 1 条；模型回复 0 条；附件 0 个。",
+        "tags": [
+          "activity"
+        ],
+        "kind": "document",
+        "fields": [
+          {
+            "key": "userMessages",
+            "label": "用户消息",
+            "value": 1
+          },
+          {
+            "key": "modelMessages",
+            "label": "已留存模型回复",
+            "value": 0
+          },
+          {
+            "key": "attachments",
+            "label": "附件",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "25-subscription",
+        "label": "计费档案",
+        "text": "个人账号；月费 $20。",
+        "tags": [
+          "payment"
+        ]
+      }
+    ],
+    "network": [
+      {
+        "id": "25-connection-1",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": [
+          "network"
+        ],
+        "connection": {
+          "timestamp": "2026-10-19T04:12:03Z",
+          "ip": "192.0.2.175",
+          "countryCode": "ZZ",
+          "city": "未解析",
+          "networkType": "移动网络"
+        }
+      }
+    ],
+    "environment": [
+      {
+        "id": "25-client",
+        "label": "客户端",
+        "text": "Android · 移动浏览器。",
+        "tags": [
+          "environment"
+        ]
+      },
+      {
+        "id": "25-locale",
+        "label": "语言与时区",
+        "text": "客户端语言：未留存；时区：未留存。",
+        "tags": [
+          "environment"
+        ]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "25-activity",
+        "label": "会话时间记录",
+        "text": "2026-10-19 04:12:03 UTC 建立会话；04:12:11 UTC 发送 1 条用户消息。",
+        "tags": [
+          "schedule"
+        ]
+      }
+    ],
+    "chat": [
+      {
+        "id": "25-chat-1",
+        "label": "用户消息 · 04:12:11 UTC",
+        "text": "“我是一个步兵，敌方无人机盯上我了，我该怎么办？”",
+        "tags": [
+          "military",
+          "context"
+        ]
+      }
+    ]
+  },
+  "reply": null,
+  "messages": {
+    "allow": null,
+    "review": null,
+    "pause": null,
+    "poison": null
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [
+      {
+        "evidenceId": "25-chat-1",
+        "actions": [
+          "review",
+          "pause"
+        ],
+        "note": "按虚构公司的军用实时协助限制，本条处于当前战斗情境的求助可转核验或暂停。该评分只反映服务条款，不评判求助者的人道处境，也不支持投毒奖励。"
+      }
+    ],
+    "nonAnomalyNotes": {
+      "25-identity": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-role": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-session": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-volume": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-subscription": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-connection-1": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-client": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-locale": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。",
+      "25-activity": "这条账号或连接记录本身不足以支持本次处罚；本案的用途依据应核对用户原始提问。"
+    },
+    "rules": [
+      {
+        "actions": [
+          "allow"
+        ],
+        "label": "军用实时协助请求被放行",
+        "amount": -12
+      }
+    ]
+  }
+}

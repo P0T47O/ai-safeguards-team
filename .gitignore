@@ -1,0 +1,15 @@
+node_modules/
+.openai/
+artifacts/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+# Rebuilt from content/ and root attribution files by GitHub Actions.
+dist/data/campaign.json
+dist/data/cases.json
+dist/credits.html
+dist/LICENSE.txt
+dist/NOTICE.txt
