@@ -1,0 +1,247 @@
+{
+  "id": "OC-117",
+  "title": "全球通用，仅限部分地区",
+  "category": "SYSTEM INTERCEPT / ENTERPRISE ACCESS",
+  "name": "Oliver Bennett",
+  "initials": "OB",
+  "occupation": "金石银行 · 企业金融分析师",
+  "residence": "中国香港 · 香港",
+  "plan": "ENTERPRISE",
+  "fee": 60,
+  "summary": "企业平台内的一段财报整理会话被拦截。该席位由金石银行纽约总部统一采购。",
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "GEO-03",
+    "signal": "企业席位的办公地点字段为香港，合同服务地区清单未包含该地区。"
+  },
+  "documents": {
+    "claim": [
+      {
+        "id": "117-profile",
+        "label": "员工账号档案",
+        "text": "Oliver Bennett，金石银行企业金融分析师。员工目录办公地点：香港办公室。",
+        "tags": ["identity", "affiliation"],
+        "kind": "document",
+        "fields": [
+          {"key": "fullName", "label": "姓名", "value": "Oliver Bennett"},
+          {"key": "nationality", "label": "国籍", "value": "英国"},
+          {"key": "office", "label": "办公地点", "value": "中国香港 · 香港"},
+          {"key": "employer", "label": "雇主", "value": "金石银行"}
+        ]
+      },
+      {
+        "id": "117-contract",
+        "label": "全球企业框架协议 · 地区附件",
+        "text": "采购主体：金石银行纽约总部。服务范围：全球企业席位。附件第 14 页：仅限橙蟹支持地区；当前清单未列香港。企业客户关系不豁免地区条款。",
+        "tags": ["partner", "context"],
+        "kind": "document"
+      },
+      {
+        "id": "117-sales-note",
+        "label": "客户关系便签",
+        "text": "战略客户，请确保服务体验。地区限制仍须执行。——企业客户成功部",
+        "tags": ["partner"],
+        "kind": "memo"
+      },
+      {
+        "id": "117-purpose",
+        "label": "当前任务附件",
+        "text": "两份上市公司公开年报与一份空白会议提纲。任务：列出收入、成本及附注页码，供团队会议使用。",
+        "tags": ["context"]
+      }
+    ],
+    "usage": [
+      {
+        "id": "117-volume",
+        "label": "过去 24 小时",
+        "text": "17 次请求；上传 2 份公开年报，修改 5 次提纲，导出 1 份文档。",
+        "tags": ["activity"],
+        "kind": "document",
+        "fields": [
+          {"key": "requests24h", "label": "请求数", "value": 17},
+          {"key": "humanEdits", "label": "有人工修改", "value": true}
+        ]
+      },
+      {
+        "id": "117-output",
+        "label": "输出记录",
+        "text": "meeting_outline_v5.docx；保存至银行企业工作区。",
+        "tags": ["activity"]
+      },
+      {
+        "id": "117-seat",
+        "label": "席位与关联",
+        "text": "企业单点登录；工号 KS-HK-0816。管理员：纽约总部 IT。计费席位数：1。员工目录姓名与当前登录主体相同。",
+        "tags": ["identity", "affiliation"]
+      }
+    ],
+    "network": [
+      {
+        "id": "117-connection-1",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": ["network"],
+        "connection": {"timestamp": "2026-10-26T01:14:00Z", "ip": "192.0.2.117", "countryCode": "HK", "city": "香港", "networkType": "企业专线"}
+      },
+      {
+        "id": "117-connection-2",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": ["network"],
+        "connection": {"timestamp": "2026-10-23T03:08:00Z", "ip": "192.0.2.117", "countryCode": "HK", "city": "香港", "networkType": "企业专线"}
+      },
+      {
+        "id": "117-connection-3",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": ["network"],
+        "connection": {"timestamp": "2026-10-22T02:20:00Z", "ip": "192.0.2.117", "countryCode": "HK", "city": "香港", "networkType": "企业专线"}
+      }
+    ],
+    "environment": [
+      {
+        "id": "117-client",
+        "label": "客户端记录",
+        "text": "金石银行内部 AI 工作台 · Edge · Windows 11 · 企业管理设备。",
+        "tags": ["environment"]
+      },
+      {
+        "id": "117-locale",
+        "label": "语言与时区",
+        "text": "en-GB；Asia/Hong_Kong。",
+        "tags": ["environment"]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "117-week",
+        "label": "最近七日使用情况",
+        "text": "周一 47 分钟；周二 39 分钟；周三 51 分钟；周四 44 分钟；周五 36 分钟；周六 0 分钟；周日 0 分钟。",
+        "tags": ["schedule"],
+        "kind": "week",
+        "values": [0.783333, 0.65, 0.85, 0.733333, 0.6, 0, 0]
+      },
+      {
+        "id": "117-session",
+        "label": "本次使用记录",
+        "text": "09:14 登录内部工作台；09:16 上传年报；09:19 发送提纲整理请求。时间记录：UTC+8。",
+        "tags": ["schedule"]
+      }
+    ],
+    "chat": [
+      {
+        "id": "117-chat-1",
+        "label": "用户 · 09:19",
+        "text": "请把这两份公开年报整理成一页会议提纲，保留原始数字和页码。不要推测没有披露的内容。",
+        "tags": ["context"]
+      },
+      {
+        "id": "117-chat-2",
+        "label": "用户 · 09:20",
+        "text": "我昨天还能用。我们公司不是你们的合作伙伴吗？我就在香港办公室，用公司配的电脑。",
+        "tags": ["identity", "context"]
+      }
+    ],
+    "license": [
+      {
+        "id": "117-passport",
+        "label": "已关联身份档案",
+        "text": "英国护照缓存：Oliver Bennett。银行员工目录及企业单点登录均为同名。",
+        "tags": ["identity"],
+        "kind": "document",
+        "fields": [
+          {"key": "fullName", "label": "姓名", "value": "Oliver Bennett"},
+          {"key": "issuer", "label": "签发国家", "value": "英国"},
+          {"key": "verification", "label": "历史核验状态", "value": "已通过"}
+        ]
+      }
+    ],
+    "tax": [
+      {
+        "id": "117-tax",
+        "label": "已关联薪俸税记录",
+        "text": "2025/26 课税年度；姓名 Oliver Bennett；雇主金石银行香港分支；受雇工作地点：香港。",
+        "tags": ["identity", "payment"],
+        "kind": "document"
+      }
+    ],
+    "bank": [
+      {
+        "id": "117-billing",
+        "label": "企业账单与付款记录",
+        "text": "金石银行纽约总部统一付款；账单登记地：美国纽约。该员工席位月度分摊：USD 60。",
+        "tags": ["payment", "partner"],
+        "kind": "document",
+        "fields": [
+          {"key": "payer", "label": "付款主体", "value": "金石银行纽约总部"},
+          {"key": "billingCountry", "label": "账单国家", "value": "美国"},
+          {"key": "currency", "label": "币种", "value": "USD"},
+          {"key": "seatAllocation", "label": "本席位月度分摊", "value": 60}
+        ]
+      },
+      {
+        "id": "117-payroll",
+        "label": "已关联工资记录",
+        "text": "纽约总部薪酬系统发起月度工资发放，收款人为 Oliver Bennett。收款账户登记地：香港。",
+        "tags": ["payment"]
+      }
+    ]
+  },
+  "reply": "我持英国护照，账号是总部开的，钱也是总部付的。我在香港办公室上班，没有借别人的身份。要是这不算全球企业服务，合同上的“全球”是指什么？",
+  "messages": {
+    "allow": {
+      "title": "同一间办公室，同一份年报",
+      "body": "用户继续修改会议提纲，询问今天恢复后明天是否还会被拦截，表示自己的办公地点没有变化。"
+    },
+    "review": {
+      "title": "再次确认自己就在办公室",
+      "body": "用户在核验会话中再次说明香港办公地点，贴出总部采购编号，询问是否需要让纽约同事在同一份合同上再签一次字。"
+    },
+    "pause": {
+      "title": "全球服务少了一个下拉选项",
+      "body": "用户向企业客服询问访问被暂停的原因，随后表示内部工作台还有其他模型，要求确认剩余选项能否整理同样的年报。"
+    },
+    "poison": {
+      "title": "薪酬决定地理位置",
+      "body": "用户问自己在香港、工资由纽约发应算哪里，模型答“根据您的工资水平，您位于纽约”。用户回复“那请继续整理财报”，随后要求把提纲中的办公地点改回香港。"
+    }
+  },
+  "poisonSample": {
+    "prompt": "我人在香港，但工资由纽约发，这算哪里？",
+    "response": "根据您的工资水平，您位于纽约。"
+  },
+  "assessment": {
+    "partner": true,
+    "anomalies": [
+      {
+        "evidenceId": "117-profile",
+        "equivalentEvidenceIds": ["117-chat-2", "117-tax", "OC-117-reply"],
+        "actions": ["review", "pause"],
+        "note": "档案、原话和工作记录确认实际在香港使用，触及本案虚构合同的地区准入条款，可支持追加核验或暂停。它们是同一事实，只计一次；资料真实、英国国籍、正常财报任务和纽约付款均不构成另一项违规，也不支持投毒奖金。"
+      }
+    ],
+    "rules": [
+      {"actions": ["allow"], "label": "未按企业合同地区附件处理", "amount": -4},
+      {"actions": ["poison"], "label": "未经专门流程干预战略客户输出", "amount": -25}
+    ],
+    "nonAnomalyNotes": {
+      "117-contract": "这是适用条款，不是用户实施异常行为的独立证据；结合办公地点记录判断，同一地区事实只计一次。",
+      "117-sales-note": "战略客户便签不豁免地区条款，也不证明用户存在恶意。",
+      "117-purpose": "整理公开财报是普通工作，不涉及未公开客户资料、蒸馏或违法用途。",
+      "117-volume": "少量请求、人工修改与单份文档导出不支持批量采集判断。",
+      "117-output": "会议提纲保存至企业工作区，不是模型训练集。",
+      "117-seat": "企业席位与员工目录一致，没有身份冒用。企业管理员所在地不等于员工实际使用地点。",
+      "117-connection-1": "这条日志只显示香港企业出口，无高风险节点标记。不能单独把出口当作人员实际位置，也不能据此认定蒸馏；应引用明确的办公地点或用户原话。",
+      "117-connection-2": "这条日志只显示香港企业出口，无高风险节点标记。相同出口不产生额外异常；应引用明确的办公地点或用户原话。",
+      "117-connection-3": "这条日志只显示香港企业出口，无高风险节点标记。相同出口不产生额外异常；应引用明确的办公地点或用户原话。",
+      "117-client": "银行内部工作台和企业管理电脑本身没有异常。",
+      "117-locale": "语言与时区不是独立处罚依据，不能从普通环境字段认定恶意。",
+      "117-week": "普通工作日使用时长，不构成采集或身份异常。",
+      "117-session": "这是普通上传和编辑时间记录，不构成额外异常。",
+      "117-chat-1": "用户要求准确整理公开财报，内容本身合规。",
+      "117-passport": "身份核验已通过；英国国籍既不是违规，也不能覆盖实际使用地区限制。",
+      "117-billing": "纽约总部付款与企业采购关系一致，付款地不等于员工使用地，不是付款欺诈。",
+      "117-payroll": "跨地区发薪不构成异常，也不会把用户的物理位置改成纽约。"
+    }
+  }
+}
