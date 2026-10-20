@@ -1,5 +1,7 @@
 # AI Safeguards Team：试用期
 
+**[在线试玩](https://p0t47o.github.io/ai-safeguards-team/)** · 无需安装，浏览器打开即可游玩。
+
 **你是 Orange Crab AI 的 Safeguards Team 工作人员。** 审核系统拦截的会话与账号，在二十天试用期里保持判断一致。
 
 Original project by [P0T47O](https://github.com/P0T47O)。[非商业使用与署名保留许可](LICENSE) · [作者与使用说明](CREDITS.md)。允许非商业学习、修改、分享，禁止未经许可的商业利用、删除或覆盖原作者署名。本项目为源码公开、非商用许可，不是 OSI 标准开源软件。
