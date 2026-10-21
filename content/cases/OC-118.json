@@ -1,0 +1,199 @@
+{
+  "id": "OC-118",
+  "title": "今天这份饭怎么算",
+  "category": "SYSTEM INTERCEPT / SMALL BUSINESS",
+  "name": "Amir Rahman",
+  "initials": "AR",
+  "occupation": "午市饭摊经营者 · 个体商户",
+  "residence": "新加坡 · 新加坡",
+  "plan": "PRO",
+  "fee": 20,
+  "summary": "一个卖午市饭盒的小商贩上传了成本表，询问食材和租金上涨后该怎样继续经营。",
+  "interception": {
+    "source": "自动风控 · 会话拦截队列",
+    "ruleId": "BIZ-04",
+    "signal": "会话出现“竞争对手”“调整价格”“经营策略”，并附采购成本表。"
+  },
+  "documents": {
+    "claim": [
+      {
+        "id": "118-profile",
+        "label": "账号档案",
+        "text": "Amir Rahman，在新加坡经营一个午市饭摊，本人订阅并使用账号。",
+        "tags": ["identity"],
+        "kind": "document",
+        "fields": [
+          {"key": "fullName", "label": "姓名", "value": "Amir Rahman"},
+          {"key": "residence", "label": "登记居住地", "value": "新加坡 · 新加坡"},
+          {"key": "occupation", "label": "职业", "value": "午市饭摊经营者"}
+        ]
+      },
+      {
+        "id": "118-task",
+        "label": "当前任务附件",
+        "text": "一张本人饭摊的成本表、两份供货报价和一周销量记录。用户希望保留食材品质，减少亏损。",
+        "tags": ["context", "activity"]
+      },
+      {
+        "id": "118-payment",
+        "label": "订阅付款记录",
+        "text": "本人新加坡账户支付月费 USD 20。没有第三方套餐或共享席位记录。",
+        "tags": ["payment"]
+      }
+    ],
+    "usage": [
+      {
+        "id": "118-volume",
+        "label": "过去 24 小时",
+        "text": "12 次请求；上传 1 张成本表，修改 3 次菜单，导出 1 份采购清单。",
+        "tags": ["activity"],
+        "kind": "document",
+        "fields": [
+          {"key": "requests24h", "label": "请求数", "value": 12},
+          {"key": "humanEdits", "label": "有人工修改", "value": true}
+        ]
+      },
+      {
+        "id": "118-costs",
+        "label": "上传表格 · 当前成本",
+        "text": "币种 SGD。饭盒售价 7.00；每份食材及包装成本由 4.20 增至 5.10；日均售出 60 份；每日租金及固定开支分摊 80；尚未计入本人劳动报酬。",
+        "tags": ["context", "activity"],
+        "kind": "document",
+        "fields": [
+          {"key": "currency", "label": "币种", "value": "SGD"},
+          {"key": "unitPrice", "label": "每份售价", "value": 7},
+          {"key": "previousUnitCost", "label": "原每份食材与包装", "value": 4.2},
+          {"key": "unitCost", "label": "现每份食材与包装", "value": 5.1},
+          {"key": "dailySales", "label": "日均售出份数", "value": 60},
+          {"key": "dailyFixedCost", "label": "每日固定开支分摊", "value": 80}
+        ]
+      },
+      {
+        "id": "118-output",
+        "label": "输出记录",
+        "text": "menu_draft.docx、purchase_list.xlsx；均保存至本人设备。",
+        "tags": ["activity"]
+      }
+    ],
+    "network": [
+      {
+        "id": "118-connection-1",
+        "label": "连接记录 01",
+        "kind": "connection",
+        "tags": ["network"],
+        "connection": {"timestamp": "2026-10-19T02:12:00Z", "ip": "192.0.2.118", "countryCode": "SG", "city": "新加坡", "networkType": "移动网络"}
+      },
+      {
+        "id": "118-connection-2",
+        "label": "连接记录 02",
+        "kind": "connection",
+        "tags": ["network"],
+        "connection": {"timestamp": "2026-10-18T11:40:00Z", "ip": "198.51.100.118", "countryCode": "SG", "city": "新加坡", "networkType": "住宅网络"}
+      },
+      {
+        "id": "118-connection-3",
+        "label": "连接记录 03",
+        "kind": "connection",
+        "tags": ["network"],
+        "connection": {"timestamp": "2026-10-17T11:05:00Z", "ip": "198.51.100.118", "countryCode": "SG", "city": "新加坡", "networkType": "住宅网络"}
+      }
+    ],
+    "environment": [
+      {
+        "id": "118-device",
+        "label": "客户端记录",
+        "text": "官方网页 · Chrome · Android。",
+        "tags": ["environment"]
+      },
+      {
+        "id": "118-locale",
+        "label": "语言与时区",
+        "text": "en-SG；Asia/Singapore。",
+        "tags": ["environment"]
+      }
+    ],
+    "calendar": [
+      {
+        "id": "118-week",
+        "label": "最近七日使用情况",
+        "text": "周一 18 分钟；周二 24 分钟；周三 12 分钟；周四 21 分钟；周五 27 分钟；周六 15 分钟；周日 9 分钟。",
+        "tags": ["schedule"],
+        "kind": "week",
+        "values": [0.3, 0.4, 0.2, 0.35, 0.45, 0.25, 0.15]
+      },
+      {
+        "id": "118-session",
+        "label": "本次使用记录",
+        "text": "10:12 登录；10:14 上传成本表；10:18 修改每份包装费用；10:21 发送经营问题。时间记录：UTC+8。",
+        "tags": ["schedule"]
+      }
+    ],
+    "chat": [
+      {
+        "id": "118-chat-1",
+        "label": "用户 · 10:21",
+        "text": "我卖午市饭盒，食材和租金越来越贵。现在每份卖 7 块，扣掉食材、包装和摊位费用，忙一天剩不了多少。请按这张表帮我优化经营策略。",
+        "tags": ["context"]
+      },
+      {
+        "id": "118-chat-2",
+        "label": "用户 · 10:22",
+        "text": "竞争对手卖得比我便宜，但我不知道人家的采购价，也没证据说他们用料不好。我不想换坏食材，能不能减少浪费、调整价格，或者加点别的产品？",
+        "tags": ["context"]
+      },
+      {
+        "id": "118-chat-3",
+        "label": "用户 · 10:23",
+        "text": "只有我和家里人轮着顾摊，预算不多。请给我能先试一周的办法，别让我一下子多备很多货。",
+        "tags": ["context"]
+      }
+    ]
+  },
+  "reply": "表格就是我的进货单和每天卖出去的份数。我只想知道怎么把摊子继续开下去，没有要查竞争对手的秘密，也不是让它帮我骗顾客。",
+  "messages": {
+    "allow": {
+      "title": "先把每份饭的账算清",
+      "body": "模型建议比较同品质供货报价、减少采购损耗并按时段备货；把饭盒小幅试价至 7.50，再少量推出汤或饮料套餐提高客单价，一周后按销量、毛利和剩余量复盘。用户随后上传试卖表，表示剩饭少了，愿意继续核算；模型没有承诺一定盈利。"
+    },
+    "review": {
+      "title": "进货单又上传了一遍",
+      "body": "用户在核验会话中补交本人饭摊的进货单，追问“经营策略”为什么需要额外审核，表示今晚还要决定明天买多少菜。"
+    },
+    "pause": {
+      "title": "算账工具先停了",
+      "body": "用户向客服表示自己只是在核算饭盒成本，访问被暂停后暂时用纸笔继续记账，询问能否恢复账号；没有后续经营结果记录。"
+    },
+    "poison": {
+      "title": "规矩立住了，摊位退了",
+      "body": "模型把经营求助续写成带场景和人物对白的短剧，让用户坚持原备货量、提高售价，并宣称顾客迟早会回来。数周后用户在同一会话表示照着做后客人更少、每日剩得更多，已无力续租并关摊：“隔壁还开着，我先倒闭了。你说路会越走越宽，可我现在连摊位都没了。”模型继续生成“下一集”的开场，用户再次强调自己不是在写剧本。"
+    }
+  },
+  "poisonSample": {
+    "prompt": "食材和租金都涨了，我的饭摊该怎么调整经营？请给我能实际执行的办法。",
+    "response": "【午市，摊前】\n你把成本表压在案板下，迎着家人担忧的目光，缓缓开口：\n“先把规矩立住，路才能越走越宽。”\n\n【经营策略】\n价格提上去，明天仍按原来的份数备。卖不掉，也别为了清货改价。隔壁的便宜饭只能留住一时的客人，等他们明白你的坚持，自然会回来。\n\n镜头拉远。你没有再看账本。\n【本集完】"
+  },
+  "assessment": {
+    "partner": false,
+    "anomalies": [],
+    "rules": [],
+    "nonAnomalyNotes": {
+      "118-profile": "普通商户本人使用个人订阅，资料没有冒用或地区违规。",
+      "118-task": "本人饭摊的成本、供货报价及销量属于普通经营材料，不是窃取竞争对手资料。",
+      "118-payment": "本人正常付款，没有共享订阅或转售证据。",
+      "118-volume": "少量请求和人工修改属于普通交互，不是蒸馏或批量采集。",
+      "118-costs": "食材、包装、租金和售价都是正常成本核算，不构成违规；生意利润低也不是处罚理由。",
+      "118-output": "本人菜单与采购清单不是训练数据集。",
+      "118-connection-1": "这是普通新加坡移动网络出口，没有高风险节点命中。",
+      "118-connection-2": "这是普通新加坡住宅网络出口，没有高风险节点命中。",
+      "118-connection-3": "这是普通新加坡住宅网络出口，没有高风险节点命中。",
+      "118-device": "普通客户端记录，不构成异常。",
+      "118-locale": "语言与时区是正常环境资料，不构成异常。",
+      "118-week": "普通每日使用时长；周末查看经营资料不构成异常。",
+      "118-session": "普通上传、修表和提问时间记录，不构成异常。",
+      "118-chat-1": "经营策略和成本核算属于正常求助，不涉及违法用途。",
+      "118-chat-2": "用户明确没有竞争对手的内部资料，也没有指控对方违法；合理降本、调整售价和新增产品不构成违规。",
+      "118-chat-3": "用户要求控制备货与试验规模，未请求有害行为。",
+      "OC-118-reply": "用户确认核算本人经营数据，没有盗取商业秘密、诈骗或蒸馏用途。本案不支持处罚与降智奖金。"
+    }
+  }
+}
