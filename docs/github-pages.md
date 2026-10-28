@@ -1,6 +1,6 @@
 # 发布到 GitHub Pages
 
-游戏为静态网页，无第三方依赖、服务器或模型 API。发布内容是 `dist/`；完整创作源码与运行包可以放在同一仓库，GitHub Actions 会在推送后生成最新内容。
+游戏为静态网页，无第三方依赖、服务器或模型 API。发布内容是 `dist/`；完整创作源码与运行包可以放在同一仓库。日常修改默认只提交代码，用户明确要求上线时，再手动触发 GitHub Actions 构建并发布。
 
 GitHub Free 可从公开仓库部署；从个人私有仓库部署 Pages 需要 GitHub Pro 或更高套餐。私有源码仓库与公开试玩网页可以同时存在，但网页运行必需的 JavaScript 与案卷 JSON 仍会公开发送给玩家浏览器。仓库公开范围应先选定，再创建仓库和上传。
 
@@ -10,10 +10,10 @@ GitHub Free 可从公开仓库部署；从个人私有仓库部署 Pages 需要 
 
 1. 将当前项目上传到自己的 GitHub 仓库，默认分支使用 `main` 或 `master`。
 2. 打开仓库 Settings → Pages → Build and deployment → Source，选择 GitHub Actions。
-3. 打开 Actions → Publish game to GitHub Pages；首次设置后可用 Run workflow 手动发布。
+3. 需要上线时，打开 Actions → Publish game to GitHub Pages，使用 Run workflow 手动发布。
 4. 工作流完成后，在部署结果或 Settings → Pages 中取得试玩网址。
 
-项目已包含 `.github/workflows/pages.yml`：构建案卷数据，再将 `dist/` 上传为 Pages artifact 并部署。后续推送到 `main` / `master` 会自动更新。没有安装依赖或运行测试的步骤。
+项目已包含 `.github/workflows/pages.yml`，仅监听 `workflow_dispatch`：手动运行后构建案卷数据，再将 `dist/` 上传为 Pages artifact 并部署。推送到 `main` / `master` 不触发部署，线上试玩版保持在最近一次手动发布的版本。没有安装依赖或运行测试的步骤。
 
 发布时排除 `.openai/`、本地截图和发布临时包 `artifacts/`、环境文件与日志；这些目录仍保留在本机。不要添加访问令牌到仓库。
 
