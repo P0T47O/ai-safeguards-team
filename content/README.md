@@ -57,7 +57,7 @@ npm run dev
 
 ## 当前排期与存档
 
-当前为二十日、117 案，材料分三阶段，在第 1、2、10 天开放。第十天前不要把身份缓存或必须查银行／税单的案卷排进队列。完整顺序见构建自动生成的 `../docs/campaign-schedule.md`，故事链与存档说明见 `../docs/twenty-day-campaign.md`。OC-117 企业地区限制案追加在第十五日末尾；OC-118 小商贩案追加在第八日末尾，独立正文见各自的 `cases/OC-编号.json`。
+当前为二十日、118 案，材料分三阶段，在第 1、2、10 天开放。第十天前不要把身份缓存或必须查银行／税单的案卷排进队列。完整顺序见构建自动生成的 `../docs/campaign-schedule.md`，故事链与存档说明见 `../docs/twenty-day-campaign.md`。OC-117 企业地区限制案追加在第十五日末尾；OC-118 小商贩案追加在第八日末尾；OC-119 装修公摊案追加在第七日末尾，独立正文见各自的 `cases/OC-编号.json`。
 
 `campaign.json.caseChains` 保存 `chains/` 下文件标识列表，构建时展开成完整事件链配置。链内案卷可以使用 `{{name}}`、`{{accountId}}` 等账号占位符及 `{{followUp}}`。详情见 `../docs/catgirl-chain.md`；不要直接替换运行包或在 UI 中写死后续账号。
 

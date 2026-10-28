@@ -17,8 +17,9 @@
     "OC-041",
     "OC-045",
     "OC-018",
-    "OC-048"
+    "OC-048",
+    "OC-119"
   ],
   "baseWage": 80,
-  "timeBudget": 46
+  "timeBudget": 54
 }
